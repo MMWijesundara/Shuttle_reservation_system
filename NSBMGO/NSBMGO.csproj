@@ -123,6 +123,12 @@
     <Compile Include="Shuttle.Designer.cs">
       <DependentUpon>Shuttle.cs</DependentUpon>
     </Compile>
+    <Compile Include="testUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="testUserControl.Designer.cs">
+      <DependentUpon>testUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
     </EmbeddedResource>
