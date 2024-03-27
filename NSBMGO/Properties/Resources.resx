@@ -124,4 +124,10 @@
   <data name="NSBM GO GREEN TRANSPARENT 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NSBM GO GREEN TRANSPARENT 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Top panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Top panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Top panel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Top panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
