@@ -63,6 +63,26 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_1 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hi_Operator__Welcome_to_NSBMGO {
+            get {
+                object obj = ResourceManager.GetObject("Hi Operator, Welcome to NSBMGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NSBM_GO_GREEN_TRANSPARENT_2 {
             get {
                 object obj = ResourceManager.GetObject("NSBM GO GREEN TRANSPARENT 2", resourceCulture);

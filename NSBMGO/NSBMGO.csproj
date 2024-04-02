@@ -196,5 +196,11 @@
   <ItemGroup>
     <None Include="Resources\Top panel1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hi Operator, Welcome to NSBMGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
