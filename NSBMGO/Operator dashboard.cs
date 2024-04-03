@@ -66,10 +66,7 @@ namespace NSBMGO
             //this.Size = new Size(w, h);
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void btnlogout_click(object sender, EventArgs e)
         {
