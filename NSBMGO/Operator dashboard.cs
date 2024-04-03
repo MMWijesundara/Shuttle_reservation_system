@@ -75,5 +75,20 @@ namespace NSBMGO
         {
 
         }
+
+        private void btn_home_click(object sender, EventArgs e)
+        {
+            Driver driver = new Driver();
+
+            driver.TopLevel = false;
+            driver.FormBorderStyle = FormBorderStyle.None;  
+            driver.Dock = DockStyle.Fill;
+
+            operator_dash_panel.Controls.Clear();
+            operator_dash_panel.Controls.Add(driver);   
+
+            driver.Show();
+
+        }
     }
 }
