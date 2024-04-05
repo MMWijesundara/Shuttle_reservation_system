@@ -140,6 +140,9 @@
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loading_screen.resx">
       <DependentUpon>Loading_screen.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +222,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ticket %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NSBM GO BLACK TRANSPARENT 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NSBM GO BLACK TRANSPARENT 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NSBM GO BLACK TRANSPARENT 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com %283%292.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

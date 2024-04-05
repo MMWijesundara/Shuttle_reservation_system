@@ -73,6 +73,56 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com__1_ {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com__3_ {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com__3_2 {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com (3)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ellipse_1 {
             get {
                 object obj = ResourceManager.GetObject("Ellipse 1", resourceCulture);
@@ -106,6 +156,36 @@ namespace NSBMGO.Properties {
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NSBM_GO_BLACK_TRANSPARENT_1 {
+            get {
+                object obj = ResourceManager.GetObject("NSBM GO BLACK TRANSPARENT 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NSBM_GO_BLACK_TRANSPARENT_11 {
+            get {
+                object obj = ResourceManager.GetObject("NSBM GO BLACK TRANSPARENT 11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NSBM_GO_BLACK_TRANSPARENT_12 {
+            get {
+                object obj = ResourceManager.GetObject("NSBM GO BLACK TRANSPARENT 12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
