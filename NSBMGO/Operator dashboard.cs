@@ -7,74 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Guna.UI2.WinForms;
 
 
 namespace NSBMGO
 {
     public partial class Operator_dashboard : Form
     {
+        
         public Operator_dashboard()
         {
             InitializeComponent();
 
             
         }
-
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
             
-            //int w = Screen.PrimaryScreen.Bounds.Width;
-            //int h = Screen.PrimaryScreen.Bounds.Height;
-            //this.Location = new Point(0, 0);
-            //this.Size = new Size(w, h);
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+            
+            
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            //int w = Screen.PrimaryScreen.Bounds.Width;
-            //int h = Screen.PrimaryScreen.Bounds.Height;
-            //this.Location = new Point(0, 0);
-            //this.Size = new Size(w, h);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            //int w = Screen.PrimaryScreen.Bounds.Width;
-            //int h = Screen.PrimaryScreen.Bounds.Height;
-            //this.Location = new Point(0, 0);
-            //this.Size = new Size(w, h);
-        }
-
-        
 
         private void btnlogout_click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            if (MessageBox.Show("Do you want to switch user?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                this.Close();
+                LogIn logIn = new LogIn();
+                logIn.Show();
+            }
         }
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void btn_home_Click(object sender, EventArgs e)
@@ -93,21 +68,30 @@ namespace NSBMGO
         private void btn_reserve_Click(object sender, EventArgs e)
         {
 
+            Reserve reserve = new Reserve();
+            reserve.TopLevel = false;
+            reserve.FormBorderStyle = FormBorderStyle.None;
+            reserve.Dock = DockStyle.Fill;
+
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(reserve);
+
+            reserve.Show();
         }
 
-        //private void btnhome_click(object sender, EventArgs e)
-        //{
+        private void btn_cancle_Click(object sender, EventArgs e)
+        {
+            Cancel cancel = new Cancel();
+            cancel.TopLevel = false;
+            cancel.FormBorderStyle = FormBorderStyle.None;
+            cancel.Dock = DockStyle.Fill;
 
-        //}
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(cancel);
 
-        //private void btnreserve_click(object sender, EventArgs e)
-        //{
+            cancel.Show();
+        }
 
-        //}
-
-        //private void btncancel_click(object sender, EventArgs e)
-        //{
-
-        //}
+        
     }
 }
