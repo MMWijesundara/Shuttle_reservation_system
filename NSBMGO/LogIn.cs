@@ -9,80 +9,151 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Policy;
+using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
 
 
 namespace NSBMGO
 {
     public partial class LogIn : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=********;Connect Timeout=30;Application Intent=ReadWrite;Multi Subnet Failover=False");
+
         
+        
+
+        SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
+
 
 
         public LogIn()
         {
             InitializeComponent();
         }
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")] 
+
+        private static extern IntPtr CreateRoundRectRgn
+          (
+        int nLeftRect,     // x-coordinate of upper-left corner
+        int nTopRect,      // y-coordinate of upper-left corner
+        int nRightRect,    // x-coordinate of lower-right corner
+        int nBottomRect,   // y-coordinate of lower-right corner
+        int nWidthEllipse, // width of ellipse
+        int nHeightEllipse // height of ellipse
+             );
 
 
-       
+
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
+        
+
+        private void login_load(object sender, EventArgs e)
         {
-            //con.Open();
             
-            //SqlCommand cmd = new SqlCommand("select username,password from users where username '"+txt_username.Text+"' and password '"+txt_password.Text+"'");
+        }
 
-            //SqlParameter usernameParam;
-            //usernameParam = new SqlParameter("@username", this.txt_username.Text.Trim());
+        public void btn_login(object sender, EventArgs e)
+        {
+            string username = txt_username.Text;
+            string password = txt_password.Text;
 
-            //SqlParameter passwordParam;
-            //passwordParam = new SqlParameter("@password", this.txt_password.Text.Trim());
 
-            
-
-            //cmd.Parameters.Add(usernameParam);  
-            //cmd.Parameters.Add(passwordParam);
-
-            
-
-            //SqlDataReader dr = cmd.ExecuteReader(); 
-
-            if (txt_username.Text.Trim().Length == 0)
+            try
             {
-                MessageBox.Show("Please fill username","Warning",MessageBoxButtons.OK);
+                string query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+
+                if(txt_username.Text.Length==0) 
+                { 
+                    if(MessageBox.Show("Please enter username", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                    {
+                        txt_username.Focus();
+                        
+                    }
+                }
+
+                if (txt_password.Text.Length == 0)
+                {
+                    if (MessageBox.Show("Please enter password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                    {
+                        txt_username.Focus();
+                        
+                    }
+                }
+
+
+                else if (dt.Rows.Count > 0)
+                {
+                    username = txt_username.Text;
+                    password = txt_password.Text;
+
+                    string role = dt.Rows[0]["role"].ToString();
+                    
+                    switch (role)
+                    {
+                        case "operator":
+                            this.Hide();
+                            Operator_dashboard operator_Dashboard = new Operator_dashboard();
+                            operator_Dashboard.Show();
+                            operator_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                             
+                            break;
+
+                        case "admin":
+                            this.Hide();
+                            Admin_dashboard admin_Dashboard = new Admin_dashboard();
+                            admin_Dashboard.Show();
+                            //admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                            break;
+
+                             
+                    }
+
+
+                    
+                    
+                    this.Hide();
+                }
+
+                else
+                {
+                    MessageBox.Show("Invalid LogIn. Please Try Again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_username.Clear();
+                    txt_password.Clear();
+                    txt_username.Focus();
+
+
+                }
             }
-
-            if (txt_password.Text.Trim().Length == 0)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please fill password", "Warning", MessageBoxButtons.OK);
-            }
+                DialogResult res;
+                res = MessageBox.Show("error: " + ex, "error", MessageBoxButtons.OK);
+                if (res == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
 
-            //else if (dr.HasRows)
-            //{
-            //    MessageBox.Show("Login success");
-            //}
 
-            else
-            {
-                MessageBox.Show("Log In success!");
-                this.Hide();
+
                 
-                Operator_dashboard operator_Dashboard = new Operator_dashboard();
-                operator_Dashboard.ShowDialog();
             }
 
-            //con.Close();
-
-
-            
-
-            
+            finally
+            {
+                conn.Close();
+            }
         }
     }
-}
+    }
+

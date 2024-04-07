@@ -203,6 +203,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NSBM_Go_logo {
+            get {
+                object obj = ResourceManager.GetObject("NSBM-Go logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NSBMGO {
             get {
                 object obj = ResourceManager.GetObject("NSBMGO", resourceCulture);

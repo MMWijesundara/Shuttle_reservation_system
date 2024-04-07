@@ -247,5 +247,8 @@
   <ItemGroup>
     <None Include="Resources\close-square-svgrepo-com %283%292.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NSBM-Go logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
