@@ -58,7 +58,7 @@
             // 
             this.lbl_login.BackColor = System.Drawing.Color.Transparent;
             this.lbl_login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.Location = new System.Drawing.Point(130, 73);
+            this.lbl_login.Location = new System.Drawing.Point(139, 43);
             this.lbl_login.Name = "lbl_login";
             this.lbl_login.Size = new System.Drawing.Size(67, 27);
             this.lbl_login.TabIndex = 1;
@@ -116,16 +116,20 @@
             this.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_password.FocusedState.Parent = this.txt_password;
+            this.txt_password.ForeColor = System.Drawing.Color.Black;
             this.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_password.HoverState.Parent = this.txt_password;
             this.txt_password.Location = new System.Drawing.Point(3, 118);
             this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '\0';
-            this.txt_password.PlaceholderText = "";
+            this.txt_password.PasswordChar = '•';
+            this.txt_password.PlaceholderText = "••••••••";
             this.txt_password.SelectedText = "";
+            this.txt_password.ShadowDecoration.BorderRadius = 5;
+            this.txt_password.ShadowDecoration.Depth = 10;
             this.txt_password.ShadowDecoration.Parent = this.txt_password;
             this.txt_password.Size = new System.Drawing.Size(252, 36);
             this.txt_password.TabIndex = 4;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // lbl_password
             // 
@@ -159,12 +163,13 @@
             this.txt_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_username.FocusedState.Parent = this.txt_username;
+            this.txt_username.ForeColor = System.Drawing.Color.Black;
             this.txt_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_username.HoverState.Parent = this.txt_username;
             this.txt_username.Location = new System.Drawing.Point(3, 35);
             this.txt_username.Name = "txt_username";
             this.txt_username.PasswordChar = '\0';
-            this.txt_username.PlaceholderText = "";
+            this.txt_username.PlaceholderText = "user";
             this.txt_username.SelectedText = "";
             this.txt_username.ShadowDecoration.Parent = this.txt_username;
             this.txt_username.Size = new System.Drawing.Size(252, 36);

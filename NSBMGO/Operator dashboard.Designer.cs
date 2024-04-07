@@ -41,11 +41,11 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnl_fill = new System.Windows.Forms.Panel();
+            this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -210,8 +210,8 @@
             // panel2
             // 
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.pnl_profile);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(198, 0);
             this.panel2.Name = "panel2";
@@ -263,16 +263,6 @@
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "Welcome to NSBMGO\r\n";
             // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_1;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1038, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(52, 74);
-            this.panel4.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -314,6 +304,17 @@
             this.pnl_fill.Size = new System.Drawing.Size(1102, 593);
             this.pnl_fill.TabIndex = 4;
             // 
+            // pnl_profile
+            // 
+            this.pnl_profile.AutoSize = true;
+            this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
+            this.pnl_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnl_profile.Location = new System.Drawing.Point(1038, 9);
+            this.pnl_profile.Name = "pnl_profile";
+            this.pnl_profile.ShadowDecoration.Parent = this.pnl_profile;
+            this.pnl_profile.Size = new System.Drawing.Size(52, 74);
+            this.pnl_profile.TabIndex = 0;
+            // 
             // Operator_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,7 +350,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button btn_cancle;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public Guna.UI2.WinForms.Guna2HtmlLabel lbl_top_name;
@@ -359,5 +359,6 @@
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel pnl_fill;
+        public Guna.UI2.WinForms.Guna2Panel pnl_profile;
     }
 }

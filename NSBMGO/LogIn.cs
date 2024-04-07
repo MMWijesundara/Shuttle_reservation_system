@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Policy;
 using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
 
 
 namespace NSBMGO
@@ -18,8 +19,7 @@ namespace NSBMGO
     {
 
         
-        public SqlCommand cmd;
-        public SqlDataReader reader;
+        
 
         SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
 
@@ -29,9 +29,20 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")] 
+
+        private static extern IntPtr CreateRoundRectRgn
+          (
+        int nLeftRect,     // x-coordinate of upper-left corner
+        int nTopRect,      // y-coordinate of upper-left corner
+        int nRightRect,    // x-coordinate of lower-right corner
+        int nBottomRect,   // y-coordinate of lower-right corner
+        int nWidthEllipse, // width of ellipse
+        int nHeightEllipse // height of ellipse
+             );
 
 
-       
+
 
         private void btn_close_Click(object sender, EventArgs e)
         {
@@ -53,6 +64,7 @@ namespace NSBMGO
             string username = txt_username.Text;
             string password = txt_password.Text;
 
+
             try
             {
                 string query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
@@ -61,14 +73,54 @@ namespace NSBMGO
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
-                if (dt.Rows.Count > 0)
+                if(txt_username.Text.Length==0) 
+                { 
+                    if(MessageBox.Show("Please enter username", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                    {
+                        txt_username.Focus();
+                        
+                    }
+                }
+
+                if (txt_password.Text.Length == 0)
+                {
+                    if (MessageBox.Show("Please enter password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                    {
+                        txt_username.Focus();
+                        
+                    }
+                }
+
+
+                else if (dt.Rows.Count > 0)
                 {
                     username = txt_username.Text;
                     password = txt_password.Text;
 
-                    Operator_dashboard operator_Dashboard = new Operator_dashboard();
-                    operator_Dashboard.Show();
-                    operator_Dashboard.lbl_top_name.Text =("Hi,"+username+".");
+                    string role = dt.Rows[0]["role"].ToString();
+                    
+                    switch (role)
+                    {
+                        case "operator":
+                            this.Hide();
+                            Operator_dashboard operator_Dashboard = new Operator_dashboard();
+                            operator_Dashboard.Show();
+                            operator_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                             
+                            break;
+
+                        case "admin":
+                            this.Hide();
+                            Admin_dashboard admin_Dashboard = new Admin_dashboard();
+                            admin_Dashboard.Show();
+                            //admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                            break;
+
+                             
+                    }
+
+
+                    
                     
                     this.Hide();
                 }

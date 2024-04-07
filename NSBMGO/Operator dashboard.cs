@@ -25,10 +25,10 @@ namespace NSBMGO
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
             
-            int w = Screen.PrimaryScreen.Bounds.Width;
-            int h = Screen.PrimaryScreen.Bounds.Height;
-            this.Location = new Point(0, 0);
-            this.Size = new Size(w, h);
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //this.Size = new Size(w, h);
             
             
         }
@@ -41,7 +41,7 @@ namespace NSBMGO
                 this.Close();
                 LogIn logIn = new LogIn();
                 logIn.Show();
-            }
+              }
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -92,6 +92,7 @@ namespace NSBMGO
             cancel.Show();
         }
 
-        
+
+
     }
 }
