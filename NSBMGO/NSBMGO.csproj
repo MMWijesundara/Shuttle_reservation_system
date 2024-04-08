@@ -164,6 +164,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Keygen.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -258,6 +259,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rectangle 175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Keygen.exe" />
+    <Content Include="Keygen.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
