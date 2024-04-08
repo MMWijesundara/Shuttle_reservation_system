@@ -143,6 +143,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HHHHHHHH {
+            get {
+                object obj = ResourceManager.GetObject("HHHHHHHH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hi_Operator__Welcome_to_NSBMGO {
             get {
                 object obj = ResourceManager.GetObject("Hi Operator, Welcome to NSBMGO", resourceCulture);
@@ -216,6 +226,16 @@ namespace NSBMGO.Properties {
         internal static System.Drawing.Bitmap NSBMGO {
             get {
                 object obj = ResourceManager.GetObject("NSBMGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_175 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 175", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
