@@ -38,16 +38,20 @@
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_close = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.panel2.Controls.Add(this.lbl_login);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.tableLayoutPanel1);
-            this.panel2.Controls.Add(this.btn_close);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(385, 0);
             this.panel2.Name = "panel2";
@@ -56,13 +60,17 @@
             // 
             // lbl_login
             // 
+            this.lbl_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_login.BackColor = System.Drawing.Color.Transparent;
             this.lbl_login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.Location = new System.Drawing.Point(139, 43);
+            this.lbl_login.Location = new System.Drawing.Point(138, 6);
             this.lbl_login.Name = "lbl_login";
             this.lbl_login.Size = new System.Drawing.Size(67, 27);
             this.lbl_login.TabIndex = 1;
             this.lbl_login.Text = "LOG IN";
+            this.lbl_login.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -93,6 +101,7 @@
             this.guna2Button1.BorderThickness = 2;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(243)))), ((int)(((byte)(183)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
@@ -114,6 +123,7 @@
             this.txt_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_password.DisabledState.Parent = this.txt_password;
             this.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_password.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_password.FocusedState.Parent = this.txt_password;
             this.txt_password.ForeColor = System.Drawing.Color.Black;
@@ -134,21 +144,23 @@
             // lbl_password
             // 
             this.lbl_password.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_password.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_password.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.lbl_password.Location = new System.Drawing.Point(3, 89);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(90, 22);
+            this.lbl_password.Size = new System.Drawing.Size(252, 23);
             this.lbl_password.TabIndex = 3;
             this.lbl_password.Text = "PASSWORD:";
             // 
             // lbl_username
             // 
             this.lbl_username.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_username.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_username.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_username.Location = new System.Drawing.Point(3, 3);
             this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(89, 22);
+            this.lbl_username.Size = new System.Drawing.Size(252, 26);
             this.lbl_username.TabIndex = 1;
             this.lbl_username.Text = "USERNAME:";
             // 
@@ -161,6 +173,7 @@
             this.txt_username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_username.DisabledState.Parent = this.txt_username;
             this.txt_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_username.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_username.FocusedState.Parent = this.txt_username;
             this.txt_username.ForeColor = System.Drawing.Color.Black;
@@ -179,7 +192,7 @@
             // 
             this.btn_close.BackgroundImage = global::NSBMGO.Properties.Resources.close_square_svgrepo_com__3_1;
             this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_close.Location = new System.Drawing.Point(309, 3);
+            this.btn_close.Location = new System.Drawing.Point(306, 3);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(30, 30);
             this.btn_close.TabIndex = 0;
@@ -197,6 +210,24 @@
             this.panel1.Size = new System.Drawing.Size(385, 381);
             this.panel1.TabIndex = 1;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btn_close);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(339, 35);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbl_login);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 35);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(339, 53);
+            this.panel4.TabIndex = 2;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,9 +241,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.login_load);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -229,5 +262,7 @@
         public Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_login;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
     }
 }
