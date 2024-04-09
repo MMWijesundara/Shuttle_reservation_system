@@ -24,10 +24,10 @@ namespace NSBMGO
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (bunifuProgressBar1.Value <= 99)
+            if (progressBar1.Value <= 99)
             {
-                bunifuProgressBar1.Value += 1;
-                guna2HtmlLabel2.Text = (bunifuProgressBar1.Value.ToString() + "% ");
+                progressBar1.Value += 1;
+                guna2HtmlLabel2.Text = (progressBar1.Value.ToString() + "% ");
 
 
             }
