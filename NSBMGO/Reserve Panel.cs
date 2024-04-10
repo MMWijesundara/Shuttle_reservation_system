@@ -10,15 +10,12 @@ using System.Windows.Forms;
 
 namespace NSBMGO
 {
-    public partial class Reserve : UserControl
+    public partial class Reserve_Panel : UserControl
     {
-        public FormBorderStyle FormBorderStyle;
-        public Reserve()
+        public Reserve_Panel()
         {
             InitializeComponent();
         }
-
-        public bool TopLevel { get; internal set; }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {

@@ -63,6 +63,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _Magnifyingglass {
+            get {
+                object obj = ResourceManager.GetObject("_Magnifyingglass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bus {
             get {
                 object obj = ResourceManager.GetObject("bus", resourceCulture);
@@ -233,9 +243,11 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rectangle_175 {
+
+        internal static System.Drawing.Bitmap shuttle_bus_main_image_1_4 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 175", resourceCulture);
+                object obj = ResourceManager.GetObject("shuttle-bus-main-image-1 4", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
