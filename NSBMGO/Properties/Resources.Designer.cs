@@ -213,6 +213,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NSBM_GO_GREEN_TRANSPARENT_21 {
+            get {
+                object obj = ResourceManager.GetObject("NSBM GO GREEN TRANSPARENT 21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NSBM_Go_logo {
             get {
                 object obj = ResourceManager.GetObject("NSBM-Go logo", resourceCulture);
@@ -233,9 +243,11 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap shuttle_bus_main_image_1_4 {
             get {
                 object obj = ResourceManager.GetObject("shuttle-bus-main-image-1 4", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
