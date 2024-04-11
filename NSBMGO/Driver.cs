@@ -12,9 +12,12 @@ namespace NSBMGO
 {
     public partial class Driver : UserControl
     {
+        public FormBorderStyle FormBorderStyle;
         public Driver()
         {
             InitializeComponent();
         }
+
+        public bool TopLevel { get; internal set; }
     }
 }

@@ -153,6 +153,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_3 {
+            get {
+                object obj = ResourceManager.GetObject("image 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
@@ -236,6 +246,46 @@ namespace NSBMGO.Properties {
         internal static System.Drawing.Bitmap Rectangle_175 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 175", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_alt_2_svgrepo_com {
+            get {
+                object obj = ResourceManager.GetObject("search-alt-2-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_alt_2_svgrepo_com1 {
+            get {
+                object obj = ResourceManager.GetObject("search-alt-2-svgrepo-com1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_alt_2_svgrepo_com2 {
+            get {
+                object obj = ResourceManager.GetObject("search-alt-2-svgrepo-com2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_alt_2_svgrepo_com3 {
+            get {
+                object obj = ResourceManager.GetObject("search-alt-2-svgrepo-com3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
