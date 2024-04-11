@@ -19,10 +19,5 @@ namespace NSBMGO
         }
 
         public bool TopLevel { get; internal set; }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
