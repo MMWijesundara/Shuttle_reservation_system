@@ -12,12 +12,12 @@ namespace NSBMGO
 {
     public partial class Reserve : UserControl
     {
-        public FormBorderStyle FormBorderStyle;
         public Reserve()
         {
             InitializeComponent();
         }
 
+        internal FormBorderStyle FormBorderStyle;
         public bool TopLevel { get; internal set; }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -29,5 +29,6 @@ namespace NSBMGO
         {
 
         }
+
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace NSBMGO
 {
-    public partial class Reserve_Panel : UserControl
+    public partial class reserve_card : UserControl
     {
-        public Reserve_Panel()
+        public reserve_card()
         {
             InitializeComponent();
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
