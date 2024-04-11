@@ -12,12 +12,9 @@ namespace NSBMGO
 {
     public partial class Reserve : UserControl
     {
-        public FormBorderStyle FormBorderStyle;
         public Reserve()
         {
             InitializeComponent();
         }
-
-        public bool TopLevel { get; internal set; }
     }
 }
