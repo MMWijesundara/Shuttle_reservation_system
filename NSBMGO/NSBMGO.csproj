@@ -91,6 +91,18 @@
     <Compile Include="Driver.Designer.cs">
       <DependentUpon>Driver.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frame 1 Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frame 1 Panel.Designer.cs">
+      <DependentUpon>Frame 1 Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frame 1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frame 1.Designer.cs">
+      <DependentUpon>Frame 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,6 +129,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
     <Compile Include="Reserve Panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +163,12 @@
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frame 1 Panel.resx">
+      <DependentUpon>Frame 1 Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frame 1.resx">
+      <DependentUpon>Frame 1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,14 +183,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Reserve Panel.resx">
       <DependentUpon>Reserve Panel.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +288,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Keygen.pdb" />
+    <None Include="Resources\triangle-svgrepo-com 11.png" />
+    <None Include="Resources\triangle-svgrepo-com 1.png" />
+    <None Include="Resources\SVGRepo_iconCarrier.png" />
     <None Include="Resources\_Magnifyingglass.png" />
     <None Include="Resources\shuttle-bus-main-image-1 4.png" />
   </ItemGroup>

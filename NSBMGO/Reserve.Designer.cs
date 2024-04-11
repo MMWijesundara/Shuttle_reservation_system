@@ -119,6 +119,7 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(99, 13);
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "Bus number plate :";
+            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // guna2HtmlLabel3
             // 
