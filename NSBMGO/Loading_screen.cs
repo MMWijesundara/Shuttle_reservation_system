@@ -16,5 +16,35 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
+
+        private void Loading_screen_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value <= 99)
+            {
+                progressBar1.Value += 1;
+                guna2HtmlLabel2.Text = (progressBar1.Value.ToString() + "% ");
+
+
+            }
+
+            else
+            {
+                timer1.Stop();  
+                LogIn login = new LogIn();
+
+                this.Hide();
+                login.Show();
+            }
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

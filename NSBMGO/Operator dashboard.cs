@@ -41,7 +41,7 @@ namespace NSBMGO
                 this.Close();
                 LogIn logIn = new LogIn();
                 logIn.Show();
-              }
+            }
         }
 
         private void btn_close_Click(object sender, EventArgs e)
