@@ -122,6 +122,12 @@
     <Compile Include="Reserve.Designer.cs">
       <DependentUpon>Reserve.cs</DependentUpon>
     </Compile>
+    <Compile Include="reserve_card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reserve_card.Designer.cs">
+      <DependentUpon>reserve_card.cs</DependentUpon>
+    </Compile>
     <Compile Include="Route.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,12 @@
     </Compile>
     <EmbeddedResource Include="Driver.resx">
       <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserve.resx">
+      <DependentUpon>Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reserve_card.resx">
+      <DependentUpon>reserve_card.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -282,6 +294,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuttle-bus-main-image-1 4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
