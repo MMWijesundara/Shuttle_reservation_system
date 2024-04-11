@@ -53,7 +53,11 @@
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Users\USER\Downloads\Guna crack\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+
+      <HintPath>..\..\Users\Hasara Randunu\Downloads\Guna crack\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+
+      <HintPath>..\..\Users\methm\Downloads\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
@@ -152,9 +156,6 @@
     </Compile>
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Driver.resx">
-      <DependentUpon>Driver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -280,20 +281,16 @@
     <None Include="Resources\WhatsApp Image 2024-04-08 at 1.15.07 AM.jpeg" />
   </ItemGroup>
   <ItemGroup>
+
     <Content Include="Keygen.pdb" />
     <None Include="Resources\_Magnifyingglass.png" />
     <None Include="Resources\shuttle-bus-main-image-1 4.png" />
+
     <None Include="Resources\Rectangle 175.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NSBM GO GREEN TRANSPARENT 21.png" />
-    <None Include="Resources\_Magnifyingglass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image 3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image 31.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
