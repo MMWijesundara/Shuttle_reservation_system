@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace NSBMGO
 {
-    public partial class Reserve : UserControl
+    public partial class reserve_card : UserControl
     {
-        public Reserve()
+        public reserve_card()
         {
             InitializeComponent();
         }
-
-        internal FormBorderStyle FormBorderStyle;
-        public bool TopLevel { get; internal set; }
     }
 }
