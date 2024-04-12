@@ -128,11 +128,11 @@
     <Compile Include="Driver.Designer.cs">
       <DependentUpon>Driver.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reserve.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Reserve Form.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reserve.Designer.cs">
-      <DependentUpon>Reserve.cs</DependentUpon>
+    <Compile Include="Reserve Form.Designer.cs">
+      <DependentUpon>Reserve Form.cs</DependentUpon>
     </Compile>
     <Compile Include="reserve_card.cs">
       <SubType>UserControl</SubType>
@@ -192,8 +192,8 @@
     <EmbeddedResource Include="Driver.resx">
       <DependentUpon>Driver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reserve.resx">
-      <DependentUpon>Reserve.cs</DependentUpon>
+    <EmbeddedResource Include="Reserve Form.resx">
+      <DependentUpon>Reserve Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reserve_card.resx">
       <DependentUpon>reserve_card.cs</DependentUpon>

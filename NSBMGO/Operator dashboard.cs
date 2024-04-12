@@ -67,16 +67,13 @@ namespace NSBMGO
 
         private void btn_reserve_Click(object sender, EventArgs e)
         {
-
-            Reserve reserve = new Reserve();
+            
+            Reserve_Form reserve = new Reserve_Form();
             reserve.TopLevel = false;
-            reserve.FormBorderStyle = FormBorderStyle.None;
-            reserve.Dock = DockStyle.Fill;
-
-            pnl_fill.Controls.Clear();
             pnl_fill.Controls.Add(reserve);
-
+            reserve.BringToFront();
             reserve.Show();
+            
         }
 
         private void btn_cancle_Click(object sender, EventArgs e)

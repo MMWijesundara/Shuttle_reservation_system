@@ -12,12 +12,12 @@ namespace NSBMGO
 {
     public partial class Cancel : UserControl
     {
-        public FormBorderStyle FormBorderStyle;
         public Cancel()
         {
             InitializeComponent();
         }
 
+        public FormBorderStyle FormBorderStyle;
         public bool TopLevel { get; internal set; }
     }
 }
