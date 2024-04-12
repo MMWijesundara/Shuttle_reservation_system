@@ -16,8 +16,5 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
-
-        internal FormBorderStyle FormBorderStyle;
-        public bool TopLevel { get; internal set; }
     }
 }

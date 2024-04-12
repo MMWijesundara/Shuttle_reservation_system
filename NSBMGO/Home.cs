@@ -12,12 +12,12 @@ namespace NSBMGO
 {
     public partial class Home : UserControl
     {
+        internal FormBorderStyle FormBorderStyle;
         public Home()
         {
             InitializeComponent();
         }
 
-        internal FormBorderStyle FormBorderStyle;
         public bool TopLevel {  get; internal set; }
 
         private void Home_Load(object sender, EventArgs e)

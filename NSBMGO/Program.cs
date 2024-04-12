@@ -16,7 +16,7 @@ namespace NSBMGO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Operator_dashboard());  
+            Application.Run(new Loading_screen());  
         }
     }
 }
