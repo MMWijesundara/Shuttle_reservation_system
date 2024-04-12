@@ -353,6 +353,16 @@ namespace NSBMGO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap triangle_svgrepo_com_1 {
+            get {
+                object obj = ResourceManager.GetObject("triangle-svgrepo-com 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_08_at_1_15_07_AM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-08 at 1.15.07 AM", resourceCulture);

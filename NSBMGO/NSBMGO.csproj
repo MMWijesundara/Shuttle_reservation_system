@@ -84,6 +84,18 @@
     <Compile Include="Cancel.Designer.cs">
       <DependentUpon>Cancel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frame 1 seats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frame 1 seats.Designer.cs">
+      <DependentUpon>Frame 1 seats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frame 1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frame 1.Designer.cs">
+      <DependentUpon>Frame 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +160,12 @@
     </Compile>
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frame 1 seats.resx">
+      <DependentUpon>Frame 1 seats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frame 1.resx">
+      <DependentUpon>Frame 1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -297,6 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shuttle-bus-main-image-1 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle-svgrepo-com 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
