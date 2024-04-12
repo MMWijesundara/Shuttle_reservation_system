@@ -38,6 +38,7 @@
             this.btn_cancle = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,7 +46,6 @@
             this.btn_close = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnl_fill = new System.Windows.Forms.Panel();
-            this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -68,7 +68,6 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(196)))), ((int)(((byte)(65)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(198, 691);
             this.guna2Panel1.TabIndex = 2;
             // 
@@ -89,18 +88,14 @@
             this.guna2Button3.BorderThickness = 2;
             this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
             this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.White;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::NSBMGO.Properties.Resources.logout;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(15, 5);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(5);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(171, 38);
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = "LOGOUT";
@@ -131,18 +126,14 @@
             this.btn_reserve.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btn_reserve.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
             this.btn_reserve.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btn_reserve.CheckedState.Parent = this.btn_reserve;
-            this.btn_reserve.CustomImages.Parent = this.btn_reserve;
             this.btn_reserve.FillColor = System.Drawing.Color.White;
             this.btn_reserve.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reserve.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
-            this.btn_reserve.HoverState.Parent = this.btn_reserve;
             this.btn_reserve.Image = global::NSBMGO.Properties.Resources.bus;
             this.btn_reserve.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_reserve.ImageSize = new System.Drawing.Size(30, 30);
             this.btn_reserve.Location = new System.Drawing.Point(3, 65);
             this.btn_reserve.Name = "btn_reserve";
-            this.btn_reserve.ShadowDecoration.Parent = this.btn_reserve;
             this.btn_reserve.Size = new System.Drawing.Size(171, 38);
             this.btn_reserve.TabIndex = 4;
             this.btn_reserve.Text = "RESERVE";
@@ -156,17 +147,13 @@
             this.btn_home.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btn_home.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
             this.btn_home.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btn_home.CheckedState.Parent = this.btn_home;
-            this.btn_home.CustomImages.Parent = this.btn_home;
             this.btn_home.FillColor = System.Drawing.Color.White;
             this.btn_home.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
-            this.btn_home.HoverState.Parent = this.btn_home;
             this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
             this.btn_home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_home.Location = new System.Drawing.Point(3, 8);
             this.btn_home.Name = "btn_home";
-            this.btn_home.ShadowDecoration.Parent = this.btn_home;
             this.btn_home.Size = new System.Drawing.Size(171, 39);
             this.btn_home.TabIndex = 3;
             this.btn_home.Text = "HOME";
@@ -180,17 +167,13 @@
             this.btn_cancle.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btn_cancle.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
             this.btn_cancle.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btn_cancle.CheckedState.Parent = this.btn_cancle;
-            this.btn_cancle.CustomImages.Parent = this.btn_cancle;
             this.btn_cancle.FillColor = System.Drawing.Color.White;
             this.btn_cancle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
-            this.btn_cancle.HoverState.Parent = this.btn_cancle;
             this.btn_cancle.Image = global::NSBMGO.Properties.Resources.ticket__2_;
             this.btn_cancle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_cancle.Location = new System.Drawing.Point(3, 122);
             this.btn_cancle.Name = "btn_cancle";
-            this.btn_cancle.ShadowDecoration.Parent = this.btn_cancle;
             this.btn_cancle.Size = new System.Drawing.Size(171, 38);
             this.btn_cancle.TabIndex = 5;
             this.btn_cancle.Text = "CANCEL";
@@ -218,6 +201,16 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(12);
             this.panel2.Size = new System.Drawing.Size(1102, 98);
             this.panel2.TabIndex = 3;
+            // 
+            // pnl_profile
+            // 
+            this.pnl_profile.AutoSize = true;
+            this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
+            this.pnl_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnl_profile.Location = new System.Drawing.Point(1038, 9);
+            this.pnl_profile.Name = "pnl_profile";
+            this.pnl_profile.Size = new System.Drawing.Size(52, 74);
+            this.pnl_profile.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
@@ -303,17 +296,6 @@
             this.pnl_fill.Name = "pnl_fill";
             this.pnl_fill.Size = new System.Drawing.Size(1102, 593);
             this.pnl_fill.TabIndex = 4;
-            // 
-            // pnl_profile
-            // 
-            this.pnl_profile.AutoSize = true;
-            this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
-            this.pnl_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_profile.Location = new System.Drawing.Point(1038, 9);
-            this.pnl_profile.Name = "pnl_profile";
-            this.pnl_profile.ShadowDecoration.Parent = this.pnl_profile;
-            this.pnl_profile.Size = new System.Drawing.Size(52, 74);
-            this.pnl_profile.TabIndex = 0;
             // 
             // Operator_dashboard
             // 
