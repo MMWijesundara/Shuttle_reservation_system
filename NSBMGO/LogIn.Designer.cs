@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lbl_login = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_password = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_username = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_close = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -58,6 +58,15 @@
             this.panel2.Size = new System.Drawing.Size(339, 381);
             this.panel2.TabIndex = 2;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbl_login);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 35);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(339, 53);
+            this.panel4.TabIndex = 2;
+            // 
             // lbl_login
             // 
             this.lbl_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -71,6 +80,15 @@
             this.lbl_login.TabIndex = 1;
             this.lbl_login.Text = "LOG IN";
             this.lbl_login.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.guna2ControlBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(339, 35);
+            this.panel3.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -145,7 +163,7 @@
             // 
             this.lbl_password.BackColor = System.Drawing.Color.Transparent;
             this.lbl_password.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_password.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_password.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_password.Location = new System.Drawing.Point(3, 89);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(252, 23);
@@ -156,7 +174,7 @@
             // 
             this.lbl_username.BackColor = System.Drawing.Color.Transparent;
             this.lbl_username.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_username.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_username.Location = new System.Drawing.Point(3, 3);
             this.lbl_username.Name = "lbl_username";
@@ -188,17 +206,6 @@
             this.txt_username.Size = new System.Drawing.Size(252, 36);
             this.txt_username.TabIndex = 2;
             // 
-            // btn_close
-            // 
-            this.btn_close.BackgroundImage = global::NSBMGO.Properties.Resources.close_square_svgrepo_com__3_1;
-            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_close.Location = new System.Drawing.Point(306, 3);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(30, 30);
-            this.btn_close.TabIndex = 0;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -210,23 +217,19 @@
             this.panel1.Size = new System.Drawing.Size(385, 381);
             this.panel1.TabIndex = 1;
             // 
-            // panel3
+            // guna2ControlBox1
             // 
-            this.panel3.Controls.Add(this.btn_close);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(339, 35);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lbl_login);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 35);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(339, 53);
-            this.panel4.TabIndex = 2;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Gray;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(294, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 35);
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // LogIn
             // 
@@ -241,18 +244,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.login_load);
             this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -264,5 +265,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

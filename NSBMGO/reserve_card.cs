@@ -17,6 +17,17 @@ namespace NSBMGO
             InitializeComponent();
         }
 
-       
+        
+
+        private void reserve_card_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("clicked");
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            reserve__2_ reservepnl = new reserve__2_();
+            reservepnl.Show();
+        }
     }
 }

@@ -38,14 +38,16 @@
             this.btn_cancle = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_close = new System.Windows.Forms.Button();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnl_fill = new System.Windows.Forms.Panel();
-            this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -59,7 +61,6 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.guna2Panel1.BorderRadius = 10;
             this.guna2Panel1.BorderThickness = 5;
             this.guna2Panel1.Controls.Add(this.panel5);
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel1);
@@ -219,6 +220,17 @@
             this.panel2.Size = new System.Drawing.Size(1102, 98);
             this.panel2.TabIndex = 3;
             // 
+            // pnl_profile
+            // 
+            this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
+            this.pnl_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnl_profile.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_profile.Location = new System.Drawing.Point(1038, 12);
+            this.pnl_profile.Name = "pnl_profile";
+            this.pnl_profile.ShadowDecoration.Parent = this.pnl_profile;
+            this.pnl_profile.Size = new System.Drawing.Size(52, 74);
+            this.pnl_profile.TabIndex = 0;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
@@ -265,25 +277,53 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.panel3.Controls.Add(this.btn_close);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.guna2Button1);
+            this.panel3.Controls.Add(this.guna2ControlBox3);
+            this.panel3.Controls.Add(this.guna2ControlBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1300, 29);
             this.panel3.TabIndex = 0;
             // 
-            // btn_close
+            // guna2ControlBox3
             // 
-            this.btn_close.BackgroundImage = global::NSBMGO.Properties.Resources.close_square_svgrepo_com__3_2;
-            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_close.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_close.Location = new System.Drawing.Point(1270, 0);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(30, 29);
-            this.btn_close.TabIndex = 0;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.Animated = true;
+            this.guna2ControlBox3.BorderRadius = 5;
+            this.guna2ControlBox3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2ControlBox3.ControlBoxStyle = Guna.UI2.WinForms.Enums.ControlBoxStyle.Custom;
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.Green;
+            this.guna2ControlBox3.HoverState.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1203, 0);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox3.TabIndex = 3;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
+            this.guna2ControlBox2.BorderRadius = 5;
+            this.guna2ControlBox2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2ControlBox2.ControlBoxStyle = Guna.UI2.WinForms.Enums.ControlBoxStyle.Custom;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkOrange;
+            this.guna2ControlBox2.HoverState.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1154, 0);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 2;
             // 
             // panel6
             // 
@@ -298,22 +338,31 @@
             // 
             // pnl_fill
             // 
-            this.pnl_fill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_fill.Location = new System.Drawing.Point(198, 98);
+            this.pnl_fill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_fill.AutoScroll = true;
+            this.pnl_fill.Location = new System.Drawing.Point(210, 115);
             this.pnl_fill.Name = "pnl_fill";
-            this.pnl_fill.Size = new System.Drawing.Size(1102, 593);
+            this.pnl_fill.Size = new System.Drawing.Size(1078, 565);
             this.pnl_fill.TabIndex = 4;
             // 
-            // pnl_profile
+            // guna2Button1
             // 
-            this.pnl_profile.AutoSize = true;
-            this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
-            this.pnl_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_profile.Location = new System.Drawing.Point(1038, 9);
-            this.pnl_profile.Name = "pnl_profile";
-            this.pnl_profile.ShadowDecoration.Parent = this.pnl_profile;
-            this.pnl_profile.Size = new System.Drawing.Size(52, 74);
-            this.pnl_profile.TabIndex = 0;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(1255, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(45, 29);
+            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Operator_dashboard
             // 
@@ -356,9 +405,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel pnl_fill;
         public Guna.UI2.WinForms.Guna2Panel pnl_profile;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

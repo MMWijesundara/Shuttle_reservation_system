@@ -128,6 +128,12 @@
     <Compile Include="Driver.Designer.cs">
       <DependentUpon>Driver.cs</DependentUpon>
     </Compile>
+    <Compile Include="book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book.Designer.cs">
+      <DependentUpon>book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reserve Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </Compile>
     <EmbeddedResource Include="Driver.resx">
       <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book.resx">
+      <DependentUpon>book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reserve Form.resx">
       <DependentUpon>Reserve Form.cs</DependentUpon>
