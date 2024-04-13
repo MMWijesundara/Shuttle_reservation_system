@@ -36,11 +36,12 @@ namespace NSBMGO
                             // Create a new reserve_card instance
                             reserve_card card = new reserve_card();
                             card.Anchor = AnchorStyles.None; // Optional: Set anchoring as needed
+                            
 
                             // Add the card to the current cell
                             tableLayoutPanel3.Controls.Add(card, columnIndex, rowIndex); // Swap order
                         }
-                    }
+                    } 
                 }
             }
             else

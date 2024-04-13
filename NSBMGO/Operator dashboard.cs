@@ -46,10 +46,7 @@ namespace NSBMGO
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
+            
         }
 
         private void btn_home_Click(object sender, EventArgs e)
@@ -70,9 +67,12 @@ namespace NSBMGO
             
             Reserve_Form reserve = new Reserve_Form();
             reserve.TopLevel = false;
+            reserve.FormBorderStyle = FormBorderStyle.None; 
+            reserve.Dock = DockStyle.Fill;
             pnl_fill.Controls.Add(reserve);
             reserve.BringToFront();
             reserve.Show();
+            
             
         }
 
@@ -90,6 +90,12 @@ namespace NSBMGO
         }
 
 
-
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
