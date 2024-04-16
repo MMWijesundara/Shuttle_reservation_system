@@ -1,6 +1,6 @@
 ﻿namespace NSBMGO
 {
-    partial class Reserve_Form
+    partial class Cancel_form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserve_Form));
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoScroll = true;
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 64);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1078, 501);
+            this.tableLayoutPanel3.TabIndex = 10;
             // 
             // guna2Panel1
             // 
@@ -51,7 +66,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1078, 58);
-            this.guna2Panel1.TabIndex = 7;
+            this.guna2Panel1.TabIndex = 9;
             // 
             // tableLayoutPanel1
             // 
@@ -82,16 +97,15 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Silver;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconRight")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(113, 3);
+            this.guna2TextBox1.IconRight = global::NSBMGO.Properties.Resources.search_alt_2_svgrepo_com3;
+            this.guna2TextBox1.Location = new System.Drawing.Point(106, 3);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "by destination";
+            this.guna2TextBox1.PlaceholderText = "by name";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(341, 36);
             this.guna2TextBox1.TabIndex = 0;
-            this.guna2TextBox1.IconRightClick += new System.EventHandler(this.guna2TextBox1_IconRightClick);
             // 
             // guna2HtmlLabel4
             // 
@@ -100,47 +114,20 @@
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 10);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(104, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(97, 22);
             this.guna2HtmlLabel4.TabIndex = 1;
-            this.guna2HtmlLabel4.Text = "Search Shuttle :";
+            this.guna2HtmlLabel4.Text = "Search Ticket :";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 18);
-            this.panel1.TabIndex = 3;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 74);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1078, 491);
-            this.tableLayoutPanel2.TabIndex = 8;
-            // 
-            // Reserve_Form
+            // Cancel_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(1078, 565);
-            this.ControlBox = false;
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Reserve_Form";
-            this.Text = "Reserve_Form";
+            this.Name = "Cancel_form";
+            this.Text = "Cancel_form";
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -149,11 +136,11 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

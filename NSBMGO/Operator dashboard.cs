@@ -11,10 +11,12 @@ using System.Data.SqlClient;
 using Guna.UI2.WinForms;
 
 
+
 namespace NSBMGO
 {
     public partial class Operator_dashboard : Form
     {
+        public Point mouseLocation;
         
         public Operator_dashboard()
         {
@@ -95,6 +97,21 @@ namespace NSBMGO
             if (MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 Application.Exit();
+            }
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void panel3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if ((e.Button == MouseButtons.Left))
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePos;
             }
         }
     }

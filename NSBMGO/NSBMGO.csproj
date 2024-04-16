@@ -78,12 +78,27 @@
     <Compile Include="Admin dashboard.Designer.cs">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cancel card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cancel card.Designer.cs">
+      <DependentUpon>Cancel card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancel form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancel form.Designer.cs">
+      <DependentUpon>Cancel form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cancel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Cancel.Designer.cs">
       <DependentUpon>Cancel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class BLL\ClassBLL.cs" />
+    <Compile Include="Data access layer\ClassDAL.cs" />
+    <Compile Include="Data access layer\connection.cs" />
     <Compile Include="Frame 1 seats.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +181,9 @@
     </Compile>
     <EmbeddedResource Include="Admin dashboard.resx">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancel form.resx">
+      <DependentUpon>Cancel form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frame 1 seats.resx">
       <DependentUpon>Frame 1 seats.cs</DependentUpon>
@@ -327,6 +345,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\triangle-svgrepo-com 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-square-svgrepo-com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-svgrepo-com %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
