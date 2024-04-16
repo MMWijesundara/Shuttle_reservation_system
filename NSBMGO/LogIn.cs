@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Security.Policy;
-using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 namespace NSBMGO
@@ -18,8 +10,9 @@ namespace NSBMGO
     public partial class LogIn : Form
     {
 
-        
-        
+
+
+
 
         SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
 
@@ -29,7 +22,7 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")] 
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
           (
@@ -52,17 +45,18 @@ namespace NSBMGO
             }
         }
 
-        
+
 
         private void login_load(object sender, EventArgs e)
         {
-            
+
         }
 
         public void btn_login(object sender, EventArgs e)
         {
             string username = txt_username.Text;
             string password = txt_password.Text;
+
 
 
             try
@@ -73,12 +67,12 @@ namespace NSBMGO
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
-                if(txt_username.Text.Length==0) 
-                { 
-                    if(MessageBox.Show("Please enter username", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                if (txt_username.Text.Length == 0)
+                {
+                    if (MessageBox.Show("Please enter username", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
                     {
                         txt_username.Focus();
-                        
+
                     }
                 }
 
@@ -87,7 +81,7 @@ namespace NSBMGO
                     if (MessageBox.Show("Please enter password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
                     {
                         txt_username.Focus();
-                        
+
                     }
                 }
 
@@ -98,7 +92,7 @@ namespace NSBMGO
                     password = txt_password.Text;
 
                     string role = dt.Rows[0]["role"].ToString();
-                    
+
                     switch (role)
                     {
                         case "operator":
@@ -106,7 +100,7 @@ namespace NSBMGO
                             Operator_dashboard operator_Dashboard = new Operator_dashboard();
                             operator_Dashboard.Show();
                             operator_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
-                             
+
                             break;
 
                         case "admin":
@@ -116,12 +110,12 @@ namespace NSBMGO
                             //admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
                             break;
 
-                             
+
                     }
 
 
-                    
-                    
+
+
                     this.Hide();
                 }
 
@@ -146,7 +140,7 @@ namespace NSBMGO
 
 
 
-                
+
             }
 
             finally
@@ -155,5 +149,5 @@ namespace NSBMGO
             }
         }
     }
-    }
+}
 

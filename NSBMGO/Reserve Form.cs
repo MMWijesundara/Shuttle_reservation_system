@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using NSBMGO.Class_BLL;
+using NSBMGO.Data_access_layer;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NSBMGO
@@ -17,39 +13,70 @@ namespace NSBMGO
             InitializeComponent();
         }
 
-        
+        public bool cardsAdded = false;
+        public string Reservecity;
 
-        private void guna2TextBox1_IconRightClick(object sender, EventArgs e)
+
+
+
+
+
+
+
+        public void guna2TextBox1_IconRightClick(object sender, EventArgs e)
         {
-            // Check if there are any empty cells in the table layout panel
-            if (IsTableLayoutPanelEmpty(tableLayoutPanel3))
+
+            generateReserveCards();
+        }
+
+        public void generateReserveCards()
+        {
+            tableLayoutPanel2.Controls.Clear();
+
+            Reservecity = guna2TextBox1.Text;
+
+            ClassBLL objBLL = new ClassBLL();
+
+            DataTable dt = objBLL.GetItems(Reservecity);
+
+            if (dt != null)
             {
-                // Start adding cards until all cells are filled
-
-                for (int rowIndex = 0; rowIndex < tableLayoutPanel3.RowCount; rowIndex++)
+                if (dt.Rows.Count > 0)
                 {
-                    for (int columnIndex = 0; columnIndex < tableLayoutPanel3.ColumnCount; columnIndex++)
-                    {
-                        // Check if the current cell is empty
-                        if (CanAddCardToTableLayoutPanel(tableLayoutPanel3, rowIndex, columnIndex))
-                        {
-                            // Create a new reserve_card instance
-                            reserve_card card = new reserve_card();
-                            card.Anchor = AnchorStyles.None; // Optional: Set anchoring as needed
-                            
+                    reserve_card[] cards = new reserve_card[dt.Rows.Count];
 
-                            // Add the card to the current cell
-                            tableLayoutPanel3.Controls.Add(card, columnIndex, rowIndex); // Swap order
+                    for (int i = 0; i < 1; i++)
+                    {
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            cards[i] = new reserve_card();
+
+                            //MemoryStream ms = new MemoryStream();
+                            //cards[i].icon = new Bitmap(ms);
+
+                            cards[i].numPlate.Text = row["number_plate"].ToString();
+                            cards[i].Time.Text = row["depart_time"].ToString();
+                            cards[i].startCity.Text = row["start_city"].ToString();
+                            cards[i].endCity.Text = row["end_city"].ToString();
+                            cards[i].Price.Text = row["ticket_price"].ToString();
+
+                            tableLayoutPanel2.Controls.Add(cards[i]);
+                            cards[i].Anchor = AnchorStyles.None;
                         }
-                    } 
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("Empty Data.");
                 }
             }
-            else
-            {
-                // Handle the case where the table layout panel is already full
-                MessageBox.Show("The table layout panel is already full.");
-            }
+
+
         }
+
+
+
 
 
         // Helper method to check if the table layout panel is empty
@@ -69,6 +96,8 @@ namespace NSBMGO
             // Check if the cell at the specified index already contains a control
             return tableLayoutPanel.GetControlFromPosition(columnIndex, rowIndex) == null;
         }
+
+
 
     }
 }
