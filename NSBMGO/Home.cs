@@ -12,6 +12,8 @@ namespace NSBMGO
 {
     public partial class Home : UserControl
     {
+        DataTable table;
+        
         public Home()
         {
             InitializeComponent();
@@ -44,5 +46,38 @@ namespace NSBMGO
         {
 
         }
+
+        private void txtAdd_Click(object sender, EventArgs e)
+        {
+            table.Rows.Add(txtMessage.Text);
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+            table= new DataTable();
+            table.Columns.Add("Messages", typeof(string));
+
+            guna2DataGridView1.DataSource = table;
+        }
+
+        private void txtSave_Click(object sender, EventArgs e)
+        {
+            table.Rows.Add(txtMessage.Text);
+            int index = guna2DataGridView1.CurrentCell.RowIndex;
+
+            if (index > -1)
+            {
+                txtMessage.Text = table.Rows[index].ItemArray[0].ToString();
+
+            }
+            txtMessage.Clear() ;
+        }
+
+        private void txtDelete_Click(object sender, EventArgs e)
+        {
+            int index = guna2DataGridView1.CurrentCell.RowIndex;
+            table.Rows[index].Delete();
+        }
     }
+
 }
