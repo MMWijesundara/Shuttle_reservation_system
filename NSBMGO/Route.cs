@@ -16,5 +16,35 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
