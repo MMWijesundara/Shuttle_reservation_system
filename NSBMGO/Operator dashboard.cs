@@ -92,7 +92,9 @@ namespace NSBMGO
             cancel.Show();
         }
 
+        private void pnl_fill_Paint(object sender, PaintEventArgs e)
+        {
 
-
+        }
     }
 }

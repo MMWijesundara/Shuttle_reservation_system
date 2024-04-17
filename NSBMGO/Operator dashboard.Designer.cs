@@ -296,6 +296,7 @@
             this.pnl_fill.Name = "pnl_fill";
             this.pnl_fill.Size = new System.Drawing.Size(1102, 593);
             this.pnl_fill.TabIndex = 4;
+            this.pnl_fill.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_fill_Paint);
             // 
             // Operator_dashboard
             // 
