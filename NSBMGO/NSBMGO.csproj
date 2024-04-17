@@ -225,6 +225,9 @@
     <EmbeddedResource Include="reserve_card.resx">
       <DependentUpon>reserve_card.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Route.resx">
+      <DependentUpon>Route.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
