@@ -26,13 +26,24 @@ namespace NSBMGO
         }
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
-            
+
             //int w = Screen.PrimaryScreen.Bounds.Width;
             //int h = Screen.PrimaryScreen.Bounds.Height;
             //this.Location = new Point(0, 0);
             //this.Size = new Size(w, h);
-            
-            
+
+
+            Home home = new Home();
+            home.TopLevel = false;
+            home.FormBorderStyle = FormBorderStyle.None;
+            home.Dock = DockStyle.Fill;
+
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(home);
+
+            home.Show();
+
+
         }
 
         private void btnlogout_click(object sender, EventArgs e)
