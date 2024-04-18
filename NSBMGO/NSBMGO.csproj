@@ -228,6 +228,9 @@
     <EmbeddedResource Include="Route.resx">
       <DependentUpon>Route.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Shuttle.resx">
+      <DependentUpon>Shuttle.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -354,6 +357,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close-svgrepo-com %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 33.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
