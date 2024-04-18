@@ -18,6 +18,7 @@ namespace NSBMGO
             InitializeComponent();
         }
 
+        internal FormBorderStyle formBorderStyle;
         public bool TopLevel { get; internal set; }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)

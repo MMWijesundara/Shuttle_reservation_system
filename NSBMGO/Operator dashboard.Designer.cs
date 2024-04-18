@@ -47,6 +47,10 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.pnl_fill = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -348,6 +352,10 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.pnl_fill);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.panel4);
             this.panel6.Controls.Add(this.panel2);
             this.panel6.Controls.Add(this.guna2Panel1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -356,16 +364,47 @@
             this.panel6.Size = new System.Drawing.Size(1300, 691);
             this.panel6.TabIndex = 4;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(198, 98);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1102, 18);
+            this.panel4.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(198, 673);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1102, 18);
+            this.panel7.TabIndex = 5;
+            // 
+            // panel8
+            // 
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(198, 116);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(17, 557);
+            this.panel8.TabIndex = 6;
+            // 
+            // panel9
+            // 
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(1283, 116);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(17, 557);
+            this.panel9.TabIndex = 7;
+            // 
             // pnl_fill
             // 
-            this.pnl_fill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_fill.AutoScroll = true;
-            this.pnl_fill.Location = new System.Drawing.Point(210, 115);
+            this.pnl_fill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_fill.Location = new System.Drawing.Point(215, 116);
             this.pnl_fill.Name = "pnl_fill";
-            this.pnl_fill.Size = new System.Drawing.Size(1078, 565);
-            this.pnl_fill.TabIndex = 4;
+            this.pnl_fill.Size = new System.Drawing.Size(1068, 557);
+            this.pnl_fill.TabIndex = 0;
             // 
             // Operator_dashboard
             // 
@@ -409,10 +448,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel pnl_fill;
         public Guna.UI2.WinForms.Guna2Panel pnl_profile;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Panel pnl_fill;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel4;
     }
 }
