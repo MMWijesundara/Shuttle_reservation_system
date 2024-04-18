@@ -22,6 +22,7 @@ namespace NSBMGO
         {
             InitializeComponent();
         }
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -107,10 +108,8 @@ namespace NSBMGO
                             this.Hide();
                             Admin_dashboard admin_Dashboard = new Admin_dashboard();
                             admin_Dashboard.Show();
-                            //admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                            admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
                             break;
-
-
                     }
 
 

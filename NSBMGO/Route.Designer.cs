@@ -36,6 +36,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
@@ -50,9 +51,11 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtStartCity = new Guna.UI2.WinForms.Guna2TextBox();
+
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -60,6 +63,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
+
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -84,6 +88,7 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(79, 30);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "End City:";
+
             // 
             // guna2HtmlLabel1
             // 
@@ -116,6 +121,7 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1061, 281);
             this.guna2Panel2.TabIndex = 2;
             // 
+
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel3);
@@ -126,12 +132,14 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(1061, 236);
             this.guna2Panel3.TabIndex = 3;
+
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+
             this.tableLayoutPanel3.Controls.Add(this.btnAdd, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnUpdate, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.btnDelete, 0, 2);
@@ -435,9 +443,18 @@
             this.txtStartCity.ShadowDecoration.Parent = this.txtStartCity;
             this.txtStartCity.Size = new System.Drawing.Size(402, 39);
             this.txtStartCity.TabIndex = 1;
+
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 121);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(145, 43);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
+
             this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -478,6 +495,7 @@
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
             this.txtSearch.Size = new System.Drawing.Size(418, 41);
             this.txtSearch.TabIndex = 0;
+
             // 
             // guna2HtmlLabel4
             // 
@@ -489,7 +507,9 @@
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(166, 27);
             this.guna2HtmlLabel4.TabIndex = 1;
+
             this.guna2HtmlLabel4.Text = "SEARCH SHUTTLE :";
+
             // 
             // Route
             // 
