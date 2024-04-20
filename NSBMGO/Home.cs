@@ -18,6 +18,15 @@ namespace NSBMGO
         public Home()
         {
             InitializeComponent();
+
+            timer1 = new Timer();
+            timer1.Interval = 1000; // Update every second (1000 milliseconds)
+            timer1.Tick += Timer_Tick; // Attach event handler
+            timer1.Start(); // Start the timer
+
+
+            // Set initial value for the label
+            UpdateLabel();
         }
 
         internal FormBorderStyle FormBorderStyle;
@@ -55,10 +64,17 @@ namespace NSBMGO
                 int index = guna2DataGridView1.CurrentCell.RowIndex;
                 table.Rows[index].Delete();
             }
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Update the label on every tick
+            UpdateLabel();
+        }
 
+        private void UpdateLabel()
+        {
 
-            
-            
+            date.Text = DateTime.Now.ToString();
         }
     }
 

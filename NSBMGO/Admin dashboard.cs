@@ -16,6 +16,15 @@ namespace NSBMGO
         public Admin_dashboard()
         {
             InitializeComponent();
+
+            timer1 = new Timer();
+            timer1.Interval = 1000; // Update every second (1000 milliseconds)
+            timer1.Tick += Timer_Tick; // Attach event handler
+            timer1.Start(); // Start the timer
+
+
+            // Set initial value for the label
+            UpdateLabel();
         }
 
         public Point mouseLocation;
@@ -87,6 +96,22 @@ namespace NSBMGO
             pnl_fill.Controls.Clear();
             pnl_fill.Controls.Add(route);
             route.Show();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Update the label on every tick
+            UpdateLabel();
+        }
+
+        private void UpdateLabel()
+        {
+
+            date.Text = DateTime.Now.ToString();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

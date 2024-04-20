@@ -17,12 +17,21 @@ namespace NSBMGO
     public partial class Operator_dashboard : Form
     {
         public Point mouseLocation;
-        
+
+        private Timer hometimer;
         public Operator_dashboard()
         {
             InitializeComponent();
 
-            
+            timer1 = new Timer();
+            timer1.Interval = 1000; // Update every second (1000 milliseconds)
+            timer1.Tick += Timer_Tick; // Attach event handler
+            timer1.Start(); // Start the timer
+
+
+            // Set initial value for the label
+            UpdateLabel();
+
         }
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
@@ -124,6 +133,27 @@ namespace NSBMGO
                 mousePos.Offset(mouseLocation.X, mouseLocation.Y);
                 Location = mousePos;
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Update the label on every tick
+            UpdateLabel();
+        }
+
+        private void UpdateLabel()
+        {
+
+            date.Text = DateTime.Now.ToString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
