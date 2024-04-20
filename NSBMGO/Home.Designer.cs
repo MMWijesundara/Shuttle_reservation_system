@@ -234,7 +234,6 @@
             this.guna2PictureBox13.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox13.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.ErrorImage")));
             this.guna2PictureBox13.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox13.ImageRotate = 0F;
             this.guna2PictureBox13.Location = new System.Drawing.Point(679, 526);
             this.guna2PictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox13.Name = "guna2PictureBox13";
@@ -248,7 +247,6 @@
             this.guna2PictureBox12.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox12.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.ErrorImage")));
             this.guna2PictureBox12.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox12.ImageRotate = 0F;
             this.guna2PictureBox12.Location = new System.Drawing.Point(548, 526);
             this.guna2PictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox12.Name = "guna2PictureBox12";
@@ -262,7 +260,6 @@
             this.guna2PictureBox11.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox11.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.ErrorImage")));
             this.guna2PictureBox11.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox11.ImageRotate = 0F;
             this.guna2PictureBox11.Location = new System.Drawing.Point(407, 526);
             this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
@@ -276,7 +273,6 @@
             this.guna2PictureBox10.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.ErrorImage")));
             this.guna2PictureBox10.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox10.ImageRotate = 0F;
             this.guna2PictureBox10.Location = new System.Drawing.Point(276, 526);
             this.guna2PictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox10.Name = "guna2PictureBox10";
@@ -290,7 +286,6 @@
             this.guna2PictureBox9.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.ErrorImage")));
             this.guna2PictureBox9.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox9.ImageRotate = 0F;
             this.guna2PictureBox9.Location = new System.Drawing.Point(155, 526);
             this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
@@ -304,7 +299,6 @@
             this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.ErrorImage")));
             this.guna2PictureBox8.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox8.ImageRotate = 0F;
             this.guna2PictureBox8.Location = new System.Drawing.Point(44, 526);
             this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
@@ -491,7 +485,6 @@
             this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.ErrorImage")));
             this.guna2PictureBox7.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox7.ImageRotate = 0F;
             this.guna2PictureBox7.Location = new System.Drawing.Point(188, 305);
             this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
@@ -503,7 +496,6 @@
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
-            this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(188, 255);
             this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
@@ -515,7 +507,6 @@
             // guna2PictureBox5
             // 
             this.guna2PictureBox5.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
-            this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(188, 202);
             this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
@@ -527,7 +518,6 @@
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
-            this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(188, 154);
             this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
@@ -541,7 +531,6 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.ErrorImage")));
             this.guna2PictureBox3.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(188, 64);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
@@ -553,7 +542,6 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
-            this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(188, 106);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -567,7 +555,6 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
             this.guna2PictureBox1.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
-            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(188, 20);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
