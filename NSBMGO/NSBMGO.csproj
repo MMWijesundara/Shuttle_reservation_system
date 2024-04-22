@@ -55,9 +55,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Users\USER\Downloads\Guna crack\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="Keygen">
-      <HintPath>..\..\Users\USER\Downloads\Guna crack\GunaUIKeygen\Keygen.exe</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -234,6 +231,7 @@
     <EmbeddedResource Include="Shuttle.resx">
       <DependentUpon>Shuttle.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Keygen.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -370,6 +368,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image 33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Guna.UI2.dll" />
+    <Content Include="Keygen.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
