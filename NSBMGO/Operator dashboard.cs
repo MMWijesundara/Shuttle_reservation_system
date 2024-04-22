@@ -18,12 +18,12 @@ namespace NSBMGO
     {
         public Point mouseLocation;
 
-        private Timer hometimer;
+        
         public Operator_dashboard()
         {
             InitializeComponent();
 
-            timer1 = new Timer();
+            Timer timer1 = new Timer();
             timer1.Interval = 1000; // Update every second (1000 milliseconds)
             timer1.Tick += Timer_Tick; // Attach event handler
             timer1.Start(); // Start the timer
@@ -36,16 +36,19 @@ namespace NSBMGO
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
 
-            int w = Screen.PrimaryScreen.Bounds.Width;
-            int h = Screen.PrimaryScreen.Bounds.Height;
-            this.Location = new Point(0, 0);
-            this.Size = new Size(w, h);
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //this.Size = new Size(w, h);
+            this.Location = new Point(0,0);
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
 
 
             Home home = new Home();
             home.TopLevel = false;
             home.FormBorderStyle = FormBorderStyle.None;
             home.Dock = DockStyle.Fill;
+            
 
             pnl_fill.Controls.Clear();
             pnl_fill.Controls.Add(home);
@@ -148,7 +151,7 @@ namespace NSBMGO
         private void UpdateLabel()
         {
 
-            date.Text = DateTime.Now.ToString();
+            label1.Text = DateTime.Now.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
