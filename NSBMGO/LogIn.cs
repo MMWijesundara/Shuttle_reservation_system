@@ -101,14 +101,18 @@ namespace NSBMGO
                             Operator_dashboard operator_Dashboard = new Operator_dashboard();
                             operator_Dashboard.Show();
                             operator_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                            operator_Dashboard.btn_shuttle.Hide();
+                            operator_Dashboard.btn_driver.Hide();
+                            operator_Dashboard.btn_route.Hide();
 
                             break;
 
                         case "admin":
                             this.Hide();
-                            Admin_dashboard admin_Dashboard = new Admin_dashboard();
+                            Operator_dashboard admin_Dashboard = new Operator_dashboard();
                             admin_Dashboard.Show();
                             admin_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
+                           
                             break;
                     }
 
@@ -146,6 +150,11 @@ namespace NSBMGO
             {
                 conn.Close();
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
