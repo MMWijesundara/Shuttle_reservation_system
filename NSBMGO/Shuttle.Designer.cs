@@ -29,11 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shuttle));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.shuttleDataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -57,6 +61,8 @@
             this.txtNumberPlate = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shuttleDataGridView1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -66,6 +72,9 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel2);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -131,6 +140,7 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.shuttleDataGridView1);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 71);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -138,8 +148,71 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1061, 281);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // shuttleDataGridView1
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.shuttleDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.shuttleDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.shuttleDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.shuttleDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.shuttleDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.shuttleDataGridView1.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.shuttleDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.shuttleDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.shuttleDataGridView1.EnableHeadersVisualStyles = false;
+            this.shuttleDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.shuttleDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.shuttleDataGridView1.Name = "shuttleDataGridView1";
+            this.shuttleDataGridView1.RowHeadersVisible = false;
+            this.shuttleDataGridView1.RowHeadersWidth = 51;
+            this.shuttleDataGridView1.RowTemplate.Height = 24;
+            this.shuttleDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.shuttleDataGridView1.Size = new System.Drawing.Size(1061, 281);
+            this.shuttleDataGridView1.TabIndex = 0;
+            this.shuttleDataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.shuttleDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.shuttleDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.shuttleDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.shuttleDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.shuttleDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.shuttleDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.shuttleDataGridView1.ThemeStyle.ReadOnly = false;
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.Height = 24;
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.shuttleDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // guna2Panel3
             // 
+            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel4);
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel3);
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel1);
@@ -246,6 +319,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(180, 45);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -263,6 +337,7 @@
             this.btnDelete.Size = new System.Drawing.Size(180, 45);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "DELETE";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -561,9 +636,12 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Shuttle";
             this.Size = new System.Drawing.Size(1061, 600);
+            this.Load += new System.EventHandler(this.Shuttle_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.shuttleDataGridView1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -601,5 +679,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2DataGridView shuttleDataGridView1;
     }
 }
