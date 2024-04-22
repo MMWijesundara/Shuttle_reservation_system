@@ -19,14 +19,7 @@ namespace NSBMGO
         {
             InitializeComponent();
 
-            timer1 = new Timer();
-            timer1.Interval = 1000; // Update every second (1000 milliseconds)
-            timer1.Tick += Timer_Tick; // Attach event handler
-            timer1.Start(); // Start the timer
-
-
-            // Set initial value for the label
-            UpdateLabel();
+            
         }
 
         internal FormBorderStyle FormBorderStyle;
@@ -34,7 +27,9 @@ namespace NSBMGO
 
         private void Home_Load(object sender, EventArgs e)
         {
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
+            tableLayoutPanel1.Dock = DockStyle.Fill;
 
             table = new DataTable();
             table.Columns.Add("Messages", typeof(string));
@@ -44,7 +39,13 @@ namespace NSBMGO
 
         
 
-        private void txtAdd_Click(object sender, EventArgs e)
+        
+
+
+
+         
+
+        private void txtAdd(object sender, EventArgs e)
         {
             table.Rows.Add(txtMessage.Text);
             int index = guna2DataGridView1.CurrentCell.RowIndex;
@@ -56,25 +57,13 @@ namespace NSBMGO
             txtMessage.Clear();
         }
 
-
-        private void txtDelete_Click(object sender, EventArgs e)
+        private void txt_delete(object sender, EventArgs e)
         {
-            if(table.Rows.Count > 0)
+            if (table.Rows.Count > 0)
             {
                 int index = guna2DataGridView1.CurrentCell.RowIndex;
                 table.Rows[index].Delete();
             }
-        }
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            // Update the label on every tick
-            UpdateLabel();
-        }
-
-        private void UpdateLabel()
-        {
-
-            date.Text = DateTime.Now.ToString();
         }
     }
 
