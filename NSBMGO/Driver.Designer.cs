@@ -297,7 +297,7 @@
             this.txtContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContactNumber.HoverState.Parent = this.txtContactNumber;
             this.txtContactNumber.Location = new System.Drawing.Point(173, 180);
-            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.PasswordChar = '\0';
             this.txtContactNumber.PlaceholderText = "";
@@ -339,7 +339,7 @@
             this.txtDriverAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDriverAddress.HoverState.Parent = this.txtDriverAddress;
             this.txtDriverAddress.Location = new System.Drawing.Point(173, 101);
-            this.txtDriverAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDriverAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtDriverAddress.Name = "txtDriverAddress";
             this.txtDriverAddress.PasswordChar = '\0';
             this.txtDriverAddress.PlaceholderText = "";
@@ -397,7 +397,7 @@
             this.txtDriverName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDriverName.HoverState.Parent = this.txtDriverName;
             this.txtDriverName.Location = new System.Drawing.Point(173, 23);
-            this.txtDriverName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDriverName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDriverName.Name = "txtDriverName";
             this.txtDriverName.PasswordChar = '\0';
             this.txtDriverName.PlaceholderText = "";
@@ -410,7 +410,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
