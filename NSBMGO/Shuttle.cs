@@ -1,17 +1,9 @@
-﻿using NSBMGO.Data_access_layer;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Guna.UI2.HtmlRenderer.Adapters;
 using System.IO;
-using Guna.UI2.WinForms.Suite;
+using System.Windows.Forms;
 
 
 
@@ -51,6 +43,18 @@ namespace NSBMGO
             {
                 guna2PictureBox1.Image = new Bitmap(openFileDialog.FileName);
             }
+
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string imagePath = openFileDialog1.FileName;
+                imageData = File.ReadAllBytes(imagePath);
+
+                guna2PictureBox1.Image = Image.FromFile(imagePath);
+
+                this.imagePath = imagePath;
+            }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -61,19 +65,20 @@ namespace NSBMGO
             //string departTime = txtDepartTime.Text;
             //int seatCount = int.Parse(txtseatCount.Text);
             //string driverName = txtDriverName.Text;
-
+            byte[] imageData = File.ReadAllBytes(imagePath);
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Shuttle(number_plate,start_city,end_city,depart_time) VALUES(@numberPlate,@startCity,@endCity,@departTime)";
-                cmd.Parameters.AddWithValue ("@numberPlate",txtNumberPlate.Text);
-                cmd.Parameters.AddWithValue("@startCity",txtStartCity.Text);
-                cmd.Parameters.AddWithValue("@endCity",txtEndCity.Text);
-                cmd.Parameters.AddWithValue("@departTime",txtDepartTime.Text);
-                cmd.Parameters.AddWithValue("@seatCount",txtseatCount.Text);
-                cmd.Parameters.AddWithValue("@drivername",txtDriverName.Text);
+                cmd.CommandText = "INSERT INTO Shuttle(number_plate,start_city,end_city,depart_time,image) VALUES(@numberPlate,@startCity,@endCity,@departTime,@image)";
+                cmd.Parameters.AddWithValue("@numberPlate", txtNumberPlate.Text);
+                cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
+                cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
+                cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
+                cmd.Parameters.AddWithValue("@seatCount", txtseatCount.Text);
+                cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
+                cmd.Parameters.AddWithValue("@image", imageData);
 
                 cmd.ExecuteNonQuery();
 
@@ -116,14 +121,14 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string numberPlate = txtNumberPlate.Text;
-            string startCity = txtStartCity.Text;
-            string endCity = txtEndCity.Text;
-            string departTime = txtDepartTime.Text;
-            int seatCount = int.Parse(txtseatCount.Text);
-            string driverName = txtDriverName.Text;
+            //string numberPlate = txtNumberPlate.Text;
+            //string startCity = txtStartCity.Text;
+            //string endCity = txtEndCity.Text;
+            //string departTime = txtDepartTime.Text;
+            //int seatCount = int.TryParse(txtseatCount.Text);
+            //string driverName = txtDriverName.Text;
 
-            string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime WHERE shuttle_id = @shuttleId";
+            string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime, image = @image WHERE shuttle_id = @shuttleId";
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -133,6 +138,7 @@ namespace NSBMGO
             cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
             cmd.Parameters.AddWithValue("@seatCount", txtseatCount.Text);
             cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
+            cmd.Parameters.AddWithValue("@image", imageData);
 
             if (shuttleDataGridView1.SelectedRows.Count > 0)
             {
@@ -221,6 +227,18 @@ namespace NSBMGO
                 MessageBox.Show("Please select a row to delete");
             }
 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+
+            txtNumberPlate.Clear();
+            txtStartCity.Clear();
+            txtEndCity.Clear();
+            txtDriverName.Clear();
+            txtDepartTime.Clear();
+            txtseatCount.Clear();
         }
     }
 }
