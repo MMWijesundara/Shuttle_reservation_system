@@ -98,6 +98,12 @@
     <Compile Include="Class BLL\ClassBLL.cs" />
     <Compile Include="Data access layer\ClassDAL.cs" />
     <Compile Include="Data access layer\connection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frame 1 seats.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cancel form.resx">
       <DependentUpon>Cancel form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frame 1 seats.resx">
       <DependentUpon>Frame 1 seats.cs</DependentUpon>
