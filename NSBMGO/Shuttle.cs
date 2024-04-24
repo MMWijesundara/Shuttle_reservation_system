@@ -240,5 +240,10 @@ namespace NSBMGO
             txtDepartTime.Clear();
             txtseatCount.Clear();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
