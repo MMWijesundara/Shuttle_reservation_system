@@ -54,11 +54,14 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtStartCity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.routeDataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.routeDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel3
@@ -170,6 +173,7 @@
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel2.Controls.Add(this.routeDataGridView1);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 68);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -501,6 +505,18 @@
             this.txtStartCity.Size = new System.Drawing.Size(706, 39);
             this.txtStartCity.TabIndex = 1;
             // 
+            // routeDataGridView1
+            // 
+            this.routeDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.routeDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.routeDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routeDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.routeDataGridView1.Name = "routeDataGridView1";
+            this.routeDataGridView1.RowHeadersWidth = 51;
+            this.routeDataGridView1.RowTemplate.Height = 24;
+            this.routeDataGridView1.Size = new System.Drawing.Size(1583, 414);
+            this.routeDataGridView1.TabIndex = 0;
+            // 
             // Route
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -514,9 +530,11 @@
             this.Size = new System.Drawing.Size(1507, 749);
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.routeDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -547,5 +565,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private System.Windows.Forms.DataGridView routeDataGridView1;
     }
 }
