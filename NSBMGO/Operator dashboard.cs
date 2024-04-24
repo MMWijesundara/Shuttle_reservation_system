@@ -18,12 +18,12 @@ namespace NSBMGO
     {
         public Point mouseLocation;
 
-        private Timer hometimer;
+        
         public Operator_dashboard()
         {
             InitializeComponent();
-
-            timer1 = new Timer();
+            Timer timer1 = new Timer();
+            
             timer1.Interval = 1000; // Update every second (1000 milliseconds)
             timer1.Tick += Timer_Tick; // Attach event handler
             timer1.Start(); // Start the timer

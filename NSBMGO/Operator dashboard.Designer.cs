@@ -102,7 +102,7 @@
             this.guna2Button3.Image = global::NSBMGO.Properties.Resources.logout;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(15, 5);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(5);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(171, 38);
             this.guna2Button3.TabIndex = 6;
@@ -207,15 +207,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(198, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panel2.Padding = new System.Windows.Forms.Padding(12);
             this.panel2.Size = new System.Drawing.Size(920, 98);
             this.panel2.TabIndex = 3;
             // 
             // date
             // 
             this.date.AutoSize = true;
+            this.date.Dock = System.Windows.Forms.DockStyle.Right;
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(898, 34);
+            this.date.Location = new System.Drawing.Point(777, 12);
             this.date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(79, 29);
@@ -448,7 +449,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label date;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label date;
     }
 }
