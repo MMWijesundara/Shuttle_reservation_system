@@ -72,11 +72,24 @@ namespace NSBMGO
 
         private void btn_driver_Click(object sender, EventArgs e)
         {
-           
+            Driver driver = new Driver();
+            driver.formBorderStyle = FormBorderStyle.None;
+            driver.Dock = DockStyle.Fill;
+            driver.TopLevel = false;
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(driver);
+            driver.Show();
         }
 
         private void btn_route_Click(object sender, EventArgs e)
         {
+            Route route = new Route();
+            route.formBorderStyle = FormBorderStyle.None;
+            route.Dock = DockStyle.Fill;
+            route.TopLevel = false;
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(route);
+            route.Show();
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
