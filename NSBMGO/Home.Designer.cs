@@ -91,6 +91,11 @@
             this.homedatagridView = new System.Windows.Forms.DataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label32 = new System.Windows.Forms.Label();
+            this.nSBMGODataSet = new NSBMGO.NSBMGODataSet();
+            this.newsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.newsTableAdapter = new NSBMGO.NSBMGODataSetTableAdapters.NewsTableAdapter();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
@@ -110,6 +115,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homedatagridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nSBMGODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -143,18 +150,18 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(824, 735);
+            this.guna2Panel1.Size = new System.Drawing.Size(1099, 905);
             this.guna2Panel1.TabIndex = 0;
             // 
             // date
             // 
             this.date.AutoSize = true;
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(479, 9);
-            this.date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date.Location = new System.Drawing.Point(639, 11);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(79, 29);
+            this.date.Size = new System.Drawing.Size(95, 36);
             this.date.TabIndex = 40;
             this.date.Text = "label1";
             // 
@@ -162,9 +169,10 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(175, 668);
+            this.label31.Location = new System.Drawing.Point(233, 822);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(483, 20);
+            this.label31.Size = new System.Drawing.Size(587, 26);
             this.label31.TabIndex = 39;
             this.label31.Text = "cloud conditions will continue all day . Wind gusts are up to 17 km/h";
             // 
@@ -172,9 +180,10 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(625, 586);
+            this.label30.Location = new System.Drawing.Point(833, 721);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(45, 21);
+            this.label30.Size = new System.Drawing.Size(57, 27);
             this.label30.TabIndex = 38;
             this.label30.Text = "30°C";
             // 
@@ -182,9 +191,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(527, 586);
+            this.label29.Location = new System.Drawing.Point(703, 721);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(45, 21);
+            this.label29.Size = new System.Drawing.Size(57, 27);
             this.label29.TabIndex = 37;
             this.label29.Text = "30°C";
             // 
@@ -192,9 +202,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(421, 586);
+            this.label28.Location = new System.Drawing.Point(561, 721);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(45, 21);
+            this.label28.Size = new System.Drawing.Size(57, 27);
             this.label28.TabIndex = 36;
             this.label28.Text = "30°C";
             // 
@@ -202,9 +213,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(325, 586);
+            this.label27.Location = new System.Drawing.Point(433, 721);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(43, 21);
+            this.label27.Size = new System.Drawing.Size(54, 27);
             this.label27.TabIndex = 35;
             this.label27.Text = "31°C";
             // 
@@ -212,9 +224,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(234, 586);
+            this.label26.Location = new System.Drawing.Point(312, 721);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(43, 21);
+            this.label26.Size = new System.Drawing.Size(54, 27);
             this.label26.TabIndex = 34;
             this.label26.Text = "31°C";
             // 
@@ -222,9 +235,10 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(151, 586);
+            this.label25.Location = new System.Drawing.Point(201, 721);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(43, 21);
+            this.label25.Size = new System.Drawing.Size(54, 27);
             this.label25.TabIndex = 33;
             this.label25.Text = "31°C";
             // 
@@ -232,11 +246,11 @@
             // 
             this.guna2PictureBox13.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox13.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.ErrorImage")));
-            this.guna2PictureBox13.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox13.ImageRotate = 0F;
-            this.guna2PictureBox13.Location = new System.Drawing.Point(629, 535);
+            this.guna2PictureBox13.Location = new System.Drawing.Point(839, 658);
+            this.guna2PictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox13.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox13.TabIndex = 32;
             this.guna2PictureBox13.TabStop = false;
@@ -245,11 +259,11 @@
             // 
             this.guna2PictureBox12.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox12.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.ErrorImage")));
-            this.guna2PictureBox12.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox12.ImageRotate = 0F;
-            this.guna2PictureBox12.Location = new System.Drawing.Point(531, 535);
+            this.guna2PictureBox12.Location = new System.Drawing.Point(708, 658);
+            this.guna2PictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox12.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox12.TabIndex = 31;
             this.guna2PictureBox12.TabStop = false;
@@ -258,11 +272,11 @@
             // 
             this.guna2PictureBox11.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox11.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.ErrorImage")));
-            this.guna2PictureBox11.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox11.ImageRotate = 0F;
-            this.guna2PictureBox11.Location = new System.Drawing.Point(425, 535);
+            this.guna2PictureBox11.Location = new System.Drawing.Point(567, 658);
+            this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox11.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox11.TabIndex = 30;
             this.guna2PictureBox11.TabStop = false;
@@ -271,11 +285,11 @@
             // 
             this.guna2PictureBox10.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.ErrorImage")));
-            this.guna2PictureBox10.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(327, 535);
+            this.guna2PictureBox10.Location = new System.Drawing.Point(436, 658);
+            this.guna2PictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox10.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox10.TabIndex = 29;
             this.guna2PictureBox10.TabStop = false;
@@ -284,11 +298,11 @@
             // 
             this.guna2PictureBox9.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.ErrorImage")));
-            this.guna2PictureBox9.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(236, 535);
+            this.guna2PictureBox9.Location = new System.Drawing.Point(315, 658);
+            this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox9.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox9.TabIndex = 28;
             this.guna2PictureBox9.TabStop = false;
@@ -297,11 +311,11 @@
             // 
             this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.ErrorImage")));
-            this.guna2PictureBox8.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(153, 535);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(204, 658);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(41, 39);
+            this.guna2PictureBox8.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox8.TabIndex = 27;
             this.guna2PictureBox8.TabStop = false;
@@ -310,9 +324,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(632, 511);
+            this.label24.Location = new System.Drawing.Point(843, 629);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(26, 21);
+            this.label24.Size = new System.Drawing.Size(33, 27);
             this.label24.TabIndex = 26;
             this.label24.Text = "17";
             // 
@@ -320,9 +335,10 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(536, 511);
+            this.label23.Location = new System.Drawing.Point(715, 629);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(26, 21);
+            this.label23.Size = new System.Drawing.Size(33, 27);
             this.label23.TabIndex = 25;
             this.label23.Text = "16";
             // 
@@ -330,9 +346,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(436, 511);
+            this.label22.Location = new System.Drawing.Point(581, 629);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(26, 21);
+            this.label22.Size = new System.Drawing.Size(33, 27);
             this.label22.TabIndex = 24;
             this.label22.Text = "15";
             // 
@@ -340,9 +357,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(340, 511);
+            this.label21.Location = new System.Drawing.Point(453, 629);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(26, 21);
+            this.label21.Size = new System.Drawing.Size(33, 27);
             this.label21.TabIndex = 23;
             this.label21.Text = "14";
             // 
@@ -350,9 +368,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(249, 511);
+            this.label20.Location = new System.Drawing.Point(332, 629);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(26, 21);
+            this.label20.Size = new System.Drawing.Size(33, 27);
             this.label20.TabIndex = 22;
             this.label20.Text = "13";
             // 
@@ -360,9 +379,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(149, 511);
+            this.label19.Location = new System.Drawing.Point(199, 629);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(45, 21);
+            this.label19.Size = new System.Drawing.Size(56, 27);
             this.label19.TabIndex = 21;
             this.label19.Text = "Now";
             // 
@@ -390,18 +410,20 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(463, 171);
+            this.panel1.Location = new System.Drawing.Point(617, 210);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(288, 284);
+            this.panel1.Size = new System.Drawing.Size(384, 350);
             this.panel1.TabIndex = 4;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(204, 247);
+            this.label18.Location = new System.Drawing.Point(272, 304);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(45, 21);
+            this.label18.Size = new System.Drawing.Size(57, 27);
             this.label18.TabIndex = 20;
             this.label18.Text = "27°C";
             // 
@@ -409,9 +431,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(204, 207);
+            this.label17.Location = new System.Drawing.Point(272, 255);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 21);
+            this.label17.Size = new System.Drawing.Size(57, 27);
             this.label17.TabIndex = 19;
             this.label17.Text = "27°C";
             // 
@@ -419,9 +442,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(204, 164);
+            this.label16.Location = new System.Drawing.Point(272, 202);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 21);
+            this.label16.Size = new System.Drawing.Size(57, 27);
             this.label16.TabIndex = 18;
             this.label16.Text = "27°C";
             // 
@@ -429,9 +453,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(204, 125);
+            this.label15.Location = new System.Drawing.Point(272, 154);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 21);
+            this.label15.Size = new System.Drawing.Size(57, 27);
             this.label15.TabIndex = 17;
             this.label15.Text = "28°C";
             // 
@@ -439,9 +464,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(204, 89);
+            this.label14.Location = new System.Drawing.Point(272, 110);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 21);
+            this.label14.Size = new System.Drawing.Size(57, 27);
             this.label14.TabIndex = 16;
             this.label14.Text = "28°C";
             // 
@@ -449,9 +475,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(204, 52);
+            this.label13.Location = new System.Drawing.Point(272, 64);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 21);
+            this.label13.Size = new System.Drawing.Size(57, 27);
             this.label13.TabIndex = 15;
             this.label13.Text = "28°C";
             // 
@@ -459,9 +486,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(204, 15);
+            this.label12.Location = new System.Drawing.Point(272, 18);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 21);
+            this.label12.Size = new System.Drawing.Size(57, 27);
             this.label12.TabIndex = 14;
             this.label12.Text = "27°C";
             // 
@@ -469,44 +497,44 @@
             // 
             this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.ErrorImage")));
-            this.guna2PictureBox7.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(141, 248);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(188, 305);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox7.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 13;
             this.guna2PictureBox7.TabStop = false;
             // 
             // guna2PictureBox6
             // 
-            this.guna2PictureBox6.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
             this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(141, 207);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(188, 255);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 12;
             this.guna2PictureBox6.TabStop = false;
             // 
             // guna2PictureBox5
             // 
-            this.guna2PictureBox5.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
             this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(141, 164);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(188, 202);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox5.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 11;
             this.guna2PictureBox5.TabStop = false;
             // 
             // guna2PictureBox4
             // 
-            this.guna2PictureBox4.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(141, 125);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(188, 154);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 10;
             this.guna2PictureBox4.TabStop = false;
@@ -515,22 +543,22 @@
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.ErrorImage")));
-            this.guna2PictureBox3.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(141, 52);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(188, 64);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 9;
             this.guna2PictureBox3.TabStop = false;
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_15_AM;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(141, 86);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(188, 106);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 8;
             this.guna2PictureBox2.TabStop = false;
@@ -539,11 +567,11 @@
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
-            this.guna2PictureBox1.Image = global::NSBMGO.Properties.Resources.WhatsApp_Image_2024_04_08_at_1_15_07_AM;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(141, 16);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(188, 20);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
@@ -552,9 +580,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(20, 248);
+            this.label11.Location = new System.Drawing.Point(27, 305);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 21);
+            this.label11.Size = new System.Drawing.Size(102, 27);
             this.label11.TabIndex = 6;
             this.label11.Text = "Saturday ";
             // 
@@ -562,9 +591,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 207);
+            this.label10.Location = new System.Drawing.Point(27, 255);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 21);
+            this.label10.Size = new System.Drawing.Size(69, 27);
             this.label10.TabIndex = 5;
             this.label10.Text = "Friday";
             // 
@@ -572,9 +602,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 163);
+            this.label9.Location = new System.Drawing.Point(27, 201);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 21);
+            this.label9.Size = new System.Drawing.Size(104, 27);
             this.label9.TabIndex = 4;
             this.label9.Text = "Thursday ";
             // 
@@ -582,9 +613,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(20, 124);
+            this.label8.Location = new System.Drawing.Point(27, 153);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 21);
+            this.label8.Size = new System.Drawing.Size(120, 27);
             this.label8.TabIndex = 3;
             this.label8.Text = "Wednesday";
             // 
@@ -592,9 +624,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 85);
+            this.label7.Location = new System.Drawing.Point(27, 105);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 21);
+            this.label7.Size = new System.Drawing.Size(90, 27);
             this.label7.TabIndex = 2;
             this.label7.Text = "Tuesday";
             // 
@@ -602,9 +635,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(20, 52);
+            this.label6.Location = new System.Drawing.Point(27, 64);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 21);
+            this.label6.Size = new System.Drawing.Size(94, 27);
             this.label6.TabIndex = 1;
             this.label6.Text = "Monday ";
             // 
@@ -612,9 +646,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 15);
+            this.label5.Location = new System.Drawing.Point(27, 18);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 21);
+            this.label5.Size = new System.Drawing.Size(68, 27);
             this.label5.TabIndex = 0;
             this.label5.Text = "Today";
             // 
@@ -622,9 +657,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(143, 394);
+            this.label4.Location = new System.Drawing.Point(191, 485);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 26);
+            this.label4.Size = new System.Drawing.Size(176, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "H:31°C   L:27°C";
             // 
@@ -632,9 +668,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(141, 357);
+            this.label3.Location = new System.Drawing.Point(188, 439);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 26);
+            this.label3.Size = new System.Drawing.Size(184, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mostly Cloudly";
             // 
@@ -642,9 +679,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(137, 219);
+            this.label2.Location = new System.Drawing.Point(183, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 128);
+            this.label2.Size = new System.Drawing.Size(221, 159);
             this.label2.TabIndex = 1;
             this.label2.Text = "31°";
             // 
@@ -652,9 +690,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 26);
+            this.label1.Size = new System.Drawing.Size(254, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "WEATHER FORECAST";
             // 
@@ -667,9 +706,10 @@
             this.guna2Panel2.Controls.Add(this.txtDelete);
             this.guna2Panel2.Controls.Add(this.txtAdd);
             this.guna2Panel2.Controls.Add(this.label35);
-            this.guna2Panel2.Location = new System.Drawing.Point(880, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(1173, 0);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(531, 347);
+            this.guna2Panel2.Size = new System.Drawing.Size(708, 427);
             this.guna2Panel2.TabIndex = 1;
             // 
             // txtMessage
@@ -683,13 +723,13 @@
             this.txtMessage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMessage.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMessage.Location = new System.Drawing.Point(14, 56);
-            this.txtMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMessage.Location = new System.Drawing.Point(19, 69);
+            this.txtMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.PasswordChar = '\0';
             this.txtMessage.PlaceholderText = "Message";
             this.txtMessage.SelectedText = "";
-            this.txtMessage.Size = new System.Drawing.Size(414, 34);
+            this.txtMessage.Size = new System.Drawing.Size(552, 42);
             this.txtMessage.TabIndex = 5;
             // 
             // guna2DataGridView1
@@ -718,11 +758,12 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 197);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 242);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(531, 150);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(708, 185);
             this.guna2DataGridView1.TabIndex = 6;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -751,9 +792,10 @@
             this.txtDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
             this.txtDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.txtDelete.Location = new System.Drawing.Point(374, 9);
+            this.txtDelete.Location = new System.Drawing.Point(499, 11);
+            this.txtDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDelete.Name = "txtDelete";
-            this.txtDelete.Size = new System.Drawing.Size(54, 26);
+            this.txtDelete.Size = new System.Drawing.Size(72, 32);
             this.txtDelete.TabIndex = 4;
             this.txtDelete.Text = "-Delete";
             this.txtDelete.Click += new System.EventHandler(this.txtDelete_Click);
@@ -763,9 +805,10 @@
             this.txtAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
             this.txtAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.txtAdd.Location = new System.Drawing.Point(326, 9);
+            this.txtAdd.Location = new System.Drawing.Point(435, 11);
+            this.txtAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAdd.Name = "txtAdd";
-            this.txtAdd.Size = new System.Drawing.Size(42, 26);
+            this.txtAdd.Size = new System.Drawing.Size(56, 32);
             this.txtAdd.TabIndex = 2;
             this.txtAdd.Text = "+Add";
             this.txtAdd.Click += new System.EventHandler(this.txtAdd_Click);
@@ -774,9 +817,10 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Segoe UI Variable Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 9);
+            this.label35.Location = new System.Drawing.Point(4, 11);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(72, 26);
+            this.label35.Size = new System.Drawing.Size(91, 32);
             this.label35.TabIndex = 1;
             this.label35.Text = "NOTES";
             // 
@@ -787,19 +831,27 @@
             this.guna2Panel3.Controls.Add(this.homedatagridView);
             this.guna2Panel3.Controls.Add(this.guna2Button1);
             this.guna2Panel3.Controls.Add(this.label32);
-            this.guna2Panel3.Location = new System.Drawing.Point(880, 394);
+            this.guna2Panel3.Location = new System.Drawing.Point(1173, 485);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(531, 338);
+            this.guna2Panel3.Size = new System.Drawing.Size(708, 416);
             this.guna2Panel3.TabIndex = 2;
             // 
             // homedatagridView
             // 
+            this.homedatagridView.AutoGenerateColumns = false;
             this.homedatagridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.homedatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.homedatagridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dateDataGridViewTextBoxColumn,
+            this.newsDataGridViewTextBoxColumn});
+            this.homedatagridView.DataSource = this.newsBindingSource;
             this.homedatagridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.homedatagridView.Location = new System.Drawing.Point(0, 74);
+            this.homedatagridView.Location = new System.Drawing.Point(0, 91);
+            this.homedatagridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homedatagridView.Name = "homedatagridView";
-            this.homedatagridView.Size = new System.Drawing.Size(531, 264);
+            this.homedatagridView.RowHeadersWidth = 51;
+            this.homedatagridView.Size = new System.Drawing.Size(708, 325);
             this.homedatagridView.TabIndex = 3;
             // 
             // guna2Button1
@@ -811,9 +863,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.guna2Button1.Location = new System.Drawing.Point(301, 11);
+            this.guna2Button1.Location = new System.Drawing.Point(401, 14);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(123, 24);
+            this.guna2Button1.Size = new System.Drawing.Size(164, 30);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Add  News";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -822,22 +875,54 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Segoe UI Variable Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(7, 9);
+            this.label32.Location = new System.Drawing.Point(9, 11);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(67, 26);
+            this.label32.Size = new System.Drawing.Size(84, 32);
             this.label32.TabIndex = 1;
             this.label32.Text = "NEWS";
             // 
+            // nSBMGODataSet
+            // 
+            this.nSBMGODataSet.DataSetName = "NSBMGODataSet";
+            this.nSBMGODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // newsBindingSource
+            // 
+            this.newsBindingSource.DataMember = "News";
+            this.newsBindingSource.DataSource = this.nSBMGODataSet;
+            // 
+            // newsTableAdapter
+            // 
+            this.newsTableAdapter.ClearBeforeFill = true;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // newsDataGridViewTextBoxColumn
+            // 
+            this.newsDataGridViewTextBoxColumn.DataPropertyName = "News";
+            this.newsDataGridViewTextBoxColumn.HeaderText = "News";
+            this.newsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.newsDataGridViewTextBoxColumn.Name = "newsDataGridViewTextBoxColumn";
+            this.newsDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Home";
-            this.Size = new System.Drawing.Size(1411, 735);
+            this.Size = new System.Drawing.Size(1881, 905);
             this.Load += new System.EventHandler(this.Home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -862,6 +947,8 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homedatagridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nSBMGODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -926,5 +1013,10 @@
         private System.Windows.Forms.Label label32;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.DataGridView homedatagridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn newsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource newsBindingSource;
+        private NSBMGODataSet nSBMGODataSet;
+        private NSBMGODataSetTableAdapters.NewsTableAdapter newsTableAdapter;
     }
 }

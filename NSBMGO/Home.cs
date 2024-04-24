@@ -146,7 +146,7 @@ namespace NSBMGO
                 con1.Close();
             }
 
-            catch (Exception ex)
+            catch
 
             {
             }
