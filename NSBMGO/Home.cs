@@ -96,7 +96,7 @@ namespace NSBMGO
             date.Text = DateTime.Now.ToString();
         }
 
-        private void inventory_Load(object sender, EventArgs e)
+        private void home_Load(object sender, EventArgs e)
         {
             openFileDialog1 = new OpenFileDialog();
             
