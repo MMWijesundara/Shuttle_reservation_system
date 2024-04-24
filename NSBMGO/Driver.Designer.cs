@@ -35,9 +35,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnAddImage = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,13 +47,19 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnAddImage = new Guna.UI2.WinForms.Guna2Button();
+            this.driverDataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -132,6 +135,7 @@
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel2.Controls.Add(this.driverDataGridView1);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 68);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -152,52 +156,6 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(1507, 250);
             this.guna2Panel3.TabIndex = 3;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.guna2PictureBox1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnAddImage, 0, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(913, 499);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.77966F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.22034F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(292, 250);
-            this.tableLayoutPanel4.TabIndex = 4;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = global::NSBMGO.Properties.Resources.image_33;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(286, 198);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnAddImage
-            // 
-            this.btnAddImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddImage.BorderRadius = 5;
-            this.btnAddImage.CheckedState.Parent = this.btnAddImage;
-            this.btnAddImage.CustomImages.Parent = this.btnAddImage;
-            this.btnAddImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.btnAddImage.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddImage.ForeColor = System.Drawing.Color.Black;
-            this.btnAddImage.HoverState.Parent = this.btnAddImage;
-            this.btnAddImage.Location = new System.Drawing.Point(88, 211);
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.ShadowDecoration.Parent = this.btnAddImage;
-            this.btnAddImage.Size = new System.Drawing.Size(116, 32);
-            this.btnAddImage.TabIndex = 1;
-            this.btnAddImage.Text = "Add Image";
             // 
             // tableLayoutPanel2
             // 
@@ -429,6 +387,64 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "DELETE";
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.guna2PictureBox1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnAddImage, 0, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(913, 499);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.77966F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.22034F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(292, 250);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBox1.Image = global::NSBMGO.Properties.Resources.image_33;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(286, 198);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddImage.BorderRadius = 5;
+            this.btnAddImage.CheckedState.Parent = this.btnAddImage;
+            this.btnAddImage.CustomImages.Parent = this.btnAddImage;
+            this.btnAddImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.btnAddImage.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddImage.ForeColor = System.Drawing.Color.Black;
+            this.btnAddImage.HoverState.Parent = this.btnAddImage;
+            this.btnAddImage.Location = new System.Drawing.Point(88, 211);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.ShadowDecoration.Parent = this.btnAddImage;
+            this.btnAddImage.Size = new System.Drawing.Size(116, 32);
+            this.btnAddImage.TabIndex = 1;
+            this.btnAddImage.Text = "Add Image";
+            // 
+            // driverDataGridView1
+            // 
+            this.driverDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.driverDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.driverDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.driverDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.driverDataGridView1.Name = "driverDataGridView1";
+            this.driverDataGridView1.RowHeadersWidth = 51;
+            this.driverDataGridView1.RowTemplate.Height = 24;
+            this.driverDataGridView1.Size = new System.Drawing.Size(1583, 414);
+            this.driverDataGridView1.TabIndex = 0;
+            // 
             // Driver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -443,11 +459,13 @@
             this.Size = new System.Drawing.Size(1507, 749);
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,5 +493,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private System.Windows.Forms.DataGridView driverDataGridView1;
     }
 }
