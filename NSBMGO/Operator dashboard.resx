@@ -270,6 +270,36 @@
         9Pwo3W5WAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btn_shuttle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DQAACw0B7QfALAAAAOJJREFUOE/t07EOwUAAxvFGbBYWK97EExjNRgkJj+ANSDwAq8nEajaJiRjYrF5A
+        8P/a3uXaXBftxpf8kruvdY5eg39+KGMsvjREAzZTvHO6oYowL6icoRfr4450L2uoPzvdEhOEMd+Sjm7y
+        9W2o10Im2t01GhazoKJfomt2waYmccrYId0rI6jXf+9Gi+kh2QWL8ID3Qh7eMg9vmUdi0lFBdKbc3kf3
+        lDBwuieCbTw5aBKnAnNTFjcX6IHoFbbZwBwRHY3wCGRkjm40DD+zj4bJtHDECTqDdWSlhhW0M2cjQfAB
+        JgiupA5NKEcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_driver.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DQAACw0B7QfALAAAAUhJREFUOE+VlAENwlAMRCcBByABCUhAAg7AATgAB+AAHCABCUhAAvQtu59b+dvg
+        kku2tr/tv3ZrJrAMboKHjuvO9jf2wUfwPcBnkEKTWARriUjwSjbZOVMFDj90D66Cs6DAM53h86RfMpAM
+        h4J2wSkQ40m9cHMOyvmTNh2I1bkrBkB3MjJJB1W5DtPl+lkCcArqPP6ewQWmouyZpZsABaR925AEvvFi
+        cE0z8TkuQexsSC87LVNgHhxLyEGkoFN01IDIVYI8AZqNXZnbULzmqy4s3fpaZOIjJtvbDvVl8MIznXHA
+        p5+JjxhifclbDTVlEuaV8GARm4PkuiW5elocMSRogpAPIIMfifxl7XwA7XIavMu8WgxPvl4xMvuU0UeQ
+        xtD3bxvUVbGX7gT2SgEK8iJDds4M/nRzp1Mk9quzGth+9myMLkuHpvkAQHXSa6/wLwoAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btn_route.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DQAACw0B7QfALAAAAFhJREFUOE/NzDEKwDAMxdDc/9LtFOjwiNUtAi/iyws8P29E0elGNKyO1FiO1FiO
+        1FiO1OFdD6sjNZYjNZYjNZYjdXjXw+pIjeVIjeVIjeXIHtYbUXS6D2u99dWHecoLK1gAAAAASUVORK5C
+        YII=
+</value>
+  </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
