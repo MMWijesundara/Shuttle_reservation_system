@@ -14,11 +14,10 @@ namespace NSBMGO
 {
     public partial class Driver : UserControl
     {
-        public FormBorderStyle FormBorderStyle;
-        private OpenFileDialog openFileDialog1;
-        private byte[] imageData;
         private SqlDataAdapter adapter;
         private DataSet dataSet;
+        private OpenFileDialog openFileDialog1;
+        private byte[] imageData;
         private string imagePath;
         private SqlConnection conn;
         public Driver()
@@ -30,7 +29,7 @@ namespace NSBMGO
             openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
             DataTable dataTable = new DataTable();
-            driverDataGridView1.DataSource = dataTable;
+            guna2DataGridView1.DataSource = dataTable;
         }
 
         internal FormBorderStyle formBorderStyle;
@@ -41,7 +40,7 @@ namespace NSBMGO
 
         }
 
-        private void driverDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -54,6 +53,9 @@ namespace NSBMGO
             //string departTime = txtDepartTime.Text;
             //int seatCount = int.Parse(txtseatCount.Text);
             //string driverName = txtDriverName.Text;
+            string contactNo = txtContactNumber.Text;
+            int contactnumber = int.Parse(contactNo);
+
             byte[] imageData = File.ReadAllBytes(imagePath);
             try
             {
@@ -63,7 +65,7 @@ namespace NSBMGO
                 cmd.CommandText = "INSERT INTO Driver(driverName,address,contactNumber,image) VALUES(@drivername,@driveraddress,@contactnum,@image)";
                 cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
                 cmd.Parameters.AddWithValue("@driveraddress", txtDriverAddress.Text);
-                cmd.Parameters.AddWithValue("@contactnum", txtContactNumber.Text);
+                cmd.Parameters.AddWithValue("@contactnum", contactnumber);
          
                 cmd.Parameters.AddWithValue("@image", imageData);
 
@@ -74,7 +76,7 @@ namespace NSBMGO
                 adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                 dataSet.Clear();
                 adapter.Fill(dataSet, "Driver");
-                driverDataGridView1.DataSource = dataSet.Tables["Driver"];
+                guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
                 conn.Close();
 
             }
@@ -87,6 +89,8 @@ namespace NSBMGO
 
         private void btnAddImage_Click(object sender, EventArgs e)
         {
+           
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -107,11 +111,13 @@ namespace NSBMGO
 
         private void Driver_Load(object sender, EventArgs e)
         {
+            
+
             openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
 
             DataTable dataTable = new DataTable();
-            driverDataGridView1.DataSource = dataTable;
+            guna2DataGridView1.DataSource = dataTable;
 
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
 
@@ -121,7 +127,7 @@ namespace NSBMGO
             da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            driverDataGridView1.DataSource = dt;
+            guna2DataGridView1.DataSource = dt;
             conn.Close();
         }
 
@@ -144,12 +150,12 @@ namespace NSBMGO
       
             cmd.Parameters.AddWithValue("@image", imageData);
 
-            if (driverDataGridView1.SelectedRows.Count > 0)
+            if (guna2DataGridView1.SelectedRows.Count > 0)
             {
-                int selectedRowIndex = driverDataGridView1.SelectedRows[0].Index;
+                int selectedRowIndex = guna2DataGridView1.SelectedRows[0].Index;
 
 
-                int Id = Convert.ToInt32(driverDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                int Id = Convert.ToInt32(guna2DataGridView1.Rows[selectedRowIndex].Cells[0].Value);
 
 
                 cmd.Parameters.AddWithValue("@Id", Id);
@@ -165,7 +171,7 @@ namespace NSBMGO
                     adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                     dataSet.Clear();
                     adapter.Fill(dataSet, "Driver");
-                    driverDataGridView1.DataSource = dataSet.Tables["Driver"];
+                    guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
 
                     if (rowsAffected > 0 && secondRowsAffected > 0)
                     {
@@ -173,7 +179,7 @@ namespace NSBMGO
                         dataSet.Clear();
                         adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                         adapter.Fill(dataSet, "Driver");
-                        driverDataGridView1.DataSource = dataSet.Tables["Driver"];
+                        guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
                     }
                     else
                     {
@@ -189,12 +195,12 @@ namespace NSBMGO
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (driverDataGridView1.SelectedRows.Count > 0)
+            if (guna2DataGridView1.SelectedRows.Count > 0)
             {
-                int selectedRowIndex = driverDataGridView1.SelectedRows[0].Index;
+                int selectedRowIndex = guna2DataGridView1.SelectedRows[0].Index;
 
 
-                int driverId = Convert.ToInt32(driverDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                int driverId = Convert.ToInt32(guna2DataGridView1.Rows[selectedRowIndex].Cells[0].Value);
 
                 string query = "DELETE FROM [Driver] WHERE driverId = @driverId";
 
@@ -213,7 +219,7 @@ namespace NSBMGO
                         dataSet.Clear();
                         adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                         adapter.Fill(dataSet, "Driver");
-                       driverDataGridView1.DataSource = dataSet.Tables["Driver"];
+                       guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
                     }
                     else
                     {
