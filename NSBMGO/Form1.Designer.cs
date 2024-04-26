@@ -68,10 +68,10 @@
             // 
             // bttnAdd
             // 
-            this.bttnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bttnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bttnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bttnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            //this.bttnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            //this.bttnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            //this.bttnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            //this.bttnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.bttnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bttnAdd.ForeColor = System.Drawing.Color.White;
             this.bttnAdd.Location = new System.Drawing.Point(195, 259);

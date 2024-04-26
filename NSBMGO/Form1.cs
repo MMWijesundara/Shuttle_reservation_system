@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using TheArtOfDevHtmlRenderer.Adapters;
+//using TheArtOfDevHtmlRenderer.Adapters;
 using System.IO;
 using Guna.UI2.WinForms.Suite;
 
