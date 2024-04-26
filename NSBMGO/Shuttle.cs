@@ -121,12 +121,15 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+            conn.Open();
             //string numberPlate = txtNumberPlate.Text;
             //string startCity = txtStartCity.Text;
             //string endCity = txtEndCity.Text;
             //string departTime = txtDepartTime.Text;
             //int seatCount = int.TryParse(txtseatCount.Text);
             //string driverName = txtDriverName.Text;
+            byte[] imageData = File.ReadAllBytes(imagePath);
 
             string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime, image = @image WHERE shuttle_id = @shuttleId";
 
@@ -239,6 +242,11 @@ namespace NSBMGO
             txtDriverName.Clear();
             txtDepartTime.Clear();
             txtseatCount.Clear();
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
