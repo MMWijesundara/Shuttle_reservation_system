@@ -11,6 +11,6 @@ namespace NSBMGO.Data_access_layer
     {
         #region DB connection
         public SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
-        #endregion
+        #endregion 
     }
 }

@@ -236,9 +236,11 @@
             // 
             this.guna2PictureBox13.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox13.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.ErrorImage")));
+
             this.guna2PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.Image")));
             this.guna2PictureBox13.ImageRotate = 0F;
             this.guna2PictureBox13.Location = new System.Drawing.Point(499, 449);
+
             this.guna2PictureBox13.Name = "guna2PictureBox13";
             this.guna2PictureBox13.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -249,9 +251,11 @@
             // 
             this.guna2PictureBox12.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox12.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.ErrorImage")));
+
             this.guna2PictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.Image")));
             this.guna2PictureBox12.ImageRotate = 0F;
             this.guna2PictureBox12.Location = new System.Drawing.Point(401, 449);
+
             this.guna2PictureBox12.Name = "guna2PictureBox12";
             this.guna2PictureBox12.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,9 +266,11 @@
             // 
             this.guna2PictureBox11.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox11.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.ErrorImage")));
+
             this.guna2PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.Image")));
             this.guna2PictureBox11.ImageRotate = 0F;
             this.guna2PictureBox11.Location = new System.Drawing.Point(295, 449);
+
             this.guna2PictureBox11.Name = "guna2PictureBox11";
             this.guna2PictureBox11.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,9 +281,11 @@
             // 
             this.guna2PictureBox10.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.ErrorImage")));
+
             this.guna2PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.Image")));
             this.guna2PictureBox10.ImageRotate = 0F;
             this.guna2PictureBox10.Location = new System.Drawing.Point(197, 449);
+
             this.guna2PictureBox10.Name = "guna2PictureBox10";
             this.guna2PictureBox10.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -288,9 +296,11 @@
             // 
             this.guna2PictureBox9.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.ErrorImage")));
+
             this.guna2PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.Image")));
             this.guna2PictureBox9.ImageRotate = 0F;
             this.guna2PictureBox9.Location = new System.Drawing.Point(106, 449);
+
             this.guna2PictureBox9.Name = "guna2PictureBox9";
             this.guna2PictureBox9.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,9 +311,11 @@
             // 
             this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.ErrorImage")));
+
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.ImageRotate = 0F;
             this.guna2PictureBox8.Location = new System.Drawing.Point(23, 449);
+
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.Size = new System.Drawing.Size(41, 39);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -478,8 +490,10 @@
             // 
             this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.ErrorImage")));
+
             this.guna2PictureBox7.ImageRotate = 0F;
             this.guna2PictureBox7.Location = new System.Drawing.Point(141, 248);
+
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -488,8 +502,10 @@
             // 
             // guna2PictureBox6
             // 
+
             this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(141, 207);
+
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -498,8 +514,10 @@
             // 
             // guna2PictureBox5
             // 
+
             this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(141, 164);
+
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -508,9 +526,11 @@
             // 
             // guna2PictureBox4
             // 
+
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(141, 125);
+
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -521,8 +541,10 @@
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.ErrorImage")));
+
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(141, 52);
+
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -531,8 +553,10 @@
             // 
             // guna2PictureBox2
             // 
+
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(141, 86);
+
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -543,9 +567,11 @@
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
+
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(141, 16);
+
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(20, 20);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

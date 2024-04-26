@@ -67,13 +67,7 @@ namespace NSBMGO
 
         private void btn_shuttle_Click(object sender, EventArgs e)
         {
-            Shuttle shuttle = new Shuttle();
-            shuttle.formBorderStyle = FormBorderStyle.None;
-            shuttle.Dock = DockStyle.Fill;
-            shuttle.TopLevel = false;
-            pnl_fill.Controls.Clear();
-            pnl_fill.Controls.Add(shuttle);
-            shuttle.Show();
+            
         }
 
         private void btn_driver_Click(object sender, EventArgs e)
