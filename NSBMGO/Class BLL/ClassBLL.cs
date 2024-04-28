@@ -25,18 +25,6 @@ namespace NSBMGO.Class_BLL
 			}
         }
 
-		public DataTable GetTickets(int StudentId)
-		{
-			try
-			{
-                ClassDAL objDAL = new ClassDAL();
-                return objDAL.ReadItemsFromTableShuttle(ResCity);
-            }
-			catch (Exception)
-			{
-
-				throw;
-			}
-		}
+		
     }
 }
