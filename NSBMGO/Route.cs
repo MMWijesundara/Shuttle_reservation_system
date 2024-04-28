@@ -120,7 +120,6 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            conn.Open();
             //string numberPlate = txtNumberPlate.Text;
             //string startCity = txtStartCity.Text;
             //string endCity = txtEndCity.Text;
@@ -128,7 +127,7 @@ namespace NSBMGO
             //int seatCount = int.TryParse(txtseatCount.Text);
             //string driverName = txtDriverName.Text;
 
-            string query = "UPDATE [route] SET startCity = @startCity, endCity= @endCity, shuttleId = @shuttleId, driverId= @driverId, price = @price WHERE driverId = @driverId";
+            string query = "UPDATE [route] SET startCity = @startCity, endCity= @endCity, shuttleId = @shuttleId, driverId= @driverId, price = @price WHERE routeId = @routeId";
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -143,10 +142,10 @@ namespace NSBMGO
                 int selectedRowIndex = routeDataGridView1.SelectedRows[0].Index;
 
 
-                int driverId = Convert.ToInt32(routeDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                int routeId = Convert.ToInt32(routeDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
 
 
-                cmd.Parameters.AddWithValue("@driverId", driverId);
+                cmd.Parameters.AddWithValue("@routeId", routeId);
 
 
                 try
