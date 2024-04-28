@@ -71,25 +71,25 @@ namespace NSBMGO
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO route(startCity,endCity,shuttleId,driverId,price) VALUES(@startCity,@endCity,@shuttleId,driverId,@price)";
+                cmd.CommandText = "INSERT INTO route(startCity,endCity,shuttleId,driverId,price) VALUES(@startCity,@endCity,@shuttleId,@driverId,@price)";
                 cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
                 cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
                 cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
                 cmd.Parameters.AddWithValue("@driverId", txtDriverID.Text);
-                cmd.Parameters.AddWithValue("@prce", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@price", txtPrice.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Successfully Saved");
 
-                adapter.SelectCommand = new SqlCommand("SELECT * FROM [Shuttle]", conn);
+                adapter.SelectCommand = new SqlCommand("SELECT * FROM [route]", conn);
                 dataSet.Clear();
-                adapter.Fill(dataSet, "Shuttle");
-                shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
+                adapter.Fill(dataSet, "route");
+                routeDataGridView1.DataSource = dataSet.Tables["route"];
                 conn.Close();
 
             }
@@ -99,5 +99,86 @@ namespace NSBMGO
                 MessageBox.Show("Error" + ex);
             }
         }
-    }
-}
+
+        private void Route_Load(object sender, EventArgs e)
+        {
+
+            DataTable dataTable = new DataTable();
+            routeDataGridView1.DataSource = dataTable;
+
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Select * from [route]", conn);
+            SqlDataAdapter
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            routeDataGridView1.DataSource = dt;
+            conn.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            //string numberPlate = txtNumberPlate.Text;
+            //string startCity = txtStartCity.Text;
+            //string endCity = txtEndCity.Text;
+            //string departTime = txtDepartTime.Text;
+            //int seatCount = int.TryParse(txtseatCount.Text);
+            //string driverName = txtDriverName.Text;
+
+            string query = "UPDATE [route] SET startCity = @startCity, endCity= @endCity, shuttleId = @shuttleId, driverId= @driverId, price = @price WHERE driverId = @driverId";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
+            cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
+            cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
+            cmd.Parameters.AddWithValue("@driverId", txtDriverID.Text);
+            cmd.Parameters.AddWithValue("@price", txtPrice.Text);
+
+            if (routeDataGridView1.SelectedRows.Count > 0)
+            {
+                int selectedRowIndex = routeDataGridView1.SelectedRows[0].Index;
+
+
+                int driverId = Convert.ToInt32(routeDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+
+
+                cmd.Parameters.AddWithValue("@driverId", driverId);
+
+
+                try
+                {
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    int secondRowsAffected = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    adapter.SelectCommand = new SqlCommand("SELECT * FROM [route]", conn);
+                    dataSet.Clear();
+                    adapter.Fill(dataSet, "route");
+                    routeDataGridView1.DataSource = dataSet.Tables["route"];
+
+                    if (rowsAffected > 0 && secondRowsAffected > 0)
+                    {
+                        MessageBox.Show("Successfully Updated");
+                        dataSet.Clear();
+                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [route]", conn);
+                        adapter.Fill(dataSet, "route");
+                        routeDataGridView1.DataSource = dataSet.Tables["route"];
+                    }
+                    else
+                    {
+                        MessageBox.Show("No rows updated");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+    } }
+

@@ -284,6 +284,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(135, 37);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -536,6 +537,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Route";
             this.Size = new System.Drawing.Size(1130, 609);
+            this.Load += new System.EventHandler(this.Route_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
