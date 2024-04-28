@@ -224,5 +224,14 @@ namespace NSBMGO
                 MessageBox.Show("Please select a row to delete");
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtStartCity.Clear();
+            txtEndCity.Clear();
+            txtShuttleID.Clear();
+            txtDriverID.Clear();
+            txtPrice.Clear();
+        }
     } }
 
