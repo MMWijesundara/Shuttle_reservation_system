@@ -179,5 +179,50 @@ namespace NSBMGO
                 }
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (routeDataGridView1.SelectedRows.Count > 0)
+            {
+                int selectedRowIndex = routeDataGridView1.SelectedRows[0].Index;
+
+
+                int routeId = Convert.ToInt32(routeDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+
+                string query = "DELETE FROM [route] WHERE routeId = @routeId";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@routeId", routeId);
+
+                try
+                {
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Successfully Deleted");
+
+                        dataSet.Clear();
+                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [route]", conn);
+                        adapter.Fill(dataSet, "route");
+                        routeDataGridView1.DataSource = dataSet.Tables["route"];
+                    }
+                    else
+                    {
+                        MessageBox.Show("No rows deleted");
+                    }
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
+        }
     } }
 

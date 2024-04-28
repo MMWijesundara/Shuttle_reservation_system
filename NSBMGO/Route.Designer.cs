@@ -303,6 +303,7 @@
             this.btnDelete.Size = new System.Drawing.Size(135, 37);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "DELETE";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // tableLayoutPanel1
             // 
