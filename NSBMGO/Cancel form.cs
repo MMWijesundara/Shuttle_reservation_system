@@ -1,8 +1,11 @@
-﻿using NSBMGO.Class_BLL;
-using NSBMGO.Data_access_layer;
+﻿using NSBMGO.Data_access_layer;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NSBMGO
@@ -15,69 +18,52 @@ namespace NSBMGO
         }
 
 
-        private void guna2TextBox1_IconRightClick(object sender, EventArgs e)
+
+
+        private DataTable generateTickets(string studentId)
         {
+            //connection con = new connection();
+            //con.conn.Open();
 
-        }
 
-        public void generateReserveCards()
-        {
+            SqlConnection con2 = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
+            con2.Open();
 
-            Reserve_Form form = new Reserve_Form();
-            string destination = form.Reservecity;
+            string query = "SELECT * FROM [Ticket] WHERE studentId = @stuId";
+            SqlCommand cmd = new SqlCommand(query, con2);
+            cmd.Parameters.AddWithValue("@stuId", txtSearch.Text);
 
-            flowLayoutPanel1.Controls.Clear();
-
-            int studentId = int.Parse(txtSearch.Text);
-
-            
-            ClassBLL objBLL2 = new ClassBLL();
-            DataTable dt2 = objBLL2.GetTickets(studentId);
-
-            if (dt2 != null)
+            try
             {
-                if (dt2.Rows.Count > 0)
+                using(SqlDataAdapter sda = new SqlDataAdapter(cmd))
                 {
-                    Cancel_card[] cards = new Cancel_card[dt2.Rows.Count];
-
-                    for (int i = 0; i < 1; i++)
-                    {
-                        foreach (DataRow row in dt2.Rows)
-                        {
-                            cards[i] = new Cancel_card();
-
-                            //MemoryStream ms = new MemoryStream();
-                            //cards[i].icon = new Bitmap(ms);
-
-                            cards[i].lblstuId.Text = row["studentId"].ToString();
-                            cards[i].lblStuName.Text = row["depart_time"].ToString();
-                            cards[i].lblDestination.Text = destination;
-                            cards[i].lblSeatCount.Text = row["end_city"].ToString();
-                            cards[i].lblTotPrice.Text = row["ticket_price"].ToString();
-
-                            tableLayoutPanel2.Controls.Add(cards[i]);
-                            cards[i].Anchor = AnchorStyles.None;
-                        }
-                    }
+                
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                return dt;
                 }
-
-                else
-                {
-                    MessageBox.Show("Empty Data.");
-                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+                throw;
             }
 
-
         }
 
-        public DataTable GetItemsfromShuttle(string studentId)
+        private void txtSearch_IconRightClick(object sender, EventArgs e)
         {
-            connection conn1 = new connection();
-            conn1.conn.Open();
-            string query = "SELECT end_city FROM Shuttle WHERE  ";
-            DataTable dt = new DataTable();
-            SqlDataAdapter sda = new SqlDataAdapter();
-            sda.Fill(dt);
+            DataTable dt1 = generateTickets(txtSearch.Text);
+
+            for(int i = 0; i < dt1.Rows.Count; i++)
+            {
+                Cancel_card ticket = new Cancel_card();
+                ticket[i]
+            }
+
         }
+
+
     }
 }

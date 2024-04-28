@@ -12,8 +12,6 @@ namespace NSBMGO
             InitializeComponent();
         }
 
-        public bool cardsAdded = false;
-        public string Reservecity;
 
 
 
@@ -32,7 +30,7 @@ namespace NSBMGO
         {
             tableLayoutPanel2.Controls.Clear();
 
-            Reservecity = guna2TextBox1.Text;
+            string Reservecity = guna2TextBox1.Text;
 
             ClassBLL objBLL = new ClassBLL();
 
@@ -44,24 +42,24 @@ namespace NSBMGO
                 {
                     reserve_card[] cards = new reserve_card[dt.Rows.Count];
 
-                    for (int i = 0; i < 1; i++)
+                    for (int i = 0; i < dt.Rows.Count; i++)
                     {
-                        foreach (DataRow row in dt.Rows)
-                        {
+                        
+                        
                             cards[i] = new reserve_card();
 
                             //MemoryStream ms = new MemoryStream();
                             //cards[i].icon = new Bitmap(ms);
 
-                            cards[i].numPlate.Text = row["number_plate"].ToString();
-                            cards[i].Time.Text = row["depart_time"].ToString();
-                            cards[i].startCity.Text = row["start_city"].ToString();
-                            cards[i].endCity.Text = row["end_city"].ToString();
-                            cards[i].Price.Text = row["ticket_price"].ToString();
+                            cards[i].numPlate.Text = dt.Rows[i]["number_plate"].ToString();
+                            cards[i].Time.Text = dt.Rows[i]["depart_time"].ToString();
+                            cards[i].startCity.Text = dt.Rows[i]["start_city"].ToString();
+                            cards[i].endCity.Text = dt.Rows[i]["end_city"].ToString();
+                            cards[i].Price.Text = dt.Rows[i]["ticket_price"].ToString();
 
                             tableLayoutPanel2.Controls.Add(cards[i]);
                             cards[i].Anchor = AnchorStyles.None;
-                        }
+                        
                     }
                 }
 
