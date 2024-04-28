@@ -186,11 +186,11 @@
     <Compile Include="Admin dashboard.Designer.cs">
       <DependentUpon>Admin dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cancel card.cs">
+    <Compile Include="Cancel_card.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Cancel card.Designer.cs">
-      <DependentUpon>Cancel card.cs</DependentUpon>
+    <Compile Include="Cancel_card.Designer.cs">
+      <DependentUpon>Cancel_card.cs</DependentUpon>
     </Compile>
     <Compile Include="Cancel form.cs">
       <SubType>Form</SubType>
@@ -304,6 +304,9 @@
     <EmbeddedResource Include="Cancel form.resx">
       <DependentUpon>Cancel form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cancel_card.resx">
+      <DependentUpon>Cancel_card.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,7 +356,6 @@
     <EmbeddedResource Include="Shuttle.resx">
       <DependentUpon>Shuttle.cs</DependentUpon>
     </EmbeddedResource>
-
     <None Include="NSBMGODataSet.xsc">
       <DependentUpon>NSBMGODataSet.xsd</DependentUpon>
     </None>
@@ -365,9 +367,7 @@
     <None Include="NSBMGODataSet.xss">
       <DependentUpon>NSBMGODataSet.xsd</DependentUpon>
     </None>
-
     <None Include="Keygen.exe.config" />
-
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

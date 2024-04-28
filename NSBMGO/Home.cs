@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Guna.UI2.WinForms.Suite;
+using Guna.UI2.WinForms;
 
 namespace NSBMGO
 {
@@ -108,25 +109,31 @@ namespace NSBMGO
             Form1 f1 = new Form1();
             f1.Show();
 
+            
+
 
             string query = "INSERT INTO [News] (Date,News) VALUES (@Date, @News)";
 
-            SqlCommand cmd = new SqlCommand(query, con1);
+            SqlCommand cmd3 = new SqlCommand(query, con1);
 
-            //cmd.Parameters.AddWithValue("@Date",Date);
-            //cmd.Parameters.AddWithValue("@News", News);
-           
+            cmd3.Parameters.AddWithValue("@Date", f1.txtDate);
+            cmd3.Parameters.AddWithValue("@News", f1.txtNews);
+
 
             try
             {
                 con1.Open();
-                cmd.ExecuteNonQuery();
-            
+                cmd3.ExecuteNonQuery();
 
-                adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
-                dataSet.Clear();
-                adapter.Fill(dataSet, "News");
-                homedatagridView.DataSource = dataSet.Tables["News"];
+                SqlCommand cmd2 = new SqlCommand("Select * from [News]", con1);
+                SqlDataAdapter da = new SqlDataAdapter(cmd2);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                homedatagridView.DataSource = dt;
+
+
+
+
 
                 con1.Close();
             }
@@ -137,8 +144,65 @@ namespace NSBMGO
             }
             finally
             {
-                
+
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (homedatagridView.SelectedRows.Count > 0)
+            {
+                int selectedRowIndex = homedatagridView.SelectedRows[0].Index;
+
+
+                int date = Convert.ToInt32(homedatagridView.Rows[selectedRowIndex].Cells[0].Value);
+
+                string query = "DELETE FROM [News] WHERE Date = @date";
+
+                SqlCommand cmd = new SqlCommand(query, con1);
+                cmd.Parameters.AddWithValue("@date", date);
+
+                try
+                {
+                    con1.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Successfully Deleted");
+
+
+                        dataSet.Clear();
+                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
+                        adapter.Fill(dataSet, "News");
+                        homedatagridView.DataSource = dataSet.Tables["News"];
+                        con1.Close();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("No rows deleted");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
+            dataSet.Clear();
+            adapter.Fill(dataSet, "News");
+            homedatagridView.DataSource = dataSet.Tables["News"];
         }
     }
 
