@@ -58,6 +58,7 @@ namespace NSBMGO
                 dataSet.Clear();
                 adapter.Fill(dataSet, "News");
                 
+                
             }
             catch (Exception ex)
             {
@@ -68,5 +69,7 @@ namespace NSBMGO
                 con1.Close();
             }
         }
+
+        
     }
 }

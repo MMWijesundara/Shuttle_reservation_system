@@ -139,10 +139,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txtDate;
+        public Guna.UI2.WinForms.Guna2TextBox txtDate;
         private Guna.UI2.WinForms.Guna2Button bttnAdd;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtNews;
+        public Guna.UI2.WinForms.Guna2TextBox txtNews;
         private System.Windows.Forms.Label label2;
     }
 }

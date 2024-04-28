@@ -100,7 +100,7 @@ namespace NSBMGO
 
         private void btn_cancle_Click(object sender, EventArgs e)
         {
-            Cancel cancel = new Cancel();
+            Cancel_form cancel = new Cancel_form();
             cancel.TopLevel = false;
             cancel.FormBorderStyle = FormBorderStyle.None;
             cancel.Dock = DockStyle.Fill;

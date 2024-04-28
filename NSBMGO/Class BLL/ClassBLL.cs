@@ -15,7 +15,7 @@ namespace NSBMGO.Class_BLL
 			try
 			{
 				ClassDAL objDAL = new ClassDAL();
-				return objDAL.ReadItemsFromTable(ResCity);
+				return objDAL.ReadItemsFromTableShuttle(ResCity);
 				
 			}
 			catch (Exception)
@@ -24,5 +24,7 @@ namespace NSBMGO.Class_BLL
 				throw;
 			}
         }
+
+		
     }
 }
