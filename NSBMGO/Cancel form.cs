@@ -1,11 +1,6 @@
-﻿using NSBMGO.Data_access_layer;
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NSBMGO
@@ -36,20 +31,20 @@ namespace NSBMGO
 
             try
             {
-                using(SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                 {
-                
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                return dt;
+
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    return dt;
                 }
-                
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex);
                 throw;
-                
+
             }
 
         }
@@ -84,7 +79,7 @@ namespace NSBMGO
 
         private void txtSearch_IconRightClick(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId","Alert",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            if (string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             generateCard();
 
         }
@@ -99,24 +94,32 @@ namespace NSBMGO
         {
             DataTable dtTicket = generateTickets(txtSearch.Text);
 
-            for (int i = 0; i < dtTicket.Rows.Count; i++)
+            if (dtTicket.Rows.Count > 0)
             {
-                Cancel_card ticket = new Cancel_card();
-                ticket.lblstuId.Text = dtTicket.Rows[i]["studentId"].ToString();
-                ticket.lblStuName.Text = dtTicket.Rows[i]["studentFullName"].ToString();
-                ticket.lblSeatCount.Text = dtTicket.Rows[i]["totalSeats"].ToString();
-                ticket.lblTotPrice.Text = dtTicket.Rows[i]["totalPrice"].ToString();
+                for (int i = 0; i < dtTicket.Rows.Count; i++)
+                {
+                    Cancel_card ticket = new Cancel_card();
+                    ticket.lblstuId.Text = dtTicket.Rows[i]["studentId"].ToString();
+                    ticket.lblStuName.Text = dtTicket.Rows[i]["studentFullName"].ToString();
+                    ticket.lblSeatCount.Text = dtTicket.Rows[i]["totalSeats"].ToString();
+                    ticket.lblTotPrice.Text = dtTicket.Rows[i]["totalPrice"].ToString();
 
-                ticket.Anchor = AnchorStyles.None;
+                    ticket.Anchor = AnchorStyles.None;
 
-                tableLayoutPanel2.Controls.Add(ticket);
+                    tableLayoutPanel2.Controls.Add(ticket);
 
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No such data exist", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void Cancel_form_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
