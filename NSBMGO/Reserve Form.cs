@@ -39,7 +39,7 @@ namespace NSBMGO
 
             DataTable dt = objBLL.GetItems(Reservecity);
 
-            if (dt != null)
+                if (dt != null)
             {
                 if (dt.Rows.Count > 0)
                 {

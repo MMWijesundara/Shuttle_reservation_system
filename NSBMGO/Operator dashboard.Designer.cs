@@ -39,6 +39,7 @@
             this.btn_cancle = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.date = new System.Windows.Forms.Label();
             this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -53,7 +54,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.date = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -219,6 +219,16 @@
             this.panel2.Size = new System.Drawing.Size(1469, 121);
             this.panel2.TabIndex = 3;
             // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(1198, 42);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(95, 36);
+            this.date.TabIndex = 7;
+            this.date.Text = "label1";
+            // 
             // pnl_profile
             // 
             this.pnl_profile.BackgroundImage = global::NSBMGO.Properties.Resources.Ellipse_11;
@@ -235,8 +245,8 @@
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.lbl_top_name, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_top_name, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 15);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -400,16 +410,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1469, 22);
             this.panel4.TabIndex = 4;
-            // 
-            // date
-            // 
-            this.date.AutoSize = true;
-            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(1198, 42);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(95, 36);
-            this.date.TabIndex = 7;
-            this.date.Text = "label1";
             // 
             // Operator_dashboard
             // 
