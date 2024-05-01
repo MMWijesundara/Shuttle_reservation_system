@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using Guna.UI2.HtmlRenderer.Adapters;
+//using Guna.UI2.HtmlRenderer.Adapters;
 using System.Data.SqlClient;
 
 namespace NSBMGO
@@ -80,8 +80,6 @@ namespace NSBMGO
                 cmd.CommandText = "INSERT INTO route(startCity,endCity,shuttleId,driverId,price) VALUES(@startCity,@endCity,@shuttleId,@driverId,@price)";
                 cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
                 cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
-                cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
-                cmd.Parameters.AddWithValue("@driverId", txtDriverID.Text);
                 cmd.Parameters.AddWithValue("@price", txtPrice.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Successfully Saved");
