@@ -30,11 +30,12 @@ namespace NSBMGO
         {
             tableLayoutPanel2.Controls.Clear();
 
-            string Reservecity = guna2TextBox1.Text;
+            string startcity = txtSearchStart.Text.Trim();
+            string endCity = txtSearchEnd.Text.Trim();
 
             ClassBLL objBLL = new ClassBLL();
 
-            DataTable dt = objBLL.GetItems(Reservecity);
+            DataTable dt = objBLL.GetItems(startcity,  endCity);
 
             if (dt != null)
             {
@@ -55,7 +56,7 @@ namespace NSBMGO
                             cards[i].Time.Text = dt.Rows[i]["depart_time"].ToString();
                             cards[i].startCity.Text = dt.Rows[i]["start_city"].ToString();
                             cards[i].endCity.Text = dt.Rows[i]["end_city"].ToString();
-                            cards[i].Price.Text = dt.Rows[i]["ticket_price"].ToString();
+                            cards[i].Price.Text = dt.Rows[i]["price"].ToString();
 
                             tableLayoutPanel2.Controls.Add(cards[i]);
                             cards[i].Anchor = AnchorStyles.None;
@@ -94,7 +95,9 @@ namespace NSBMGO
             return tableLayoutPanel.GetControlFromPosition(columnIndex, rowIndex) == null;
         }
 
-
-
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            generateReserveCards(); 
+        }
     }
 }
