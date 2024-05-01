@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 
 
@@ -13,9 +14,6 @@ namespace NSBMGO
     {
         private SqlDataAdapter adapter;
         private DataSet dataSet;
-        private OpenFileDialog openFileDialog1;
-        private byte[] imageData;
-        private string imagePath;
         private SqlConnection conn;
 
 
@@ -25,8 +23,6 @@ namespace NSBMGO
             conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
             adapter = new SqlDataAdapter();
             dataSet = new DataSet();
-            openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
             DataTable dataTable = new DataTable();
             shuttleDataGridView1.DataSource = dataTable;
 
@@ -36,49 +32,22 @@ namespace NSBMGO
 
         public bool TopLevel { get; internal set; }
 
-        private void btnAddImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                guna2PictureBox1.Image = new Bitmap(openFileDialog.FileName);
-            }
-
-
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                string imagePath = openFileDialog1.FileName;
-                imageData = File.ReadAllBytes(imagePath);
-
-                guna2PictureBox1.Image = Image.FromFile(imagePath);
-
-                this.imagePath = imagePath;
-            }
-
-        }
-
+        
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //string numberPlate = txtNumberPlate.Text;
-            //string startCity = txtStartCity.Text;
-            //string endCity = txtEndCity.Text;
-            //string departTime = txtDepartTime.Text;
-            //int seatCount = int.Parse(txtseatCount.Text);
-            //string driverName = txtDriverName.Text;
-            byte[] imageData = File.ReadAllBytes(imagePath);
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Shuttle(number_plate,start_city,end_city,depart_time,image) VALUES(@numberPlate,@startCity,@endCity,@departTime,@image)";
+                cmd.CommandText = "INSERT INTO Shuttle(number_plate,start_city,end_city,depart_time,price,driver_id,shuttle_id) VALUES(@numberPlate,@startCity,@endCity,@departTime,@price,@driverId,@shuttleId)";
                 cmd.Parameters.AddWithValue("@numberPlate", txtNumberPlate.Text);
                 cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
                 cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
                 cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
-                cmd.Parameters.AddWithValue("@seatCount", txtseatCount.Text);
-                cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
-                cmd.Parameters.AddWithValue("@image", imageData);
+                cmd.Parameters.AddWithValue("@price", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@driverId", txtDriverId.Text);
+                cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
 
                 cmd.ExecuteNonQuery();
 
@@ -100,8 +69,6 @@ namespace NSBMGO
 
         private void Shuttle_Load(object sender, EventArgs e)
         {
-            openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
 
             DataTable dataTable = new DataTable();
             shuttleDataGridView1.DataSource = dataTable;
@@ -123,15 +90,8 @@ namespace NSBMGO
         {
 
             conn.Open();
-            //string numberPlate = txtNumberPlate.Text;
-            //string startCity = txtStartCity.Text;
-            //string endCity = txtEndCity.Text;
-            //string departTime = txtDepartTime.Text;
-            //int seatCount = int.TryParse(txtseatCount.Text);
-            //string driverName = txtDriverName.Text;
-            byte[] imageData = File.ReadAllBytes(imagePath);
 
-            string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime, image = @image WHERE shuttle_id = @shuttleId";
+            string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime, price = @price,driver_id =@driverId  WHERE shuttle_id = @shuttleId";
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -139,9 +99,9 @@ namespace NSBMGO
             cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
             cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
             cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
-            cmd.Parameters.AddWithValue("@seatCount", txtseatCount.Text);
-            cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
-            cmd.Parameters.AddWithValue("@image", imageData);
+            cmd.Parameters.AddWithValue("@price", txtPrice.Text);
+            cmd.Parameters.AddWithValue("@driverId", txtDriverId.Text);
+            //cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
 
             if (shuttleDataGridView1.SelectedRows.Count > 0)
             {
@@ -239,13 +199,39 @@ namespace NSBMGO
             txtNumberPlate.Clear();
             txtStartCity.Clear();
             txtEndCity.Clear();
-            txtDriverName.Clear();
             txtDepartTime.Clear();
-            txtseatCount.Clear();
+            txtPrice.Clear();
+            txtDriverId.Clear();
+            txtShuttleID.Clear();   
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+
+            string query = "SELECT * FROM Shuttle WHERE start_city = @startcity AND end_city = @endcity";
+
+            cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
+            cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Successfully Saved");
+
+            adapter.SelectCommand = new SqlCommand("query", conn);
+            dataSet.Clear();
+            adapter.Fill(dataSet, "Shuttle");
+            shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
+            conn.Close();
+
+
 
         }
     }
