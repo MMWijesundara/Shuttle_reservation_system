@@ -53,8 +53,8 @@ namespace NSBMGO
             //string departTime = txtDepartTime.Text;
             //int seatCount = int.Parse(txtseatCount.Text);
             //string driverName = txtDriverName.Text;
-            string contactNo = txtContactNumber.Text;
-            int contactnumber = int.Parse(contactNo);
+            string contactNo = txtDriverId.Text;
+            int contactnumber = Convert.ToInt32(txtContactNumber.Text);
 
             byte[] imageData = File.ReadAllBytes(imagePath);
             try
@@ -62,11 +62,12 @@ namespace NSBMGO
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Driver(driverName,address,contactNumber,image) VALUES(@drivername,@driveraddress,@contactnum,@image)";
+                cmd.CommandText = "INSERT INTO Driver(driverName,address,contactNumber,image,driverId) VALUES(@drivername,@driveraddress,@contactnum,@image,@driverId)";
                 cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
                 cmd.Parameters.AddWithValue("@driveraddress", txtDriverAddress.Text);
                 cmd.Parameters.AddWithValue("@contactnum", contactnumber);
-         
+                cmd.Parameters.AddWithValue("@driverId", txtDriverId.Text);
+
                 cmd.Parameters.AddWithValue("@image", imageData);
 
                 cmd.ExecuteNonQuery();
@@ -92,10 +93,6 @@ namespace NSBMGO
            
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                guna2PictureBox1.Image = new Bitmap(openFileDialog.FileName);
-            }
 
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -133,20 +130,15 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //string drivername = txtNumberPlate.Text;
-            //string startCity = txtStartCity.Text;
-            //string endCity = txtEndCity.Text;
-            //string departTime = txtDepartTime.Text;
-            //int seatCount = int.TryParse(txtseatCount.Text);
-            //string driverName = txtDriverName.Text;
 
             string query = "UPDATE [Driver] SET driverName = @drivername, address = @address, contactNumber= @contactnumber,  image = @image WHERE driverId = @Id";
 
             SqlCommand cmd = new SqlCommand(query, conn);
-
+            int contactnumber = int.Parse(txtContactNumber.Text);
             cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
             cmd.Parameters.AddWithValue("@address", txtDriverAddress.Text);
-            cmd.Parameters.AddWithValue("@contactnumber", txtContactNumber.Text);
+            cmd.Parameters.AddWithValue("@contactnumber",contactnumber );
+
       
             cmd.Parameters.AddWithValue("@image", imageData);
 
@@ -244,7 +236,8 @@ namespace NSBMGO
 
             txtDriverName.Clear();
             txtDriverAddress.Clear();
-            txtContactNumber.Clear();
+            txtDriverId.Clear();
+            txtContactNumber.Clear();   
             guna2PictureBox1.Image=null;
         }
     }

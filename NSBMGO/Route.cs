@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using Guna.UI2.HtmlRenderer.Adapters;
+//using Guna.UI2.HtmlRenderer.Adapters;
 using System.Data.SqlClient;
 
 namespace NSBMGO
