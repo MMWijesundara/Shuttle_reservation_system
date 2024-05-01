@@ -20,6 +20,16 @@ namespace NSBMGO
             Draw1chairs();
             Draw2chairs();
             Draw3chairs();
+
+
+            pnChair1.BorderStyle = BorderStyle.Fixed3D;
+            pnChair2.BorderStyle = BorderStyle.Fixed3D;
+            pnChair3.BorderStyle = BorderStyle.Fixed3D;
+
+
+            pnChair1.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            pnChair2.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            pnChair3.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
         }
 
         private void Draw1chairs()
@@ -40,6 +50,7 @@ namespace NSBMGO
                     chair++;
 
                     lblchair.Click += Lblchair_Click;
+
 
                 }
             }
@@ -65,7 +76,7 @@ namespace NSBMGO
 
         private void Draw2chairs()
         {
-            int chair2 = 17;
+            int chair2 = 23;
             for (int z = 0; z < pnChair2.ColumnCount; z++)
             {
                 for (int x = 0; x < pnChair2.RowCount; x++)
@@ -104,8 +115,8 @@ namespace NSBMGO
 
         private void Draw3chairs()
         {
-            int chair3 = 33;
-            int maxColumns = 5; // Maximum number of columns
+            int chair3 = 45;
+            int maxColumns = 6; // Maximum number of columns
 
             for (int m = 0; m < Math.Min(pnChair3.ColumnCount, maxColumns); m++)
             {
@@ -123,6 +134,8 @@ namespace NSBMGO
                     chair3++;
 
                     lblchair3.Click += Lblchair3_Click;
+
+
                 }
             }
         }
@@ -199,102 +212,128 @@ namespace NSBMGO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StringBuilder selectedChairs = new StringBuilder();
+            DialogResult result = MessageBox.Show("confirm the selected labels..", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-            for (int i = 0; i < pnChair1.Controls.Count; i++)
+
+            if (result == DialogResult.OK)
             {
-                Label lblchair = pnChair1.Controls[i] as Label;
-                if (lblchair.BackColor == Color.SkyBlue)
+                StringBuilder selectedChairs = new StringBuilder();
+
+                for (int i = 0; i < pnChair1.Controls.Count; i++)
                 {
-                    lblchair.BackColor = Color.YellowGreen;
-                    int chair = int.Parse(lblchair.Text);
-
-                }
-            }
-
-            for (int i = 0; i < pnChair2.Controls.Count; i++)
-            {
-                Label lblchair2 = pnChair2.Controls[i] as Label;
-                if (lblchair2.BackColor == Color.SkyBlue)
-                {
-                    lblchair2.BackColor = Color.YellowGreen;
-                    int chair = int.Parse(lblchair2.Text);
-
-                }
-            }
-
-            for (int i = 0; i < pnChair3.Controls.Count; i++)
-            {
-
-                Label lblchair3 = pnChair3.Controls[i] as Label;
-                if (lblchair3.BackColor == Color.SkyBlue)
-                {
-                    lblchair3.BackColor = Color.YellowGreen;
-                    int chair = int.Parse(lblchair3.Text);
-
-                }
-
-
-            }
-            foreach (Control control in pnChair1.Controls)
-            {
-                if (control is Button btnChair && btnChair.BackColor == Color.YellowGreen)
-                {
-                    selectedChairs.Append(btnChair.Text).Append(", ");
-                }
-            }
-
-            foreach (Control control in pnChair2.Controls)
-            {
-                if (control is Button btnChair2 && btnChair2.BackColor == Color.YellowGreen)
-                {
-                    selectedChairs.Append(btnChair2.Text).Append(", ");
-                }
-            }
-
-            for (int i = 0; i < pnChair3.Controls.Count; i++)
-            {
-                Label lblchair3 = pnChair3.Controls[i] as Label;
-                if (lblchair3.BackColor == Color.SkyBlue)
-                {
-                    lblchair3.BackColor = Color.YellowGreen;
-                    int chair = int.Parse(lblchair3.Text);
-                }
-
-
-                int selectedLabelCount = 0;
-
-                foreach (Control control in pnChair3.Controls)
-                {
-                    if (control is Label label && label.BackColor == Color.YellowGreen)
+                    Label lblchair = pnChair1.Controls[i] as Label;
+                    if (lblchair.BackColor == Color.SkyBlue)
                     {
-                        selectedLabelCount++;
+                        lblchair.BackColor = Color.YellowGreen;
+                        int chair = int.Parse(lblchair.Text);
+
                     }
+                }
+
+                for (int i = 0; i < pnChair2.Controls.Count; i++)
+                {
+                    Label lblchair2 = pnChair2.Controls[i] as Label;
+                    if (lblchair2.BackColor == Color.SkyBlue)
+                    {
+                        lblchair2.BackColor = Color.YellowGreen;
+                        int chair = int.Parse(lblchair2.Text);
+
+                    }
+                }
+
+                for (int i = 0; i < pnChair3.Controls.Count; i++)
+                {
+
+                    Label lblchair3 = pnChair3.Controls[i] as Label;
+                    if (lblchair3.BackColor == Color.SkyBlue)
+                    {
+                        lblchair3.BackColor = Color.YellowGreen;
+                        int chair = int.Parse(lblchair3.Text);
+
+                    }
+
+
                 }
                 foreach (Control control in pnChair1.Controls)
                 {
-                    if (control is Label label && label.BackColor == Color.YellowGreen)
+                    if (control is Button btnChair && btnChair.BackColor == Color.YellowGreen)
                     {
-                        selectedLabelCount++;
+                        selectedChairs.Append(btnChair.Text).Append(", ");
                     }
                 }
+
                 foreach (Control control in pnChair2.Controls)
                 {
-                    if (control is Label label && label.BackColor == Color.YellowGreen)
+                    if (control is Button btnChair2 && btnChair2.BackColor == Color.YellowGreen)
                     {
-                        selectedLabelCount++;
+                        selectedChairs.Append(btnChair2.Text).Append(", ");
                     }
                 }
 
-                // Now selectedLabelCount contains the count of selected labels
+                for (int i = 0; i < pnChair3.Controls.Count; i++)
+                {
+                    Label lblchair3 = pnChair3.Controls[i] as Label;
+                    if (lblchair3.BackColor == Color.SkyBlue)
+                    {
+                        lblchair3.BackColor = Color.YellowGreen;
+                        int chair = int.Parse(lblchair3.Text);
+                    }
 
-                guna2TextBox7.Text = selectedLabelCount.ToString();
 
-                guna2Button38.Enabled = true;
+                    int selectedLabelCount = 0;
+
+                    foreach (Control control in pnChair3.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.YellowGreen)
+                        {
+                            selectedLabelCount++;
+                        }
+                    }
+                    foreach (Control control in pnChair1.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.YellowGreen)
+                        {
+                            selectedLabelCount++;
+                        }
+                    }
+                    foreach (Control control in pnChair2.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.YellowGreen)
+                        {
+                            selectedLabelCount++;
+
+                            guna2Button38.Enabled = true;
+                            guna2TextBox7.Text = selectedLabelCount.ToString();
+                        }
+                    }
+                }
+            }
+
+
+
+            else
+            {
+                DeselectAllLabels(pnChair1.Controls);
+                DeselectAllLabels(pnChair2.Controls);
+                DeselectAllLabels(pnChair3.Controls);
+            }
+
+                
+        }
+        private void DeselectAllLabels(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                if (control is Label label && label.BackColor == Color.SkyBlue)
+                {
+                    label.BackColor = Color.White;
+                }
             }
         }
     }
 
- 
     }
+
+ 
+    
 
