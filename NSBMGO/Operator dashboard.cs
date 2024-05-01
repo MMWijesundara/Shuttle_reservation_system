@@ -18,12 +18,12 @@ namespace NSBMGO
     {
         public Point mouseLocation;
 
-        private Timer hometimer;
+        
         public Operator_dashboard()
         {
             InitializeComponent();
-
-            timer1 = new Timer();
+            Timer timer1 = new Timer();
+            
             timer1.Interval = 1000; // Update every second (1000 milliseconds)
             timer1.Tick += Timer_Tick; // Attach event handler
             timer1.Start(); // Start the timer
@@ -36,10 +36,10 @@ namespace NSBMGO
         private void Operator_dashboard_Load(object sender, EventArgs e)
         {
 
-            int w = Screen.PrimaryScreen.Bounds.Width;
-            int h = Screen.PrimaryScreen.Bounds.Height;
-            this.Location = new Point(0, 0);
-            this.Size = new Size(w, h);
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //this.Size = new Size(w, h);
 
 
             Home home = new Home();
@@ -100,7 +100,7 @@ namespace NSBMGO
 
         private void btn_cancle_Click(object sender, EventArgs e)
         {
-            Cancel cancel = new Cancel();
+            Cancel_form cancel = new Cancel_form();
             cancel.TopLevel = false;
             cancel.FormBorderStyle = FormBorderStyle.None;
             cancel.Dock = DockStyle.Fill;
@@ -154,6 +154,45 @@ namespace NSBMGO
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_shuttle_Click(object sender, EventArgs e)
+        {
+            Shuttle shuttle = new Shuttle();
+            shuttle.formBorderStyle = FormBorderStyle.None;
+            shuttle.Dock = DockStyle.Fill;
+            shuttle.TopLevel = false;
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(shuttle);
+            shuttle.Show();
+        }
+
+        private void btn_driver_Click(object sender, EventArgs e)
+        {
+            Driver driver = new Driver();
+            driver.formBorderStyle = FormBorderStyle.None;
+            driver.Dock = DockStyle.Fill;
+            driver.TopLevel = false;
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(driver);
+            driver.Show();
+        }
+
+        private void btn_route_Click(object sender, EventArgs e)
+        {
+
+            Route route = new Route();
+            route.formBorderStyle = FormBorderStyle.None;
+            route.Dock = DockStyle.Fill;
+            route.TopLevel = false;
+            pnl_fill.Controls.Clear();
+            pnl_fill.Controls.Add(route);
+            route.Show();
         }
     }
 }

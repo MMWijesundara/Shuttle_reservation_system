@@ -10,12 +10,12 @@ namespace NSBMGO.Class_BLL
 {
     internal class ClassBLL
     {
-        public DataTable GetItems(string ResCity)
+        public DataTable GetItems(string startCity, string endCity)
         {
 			try
 			{
 				ClassDAL objDAL = new ClassDAL();
-				return objDAL.ReadItemsFromTable(ResCity);
+				return objDAL.ReadItemsFromTableShuttle( startCity,  endCity);
 				
 			}
 			catch (Exception)
@@ -24,5 +24,7 @@ namespace NSBMGO.Class_BLL
 				throw;
 			}
         }
+
+		
     }
 }
