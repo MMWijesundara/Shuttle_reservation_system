@@ -25,6 +25,7 @@ namespace NSBMGO
             dataSet = new DataSet();
             DataTable dataTable = new DataTable();
             shuttleDataGridView1.DataSource = dataTable;
+            shuttleDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
 

@@ -42,6 +42,7 @@
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtDriverId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDepartTime = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEndCity = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,9 +55,8 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.shuttleDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtShuttleID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.shuttleDataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -310,6 +310,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(907, 247);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2HtmlLabel9.AutoSize = false;
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(3, 212);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(197, 33);
+            this.guna2HtmlLabel9.TabIndex = 12;
+            this.guna2HtmlLabel9.Text = "Shuttle ID :";
+            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // txtDriverId
             // 
             this.txtDriverId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -547,37 +564,6 @@
             this.guna2HtmlLabel7.Text = "Driver ID :";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // shuttleDataGridView1
-            // 
-            this.shuttleDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shuttleDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.shuttleDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.shuttleDataGridView1.Location = new System.Drawing.Point(0, 68);
-            this.shuttleDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.shuttleDataGridView1.Name = "shuttleDataGridView1";
-            this.shuttleDataGridView1.RowHeadersWidth = 51;
-            this.shuttleDataGridView1.RowTemplate.Height = 24;
-            this.shuttleDataGridView1.Size = new System.Drawing.Size(1583, 414);
-            this.shuttleDataGridView1.TabIndex = 3;
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel9.AutoSize = false;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(3, 212);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(197, 33);
-            this.guna2HtmlLabel9.TabIndex = 12;
-            this.guna2HtmlLabel9.Text = "Shuttle ID :";
-            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txtShuttleID
             // 
             this.txtShuttleID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -600,6 +586,20 @@
             this.txtShuttleID.SelectedText = "";
             this.txtShuttleID.Size = new System.Drawing.Size(698, 29);
             this.txtShuttleID.TabIndex = 13;
+            // 
+            // shuttleDataGridView1
+            // 
+            this.shuttleDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shuttleDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.shuttleDataGridView1.Location = new System.Drawing.Point(0, 68);
+            this.shuttleDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.shuttleDataGridView1.Name = "shuttleDataGridView1";
+            this.shuttleDataGridView1.RowHeadersWidth = 51;
+            this.shuttleDataGridView1.RowTemplate.Height = 24;
+            this.shuttleDataGridView1.Size = new System.Drawing.Size(1504, 414);
+            this.shuttleDataGridView1.TabIndex = 3;
             // 
             // Shuttle
             // 

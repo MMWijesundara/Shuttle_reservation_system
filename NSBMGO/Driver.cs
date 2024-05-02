@@ -29,7 +29,9 @@ namespace NSBMGO
             openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
             DataTable dataTable = new DataTable();
-            guna2DataGridView1.DataSource = dataTable;
+            dataGridView1.DataSource = dataTable;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         internal FormBorderStyle formBorderStyle;
@@ -40,7 +42,7 @@ namespace NSBMGO
 
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -77,7 +79,7 @@ namespace NSBMGO
                 adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                 dataSet.Clear();
                 adapter.Fill(dataSet, "Driver");
-                guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
+                dataGridView1.DataSource = dataSet.Tables["Driver"];
                 conn.Close();
 
             }
@@ -114,7 +116,7 @@ namespace NSBMGO
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
 
             DataTable dataTable = new DataTable();
-            guna2DataGridView1.DataSource = dataTable;
+            dataGridView1.DataSource = dataTable;
 
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
 
@@ -124,7 +126,7 @@ namespace NSBMGO
             da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            guna2DataGridView1.DataSource = dt;
+            dataGridView1.DataSource = dt;
             conn.Close();
         }
 
@@ -142,12 +144,12 @@ namespace NSBMGO
       
             cmd.Parameters.AddWithValue("@image", imageData);
 
-            if (guna2DataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                int selectedRowIndex = guna2DataGridView1.SelectedRows[0].Index;
+                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
 
 
-                int Id = Convert.ToInt32(guna2DataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                int Id = Convert.ToInt32(dataGridView1.Rows[selectedRowIndex].Cells[0].Value);
 
 
                 cmd.Parameters.AddWithValue("@Id", Id);
@@ -163,7 +165,7 @@ namespace NSBMGO
                     adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                     dataSet.Clear();
                     adapter.Fill(dataSet, "Driver");
-                    guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
+                    dataGridView1.DataSource = dataSet.Tables["Driver"];
 
                     if (rowsAffected > 0 && secondRowsAffected > 0)
                     {
@@ -171,7 +173,7 @@ namespace NSBMGO
                         dataSet.Clear();
                         adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                         adapter.Fill(dataSet, "Driver");
-                        guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
+                        dataGridView1.DataSource = dataSet.Tables["Driver"];
                     }
                     else
                     {
@@ -187,12 +189,12 @@ namespace NSBMGO
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                int selectedRowIndex = guna2DataGridView1.SelectedRows[0].Index;
+                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
 
 
-                int driverId = Convert.ToInt32(guna2DataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                int driverId = Convert.ToInt32(dataGridView1.Rows[selectedRowIndex].Cells[0].Value);
 
                 string query = "DELETE FROM [Driver] WHERE driverId = @driverId";
 
@@ -211,7 +213,7 @@ namespace NSBMGO
                         dataSet.Clear();
                         adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                         adapter.Fill(dataSet, "Driver");
-                       guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
+                       dataGridView1.DataSource = dataSet.Tables["Driver"];
                     }
                     else
                     {
@@ -239,6 +241,50 @@ namespace NSBMGO
             txtDriverId.Clear();
             txtContactNumber.Clear();   
             guna2PictureBox1.Image=null;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchText = guna2TextBox1.Text.Trim();
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM [Driver] WHERE driverId = @driverId";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@driverId", searchText);
+
+                    adapter.SelectCommand = cmd;
+                    dataSet.Clear();
+                    adapter.Fill(dataSet, "Driver");
+                    dataGridView1.DataSource = dataSet.Tables["Driver"];
+
+                    if (dataGridView1.Rows.Count == 0)
+                    {
+                        MessageBox.Show("No matching records found.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error occurred: " + ex.Message);
+                    // Log the exception for debugging purposes
+                    Console.WriteLine("Search Error: " + ex.ToString());
+                }
+                finally
+                {
+                    if (conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter search criteria.");
+            }
         }
     }
 }
