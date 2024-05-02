@@ -212,25 +212,37 @@ namespace NSBMGO
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
 
-            string query = "SELECT * FROM Shuttle WHERE start_city = @startcity AND end_city = @endcity";
+                string query = "SELECT * FROM Shuttle WHERE start_city LIKE @startCity AND end_city LIKE @endCity";
 
-            cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
-            cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
+                // Concatenate "%" to the search text to perform partial matching
+                cmd.Parameters.AddWithValue("@startCity", "%" + txtSearchStart.Text + "%");
+                cmd.Parameters.AddWithValue("@endCity", "%" + txtSearchEnd.Text + "%");
 
-            cmd.ExecuteNonQuery();
+                cmd.CommandText = query;
 
-            MessageBox.Show("Successfully Saved");
+                adapter.SelectCommand = cmd;
 
-            adapter.SelectCommand = new SqlCommand("query", conn);
-            dataSet.Clear();
-            adapter.Fill(dataSet, "Shuttle");
-            shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
-            conn.Close();
+                // Fill the DataSet with the search results
+                dataSet.Clear(); // Clear the previous data
+                adapter.Fill(dataSet, "Shuttle");
 
+                // Bind the DataGridView to the search results
+                shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
 
 
         }

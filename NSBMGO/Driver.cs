@@ -240,5 +240,49 @@ namespace NSBMGO
             txtContactNumber.Clear();   
             guna2PictureBox1.Image=null;
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchText = guna2TextBox1.Text.Trim();
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM [Driver] WHERE driverId = @driverId";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@driverId", searchText);
+
+                    adapter.SelectCommand = cmd;
+                    dataSet.Clear();
+                    adapter.Fill(dataSet, "Driver");
+                    guna2DataGridView1.DataSource = dataSet.Tables["Driver"];
+
+                    if (guna2DataGridView1.Rows.Count == 0)
+                    {
+                        MessageBox.Show("No matching records found.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error occurred: " + ex.Message);
+                    // Log the exception for debugging purposes
+                    Console.WriteLine("Search Error: " + ex.ToString());
+                }
+                finally
+                {
+                    if (conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter search criteria.");
+            }
+        }
     }
 }

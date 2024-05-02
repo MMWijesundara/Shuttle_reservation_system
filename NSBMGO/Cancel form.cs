@@ -77,19 +77,7 @@ namespace NSBMGO
             }
         }
 
-        private void txtSearch_IconRightClick(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            generateCard();
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            generateCard();
-        }
-
+        
         private void generateCard()
         {
             DataTable dtTicket = generateTickets(txtSearch.Text);
@@ -119,6 +107,23 @@ namespace NSBMGO
 
         private void Cancel_form_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch_IconRightClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            generateCard();
 
         }
     }

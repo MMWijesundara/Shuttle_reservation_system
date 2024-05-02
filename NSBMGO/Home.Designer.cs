@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -162,7 +162,6 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(845, 905);
             this.guna2Panel1.TabIndex = 0;
             // 
@@ -248,10 +247,10 @@
             this.guna2PictureBox13.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox13.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.ErrorImage")));
             this.guna2PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.Image")));
+            this.guna2PictureBox13.ImageRotate = 0F;
             this.guna2PictureBox13.Location = new System.Drawing.Point(665, 553);
             this.guna2PictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
             this.guna2PictureBox13.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox13.TabIndex = 32;
@@ -262,10 +261,10 @@
             this.guna2PictureBox12.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox12.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.ErrorImage")));
             this.guna2PictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox12.Image")));
+            this.guna2PictureBox12.ImageRotate = 0F;
             this.guna2PictureBox12.Location = new System.Drawing.Point(535, 553);
             this.guna2PictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
             this.guna2PictureBox12.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox12.TabIndex = 31;
@@ -276,10 +275,10 @@
             this.guna2PictureBox11.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox11.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.ErrorImage")));
             this.guna2PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox11.Image")));
+            this.guna2PictureBox11.ImageRotate = 0F;
             this.guna2PictureBox11.Location = new System.Drawing.Point(393, 553);
             this.guna2PictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
             this.guna2PictureBox11.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox11.TabIndex = 30;
@@ -290,10 +289,10 @@
             this.guna2PictureBox10.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.ErrorImage")));
             this.guna2PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox10.Image")));
+            this.guna2PictureBox10.ImageRotate = 0F;
             this.guna2PictureBox10.Location = new System.Drawing.Point(263, 553);
             this.guna2PictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.ShadowDecoration.Parent = this.guna2PictureBox10;
             this.guna2PictureBox10.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox10.TabIndex = 29;
@@ -304,10 +303,10 @@
             this.guna2PictureBox9.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.ErrorImage")));
             this.guna2PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.Image")));
+            this.guna2PictureBox9.ImageRotate = 0F;
             this.guna2PictureBox9.Location = new System.Drawing.Point(141, 553);
             this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.ShadowDecoration.Parent = this.guna2PictureBox9;
             this.guna2PictureBox9.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox9.TabIndex = 28;
@@ -318,10 +317,10 @@
             this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.ErrorImage")));
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
+            this.guna2PictureBox8.ImageRotate = 0F;
             this.guna2PictureBox8.Location = new System.Drawing.Point(31, 553);
             this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
             this.guna2PictureBox8.Size = new System.Drawing.Size(55, 48);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox8.TabIndex = 27;
@@ -431,10 +430,10 @@
             // guna2PictureBox18
             // 
             this.guna2PictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox18.Image")));
+            this.guna2PictureBox18.ImageRotate = 0F;
             this.guna2PictureBox18.Location = new System.Drawing.Point(188, 64);
             this.guna2PictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox18.Name = "guna2PictureBox18";
-            this.guna2PictureBox18.ShadowDecoration.Parent = this.guna2PictureBox18;
             this.guna2PictureBox18.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox18.TabIndex = 25;
@@ -443,10 +442,10 @@
             // guna2PictureBox17
             // 
             this.guna2PictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox17.Image")));
+            this.guna2PictureBox17.ImageRotate = 0F;
             this.guna2PictureBox17.Location = new System.Drawing.Point(188, 255);
             this.guna2PictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox17.Name = "guna2PictureBox17";
-            this.guna2PictureBox17.ShadowDecoration.Parent = this.guna2PictureBox17;
             this.guna2PictureBox17.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox17.TabIndex = 24;
@@ -455,10 +454,10 @@
             // guna2PictureBox16
             // 
             this.guna2PictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox16.Image")));
+            this.guna2PictureBox16.ImageRotate = 0F;
             this.guna2PictureBox16.Location = new System.Drawing.Point(188, 105);
             this.guna2PictureBox16.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox16.Name = "guna2PictureBox16";
-            this.guna2PictureBox16.ShadowDecoration.Parent = this.guna2PictureBox16;
             this.guna2PictureBox16.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox16.TabIndex = 23;
@@ -469,10 +468,10 @@
             this.guna2PictureBox15.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox15.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox15.ErrorImage")));
             this.guna2PictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox15.Image")));
+            this.guna2PictureBox15.ImageRotate = 0F;
             this.guna2PictureBox15.Location = new System.Drawing.Point(188, 201);
             this.guna2PictureBox15.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox15.Name = "guna2PictureBox15";
-            this.guna2PictureBox15.ShadowDecoration.Parent = this.guna2PictureBox15;
             this.guna2PictureBox15.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox15.TabIndex = 22;
@@ -483,10 +482,10 @@
             this.guna2PictureBox14.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox14.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox14.ErrorImage")));
             this.guna2PictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox14.Image")));
+            this.guna2PictureBox14.ImageRotate = 0F;
             this.guna2PictureBox14.Location = new System.Drawing.Point(188, 304);
             this.guna2PictureBox14.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox14.Name = "guna2PictureBox14";
-            this.guna2PictureBox14.ShadowDecoration.Parent = this.guna2PictureBox14;
             this.guna2PictureBox14.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox14.TabIndex = 21;
@@ -573,10 +572,10 @@
             // 
             this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.ErrorImage")));
+            this.guna2PictureBox7.ImageRotate = 0F;
             this.guna2PictureBox7.Location = new System.Drawing.Point(188, 305);
             this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
             this.guna2PictureBox7.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 13;
@@ -584,10 +583,10 @@
             // 
             // guna2PictureBox6
             // 
+            this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(188, 255);
             this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 12;
@@ -595,10 +594,10 @@
             // 
             // guna2PictureBox5
             // 
+            this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(188, 202);
             this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 11;
@@ -607,10 +606,10 @@
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(188, 154);
             this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 10;
@@ -620,10 +619,10 @@
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.ErrorImage")));
+            this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(188, 64);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 9;
@@ -631,10 +630,10 @@
             // 
             // guna2PictureBox2
             // 
+            this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(188, 106);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 8;
@@ -645,10 +644,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(188, 20);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(27, 25);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
@@ -787,7 +786,6 @@
             this.guna2Panel2.Location = new System.Drawing.Point(1173, 0);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(708, 427);
             this.guna2Panel2.TabIndex = 1;
             // 
@@ -798,63 +796,52 @@
             this.txtMessage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtMessage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMessage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMessage.DisabledState.Parent = this.txtMessage;
             this.txtMessage.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMessage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMessage.FocusedState.Parent = this.txtMessage;
             this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMessage.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMessage.HoverState.Parent = this.txtMessage;
             this.txtMessage.Location = new System.Drawing.Point(19, 69);
             this.txtMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.PasswordChar = '\0';
             this.txtMessage.PlaceholderText = "Message";
             this.txtMessage.SelectedText = "";
-            this.txtMessage.ShadowDecoration.Parent = this.txtMessage;
             this.txtMessage.Size = new System.Drawing.Size(685, 42);
             this.txtMessage.TabIndex = 5;
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 123);
             this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(708, 304);
             this.guna2DataGridView1.TabIndex = 6;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -882,16 +869,12 @@
             this.txtDelete.AutoRoundedCorners = true;
             this.txtDelete.BorderRadius = 15;
             this.txtDelete.BorderThickness = 1;
-            this.txtDelete.CheckedState.Parent = this.txtDelete;
-            this.txtDelete.CustomImages.Parent = this.txtDelete;
             this.txtDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
             this.txtDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.txtDelete.HoverState.Parent = this.txtDelete;
             this.txtDelete.Location = new System.Drawing.Point(626, 11);
             this.txtDelete.Margin = new System.Windows.Forms.Padding(4);
             this.txtDelete.Name = "txtDelete";
-            this.txtDelete.ShadowDecoration.Parent = this.txtDelete;
             this.txtDelete.Size = new System.Drawing.Size(72, 32);
             this.txtDelete.TabIndex = 4;
             this.txtDelete.Text = "-Delete";
@@ -902,16 +885,12 @@
             this.txtAdd.AutoRoundedCorners = true;
             this.txtAdd.BorderRadius = 15;
             this.txtAdd.BorderThickness = 1;
-            this.txtAdd.CheckedState.Parent = this.txtAdd;
-            this.txtAdd.CustomImages.Parent = this.txtAdd;
             this.txtAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
             this.txtAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.txtAdd.HoverState.Parent = this.txtAdd;
             this.txtAdd.Location = new System.Drawing.Point(562, 11);
             this.txtAdd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAdd.Name = "txtAdd";
-            this.txtAdd.ShadowDecoration.Parent = this.txtAdd;
             this.txtAdd.Size = new System.Drawing.Size(56, 32);
             this.txtAdd.TabIndex = 2;
             this.txtAdd.Text = "+Add";
@@ -940,7 +919,6 @@
             this.guna2Panel3.Location = new System.Drawing.Point(1173, 485);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(708, 416);
             this.guna2Panel3.TabIndex = 2;
             // 
@@ -949,17 +927,13 @@
             this.guna2Button3.AutoRoundedCorners = true;
             this.guna2Button3.BorderRadius = 14;
             this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(182)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.Location = new System.Drawing.Point(498, 13);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(56, 30);
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -969,17 +943,13 @@
             this.guna2Button2.AutoRoundedCorners = true;
             this.guna2Button2.BorderRadius = 14;
             this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(111)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.Location = new System.Drawing.Point(626, 13);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(72, 30);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -987,7 +957,7 @@
             // homedatagridView
             // 
             this.homedatagridView.AutoGenerateColumns = false;
-            this.homedatagridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
+            this.homedatagridView.BackgroundColor = System.Drawing.Color.White;
             this.homedatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.homedatagridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dateDataGridViewTextBoxColumn,
@@ -1032,17 +1002,13 @@
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BorderRadius = 14;
             this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.Location = new System.Drawing.Point(562, 13);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(56, 30);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
