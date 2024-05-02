@@ -27,9 +27,5 @@ namespace NSBMGO
         {
             this.BackColor = Color.White;
         }
-
-        
-
-
     }
 }
