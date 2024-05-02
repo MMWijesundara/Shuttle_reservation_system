@@ -483,7 +483,7 @@
             this.pnChair1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.pnChair1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.pnChair1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.pnChair1.Size = new System.Drawing.Size(132, 425);
+            this.pnChair1.Size = new System.Drawing.Size(109, 425);
             this.pnChair1.TabIndex = 2;
             // 
             // pnChair2
@@ -491,7 +491,7 @@
             this.pnChair2.ColumnCount = 2;
             this.pnChair2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.pnChair2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pnChair2.Location = new System.Drawing.Point(206, 6);
+            this.pnChair2.Location = new System.Drawing.Point(228, 6);
             this.pnChair2.Name = "pnChair2";
             this.pnChair2.RowCount = 8;
             this.pnChair2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -502,22 +502,22 @@
             this.pnChair2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.pnChair2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.pnChair2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.pnChair2.Size = new System.Drawing.Size(135, 425);
+            this.pnChair2.Size = new System.Drawing.Size(113, 425);
             this.pnChair2.TabIndex = 3;
             // 
             // pnChair3
             // 
-            this.pnChair3.ColumnCount = 5;
-            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnChair3.ColumnCount = 6;
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.pnChair3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.pnChair3.Location = new System.Drawing.Point(12, 427);
             this.pnChair3.Name = "pnChair3";
             this.pnChair3.RowCount = 1;
             this.pnChair3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnChair3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.pnChair3.Size = new System.Drawing.Size(329, 62);
             this.pnChair3.TabIndex = 4;
             // 
