@@ -103,7 +103,6 @@ namespace NSBMGO
                             operator_Dashboard.lbl_top_name.Text = ("Hi," + username + ".");
                             operator_Dashboard.btn_shuttle.Hide();
                             operator_Dashboard.btn_driver.Hide();
-                            operator_Dashboard.btn_route.Hide();
 
                             break;
 
