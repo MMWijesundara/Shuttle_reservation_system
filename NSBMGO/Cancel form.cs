@@ -129,6 +129,7 @@ namespace NSBMGO
             }
             else
             {
+                tableLayoutPanel2.Controls.Clear();
                 generateCard();
 
             }
