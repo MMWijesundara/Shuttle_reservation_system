@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReserve = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,37 +65,37 @@
             this.guna2Panel2.BorderColor = System.Drawing.Color.Green;
             this.guna2Panel2.BorderRadius = 10;
             this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
+            this.guna2Panel2.Controls.Add(this.btnReserve);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.Controls.Add(this.tableLayoutPanel1);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(587, 284);
             this.guna2Panel2.TabIndex = 0;
             // 
-            // guna2Button1
+            // btnReserve
             // 
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.guna2Button1.Location = new System.Drawing.Point(401, 30);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(159, 32);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "+ Reserve";
-            this.guna2Button1.Click += new System.EventHandler(this.btn_Reserve);
-            this.guna2Button1.MouseHover += new System.EventHandler(this.guna2Panel2_MouseHover);
+            this.btnReserve.BorderRadius = 5;
+            this.btnReserve.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
+            this.btnReserve.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnReserve.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
+            this.btnReserve.Location = new System.Drawing.Point(401, 30);
+            this.btnReserve.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReserve.Name = "btnReserve";
+            this.btnReserve.Size = new System.Drawing.Size(159, 32);
+            this.btnReserve.TabIndex = 3;
+            this.btnReserve.Text = "+ Reserve";
+            this.btnReserve.Click += new System.EventHandler(this.btn_Reserve);
+            this.btnReserve.MouseHover += new System.EventHandler(this.guna2Panel2_MouseHover);
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(21, 32);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(137, 32);
             this.guna2HtmlLabel1.TabIndex = 1;
@@ -109,7 +109,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 69);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -123,7 +123,7 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 168);
             this.panel1.TabIndex = 0;
@@ -145,7 +145,7 @@
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(241, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -162,7 +162,7 @@
             this.guna2HtmlLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(4, 136);
-            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(127, 28);
             this.guna2HtmlLabel11.TabIndex = 9;
@@ -174,7 +174,7 @@
             this.Price.BackColor = System.Drawing.Color.Transparent;
             this.Price.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.Price.Location = new System.Drawing.Point(139, 137);
-            this.Price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Price.Margin = new System.Windows.Forms.Padding(4);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(64, 25);
             this.Price.TabIndex = 8;
@@ -186,7 +186,7 @@
             this.endCity.BackColor = System.Drawing.Color.Transparent;
             this.endCity.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.endCity.Location = new System.Drawing.Point(139, 103);
-            this.endCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.endCity.Margin = new System.Windows.Forms.Padding(4);
             this.endCity.Name = "endCity";
             this.endCity.Size = new System.Drawing.Size(88, 25);
             this.endCity.TabIndex = 7;
@@ -198,7 +198,7 @@
             this.guna2HtmlLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(4, 103);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(127, 25);
             this.guna2HtmlLabel8.TabIndex = 6;
@@ -210,7 +210,7 @@
             this.startCity.BackColor = System.Drawing.Color.Transparent;
             this.startCity.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.startCity.Location = new System.Drawing.Point(139, 70);
-            this.startCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.startCity.Margin = new System.Windows.Forms.Padding(4);
             this.startCity.Name = "startCity";
             this.startCity.Size = new System.Drawing.Size(51, 25);
             this.startCity.TabIndex = 5;
@@ -222,7 +222,7 @@
             this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(4, 70);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(127, 25);
             this.guna2HtmlLabel6.TabIndex = 6;
@@ -234,7 +234,7 @@
             this.Time.BackColor = System.Drawing.Color.Transparent;
             this.Time.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.Time.Location = new System.Drawing.Point(139, 37);
-            this.Time.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Time.Margin = new System.Windows.Forms.Padding(4);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(66, 25);
             this.Time.TabIndex = 3;
@@ -246,7 +246,7 @@
             this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(4, 37);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(127, 25);
             this.guna2HtmlLabel4.TabIndex = 2;
@@ -258,7 +258,7 @@
             this.numPlate.BackColor = System.Drawing.Color.Transparent;
             this.numPlate.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.numPlate.Location = new System.Drawing.Point(139, 4);
-            this.numPlate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numPlate.Margin = new System.Windows.Forms.Padding(4);
             this.numPlate.Name = "numPlate";
             this.numPlate.Size = new System.Drawing.Size(79, 25);
             this.numPlate.TabIndex = 1;
@@ -270,7 +270,7 @@
             this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(4, 4);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(127, 25);
             this.guna2HtmlLabel2.TabIndex = 9;
@@ -393,7 +393,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2Panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "reserve_card";
             this.Size = new System.Drawing.Size(589, 287);
             this.guna2Panel2.ResumeLayout(false);
@@ -408,7 +408,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
@@ -432,5 +431,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        public Guna.UI2.WinForms.Guna2Button btnReserve;
     }
 }

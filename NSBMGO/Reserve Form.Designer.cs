@@ -35,7 +35,6 @@
             this.txtSearchStart = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSearchEnd = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Button38 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,14 +54,15 @@
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotSeats = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnBook = new System.Windows.Forms.Button();
             this.pnChair3 = new System.Windows.Forms.TableLayoutPanel();
             this.pnChair2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnChair1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -190,17 +190,6 @@
             this.btnSearch.Text = "SEARCH";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.FillColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 60);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(507, 680);
-            this.guna2Panel2.TabIndex = 8;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -209,7 +198,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.guna2Button38);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnBook);
             this.panel1.Controls.Add(this.pnChair3);
             this.panel1.Controls.Add(this.pnChair2);
             this.panel1.Controls.Add(this.pnChair1);
@@ -256,10 +245,10 @@
             this.tableLayoutPanel2.Controls.Add(this.guna2TextBox3, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.guna2DateTimePicker1, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.guna2TextBox5, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.guna2TextBox7, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.txtTotSeats, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.guna2ComboBox1, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.guna2TextBox8, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.guna2TextBox9, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtPrice, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtTotPrice, 1, 9);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(372, 56);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 10;
@@ -276,7 +265,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(581, 502);
             this.tableLayoutPanel2.TabIndex = 9;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint_1);
             // 
             // guna2HtmlLabel12
             // 
@@ -491,8 +479,7 @@
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(229)))));
-            this.guna2DateTimePicker1.BorderRadius = 4;
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.BorderThickness = 1;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -534,27 +521,27 @@
             this.guna2TextBox5.Size = new System.Drawing.Size(400, 30);
             this.guna2TextBox5.TabIndex = 36;
             // 
-            // guna2TextBox7
+            // txtTotSeats
             // 
-            this.guna2TextBox7.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(171, 360);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(10);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(400, 30);
-            this.guna2TextBox7.TabIndex = 39;
+            this.txtTotSeats.BorderColor = System.Drawing.Color.Black;
+            this.txtTotSeats.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotSeats.DefaultText = "";
+            this.txtTotSeats.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotSeats.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotSeats.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotSeats.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotSeats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTotSeats.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotSeats.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotSeats.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotSeats.Location = new System.Drawing.Point(171, 360);
+            this.txtTotSeats.Margin = new System.Windows.Forms.Padding(10);
+            this.txtTotSeats.Name = "txtTotSeats";
+            this.txtTotSeats.PasswordChar = '\0';
+            this.txtTotSeats.PlaceholderText = "";
+            this.txtTotSeats.SelectedText = "";
+            this.txtTotSeats.Size = new System.Drawing.Size(400, 30);
+            this.txtTotSeats.TabIndex = 39;
             // 
             // guna2ComboBox1
             // 
@@ -573,60 +560,60 @@
             this.guna2ComboBox1.Size = new System.Drawing.Size(416, 36);
             this.guna2ComboBox1.TabIndex = 40;
             // 
-            // guna2TextBox8
+            // txtPrice
             // 
-            this.guna2TextBox8.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(171, 410);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(10);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(400, 30);
-            this.guna2TextBox8.TabIndex = 41;
+            this.txtPrice.BorderColor = System.Drawing.Color.Black;
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.DefaultText = "";
+            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Location = new System.Drawing.Point(171, 410);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(10);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PlaceholderText = "";
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.Size = new System.Drawing.Size(400, 30);
+            this.txtPrice.TabIndex = 41;
             // 
-            // guna2TextBox9
+            // txtTotPrice
             // 
-            this.guna2TextBox9.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(171, 460);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(10);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(400, 32);
-            this.guna2TextBox9.TabIndex = 42;
+            this.txtTotPrice.BorderColor = System.Drawing.Color.Black;
+            this.txtTotPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotPrice.DefaultText = "";
+            this.txtTotPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTotPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotPrice.Location = new System.Drawing.Point(171, 460);
+            this.txtTotPrice.Margin = new System.Windows.Forms.Padding(10);
+            this.txtTotPrice.Name = "txtTotPrice";
+            this.txtTotPrice.PasswordChar = '\0';
+            this.txtTotPrice.PlaceholderText = "";
+            this.txtTotPrice.SelectedText = "";
+            this.txtTotPrice.Size = new System.Drawing.Size(400, 32);
+            this.txtTotPrice.TabIndex = 42;
             // 
-            // button1
+            // btnBook
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.Location = new System.Drawing.Point(91, 580);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 60);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Book";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnBook.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnBook.Location = new System.Drawing.Point(556, 589);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(135, 60);
+            this.btnBook.TabIndex = 8;
+            this.btnBook.Text = "Book";
+            this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // pnChair3
             // 
@@ -682,15 +669,32 @@
             this.pnChair1.Size = new System.Drawing.Size(93, 347);
             this.pnChair1.TabIndex = 5;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 62);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(518, 678);
+            this.tableLayoutPanel3.TabIndex = 26;
+            // 
             // Reserve_Form
             // 
+            this.AcceptButton = this.btnSearch;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(1507, 750);
             this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -715,12 +719,11 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearchStart;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchEnd;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel pnChair3;
         private System.Windows.Forms.TableLayoutPanel pnChair2;
         private System.Windows.Forms.TableLayoutPanel pnChair1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -738,10 +741,11 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox txtTotSeats;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
         private Guna.UI2.WinForms.Guna2Button guna2Button38;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public Guna.UI2.WinForms.Guna2TextBox txtPrice;
+        public Guna.UI2.WinForms.Guna2TextBox txtTotPrice;
     }
 }
