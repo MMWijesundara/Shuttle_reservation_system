@@ -77,7 +77,7 @@ namespace NSBMGO
             }
         }
 
-        
+
         private void generateCard()
         {
             DataTable dtTicket = generateTickets(txtSearch.Text);
@@ -90,7 +90,7 @@ namespace NSBMGO
                     ticket.lblstuId.Text = dtTicket.Rows[i]["studentId"].ToString();
                     ticket.lblStuName.Text = dtTicket.Rows[i]["studentFullName"].ToString();
                     ticket.lblSeatCount.Text = dtTicket.Rows[i]["totalSeats"].ToString();
-                    ticket.lblTotPrice.Text = dtTicket.Rows[i]["totalPrice"].ToString();
+                    ticket.lblTotPrice.Text = dtTicket.Rows[i]["totalPrice"].ToString() + " LKR";
 
                     ticket.Anchor = AnchorStyles.None;
 
@@ -122,8 +122,15 @@ namespace NSBMGO
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtSearch.Text)) MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            generateCard();
+            if (string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                MessageBox.Show("Please enter StudentId", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                generateCard();
+
+            }
 
         }
     }
