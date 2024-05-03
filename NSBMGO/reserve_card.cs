@@ -13,8 +13,7 @@ namespace NSBMGO
 
         private void btn_Reserve(object sender, EventArgs e)
         {
-            reserve__2_ reservepnl = new reserve__2_();
-            reservepnl.Show();
+            
         }
 
         private void guna2Panel2_MouseHover(object sender, EventArgs e)

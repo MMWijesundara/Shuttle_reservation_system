@@ -1,7 +1,7 @@
-﻿using System.Data.SqlClient;
-using NSBMGO.Class_BLL;
+﻿using NSBMGO.Class_BLL;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -10,13 +10,38 @@ namespace NSBMGO
 {
     public partial class Reserve_Form : Form
     {
+
+        internal int SeatPrice;
+        internal int TotPrice;
+        internal int selectedLabelCount;
+
+
         public Reserve_Form()
         {
             InitializeComponent();
         }
+        private void Reserve_Form_Load(object sender, EventArgs e)
+        {
+            Draw1chairs();
+            Draw2chairs();
+            Draw3chairs();
 
 
+            pnChair1.BorderStyle = BorderStyle.Fixed3D;
+            pnChair2.BorderStyle = BorderStyle.Fixed3D;
+            pnChair3.BorderStyle = BorderStyle.Fixed3D;
 
+            guna2ComboBox1.Items.Add("Cash");
+            guna2ComboBox1.Items.Add("Online");
+
+
+        }
+
+
+        private void updateBookingForm()
+        {
+
+        }
 
 
 
@@ -31,7 +56,7 @@ namespace NSBMGO
 
         public void generateReserveCards()
         {
-            tableLayoutPanel2.Controls.Clear();
+            tableLayoutPanel3.Controls.Clear();
 
             string startcity = txtSearchStart.Text.Trim();
             string endCity = txtSearchEnd.Text.Trim();
@@ -39,6 +64,8 @@ namespace NSBMGO
             ClassBLL objBLL = new ClassBLL();
 
             DataTable dt = objBLL.GetItems(startcity, endCity);
+
+
 
             if (dt != null)
             {
@@ -56,12 +83,25 @@ namespace NSBMGO
                         //cards[i].icon = new Bitmap(ms);
 
                         cards[i].numPlate.Text = dt.Rows[i]["number_plate"].ToString();
-                        cards[i].Time.Text = dt.Rows[i]["depart_time"].ToString();
+
+                        string timeString = dt.Rows[i]["depart_time"].ToString();
+                        cards[i].Time.Text = timeString.Substring(0, 5); // Get first 5 characters (hh:mm)
+
+
+
                         cards[i].startCity.Text = dt.Rows[i]["start_city"].ToString();
                         cards[i].endCity.Text = dt.Rows[i]["end_city"].ToString();
-                        cards[i].Price.Text = dt.Rows[i]["price"].ToString();
+                        //cards[i].Price.Text = dt.Rows[i]["price"].ToString();
+                        //cards[i].Price.Text = string.Format("{0:C2} LKR", dt.Rows[i]["price"]);
+                        cards[i].Price.Text = (dt.Rows[i]["price"]).ToString() + " LKR";
 
-                        tableLayoutPanel2.Controls.Add(cards[i]);
+                        cards[i].btnReserve.Click += new EventHandler(btnReserve_Click);
+
+                        SeatPrice = Convert.ToInt32(dt.Rows[i]["price"]);
+
+
+
+                        tableLayoutPanel3.Controls.Add(cards[i]);
                         cards[i].Anchor = AnchorStyles.None;
 
                     }
@@ -74,6 +114,11 @@ namespace NSBMGO
             }
 
 
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            txtPrice.Text = SeatPrice.ToString();
         }
 
 
@@ -118,11 +163,6 @@ namespace NSBMGO
 
         }
 
-        private void tableLayoutPanel2_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -132,7 +172,7 @@ namespace NSBMGO
         {
 
         }
-   
+
         private void Draw1chairs()
         {
             int chair = 1; // Initialize chair to 1
@@ -155,6 +195,118 @@ namespace NSBMGO
 
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("confirm the selected labels..", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+               
+
+            if (result == DialogResult.OK)
+            {
+                StringBuilder selectedChairs = new StringBuilder();
+
+                for (int i = 0; i < pnChair1.Controls.Count; i++)
+                {
+                    Label lblchair = pnChair1.Controls[i] as Label;
+                    if (lblchair.BackColor == Color.SkyBlue)
+                    {
+                        lblchair.BackColor = Color.Red;
+                        int chair = int.Parse(lblchair.Text);
+
+                    }
+                }
+
+                for (int i = 0; i < pnChair2.Controls.Count; i++)
+                {
+                    Label lblchair2 = pnChair2.Controls[i] as Label;
+                    if (lblchair2.BackColor == Color.SkyBlue)
+                    {
+                        lblchair2.BackColor = Color.Red;
+                        int chair = int.Parse(lblchair2.Text);
+
+                    }
+                }
+
+                for (int i = 0; i < pnChair3.Controls.Count; i++)
+                {
+
+                    Label lblchair3 = pnChair3.Controls[i] as Label;
+                    if (lblchair3.BackColor == Color.SkyBlue)
+                    {
+                        lblchair3.BackColor = Color.Red;
+                        int chair = int.Parse(lblchair3.Text);
+
+                    }
+
+
+                }
+                foreach (Control control in pnChair1.Controls)
+                {
+                    if (control is Button btnChair && btnChair.BackColor == Color.Red)
+                    {
+                        selectedChairs.Append(btnChair.Text).Append(", ");
+                    }
+                }
+
+                foreach (Control control in pnChair2.Controls)
+                {
+                    if (control is Button btnChair2 && btnChair2.BackColor == Color.Red)
+                    {
+                        selectedChairs.Append(btnChair2.Text).Append(", ");
+                    }
+                }
+
+                for (int i = 0; i < pnChair3.Controls.Count; i++)
+                {
+                    Label lblchair3 = pnChair3.Controls[i] as Label;
+                    if (lblchair3.BackColor == Color.SkyBlue)
+                    {
+                        lblchair3.BackColor = Color.Red;
+                        int chair = int.Parse(lblchair3.Text);
+                    }
+
+
+                     selectedLabelCount = 0;
+
+                    foreach (Control control in pnChair3.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.Red)
+                        {
+                            selectedLabelCount++;
+                        }
+                    }
+                    foreach (Control control in pnChair1.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.Red)
+                        {
+                            selectedLabelCount++;
+                        }
+                    }
+                    foreach (Control control in pnChair2.Controls)
+                    {
+                        if (control is Label label && label.BackColor == Color.Red)
+                        {
+                            selectedLabelCount++;
+                            guna2Button38.Enabled = true;
+                            txtTotSeats.Text = selectedLabelCount.ToString();
+                            calDetails();
+                        }
+                    }
+                }
+            }
+
+
+
+            else
+            {
+                DeselectAllLabels(pnChair1.Controls);
+                DeselectAllLabels(pnChair2.Controls);
+                DeselectAllLabels(pnChair3.Controls);
+            }
+
+
         }
 
         private void Lblchair_Click(object sender, EventArgs e)
@@ -258,12 +410,11 @@ namespace NSBMGO
                 MessageBox.Show("The chair " + lblchair3.Text + "is choose.");
         }
 
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("confirm the selected labels..", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
+                
 
             if (result == DialogResult.OK)
             {
@@ -330,7 +481,7 @@ namespace NSBMGO
                     }
 
 
-                    int selectedLabelCount = 0;
+                     selectedLabelCount = 0;
 
                     foreach (Control control in pnChair3.Controls)
                     {
@@ -351,24 +502,17 @@ namespace NSBMGO
                         if (control is Label label && label.BackColor == Color.Red)
                         {
                             selectedLabelCount++;
+
                             guna2Button38.Enabled = true;
-                            guna2TextBox7.Text = selectedLabelCount.ToString();
+                            txtTotSeats.Text = selectedLabelCount.ToString();
+                            calDetails();
                         }
                     }
                 }
             }
-
-
-
-            else
-            {
-                DeselectAllLabels(pnChair1.Controls);
-                DeselectAllLabels(pnChair2.Controls);
-                DeselectAllLabels(pnChair3.Controls);
-            }
-
-
         }
+
+
         private void DeselectAllLabels(Control.ControlCollection controls)
         {
             foreach (Control control in controls)
@@ -380,8 +524,59 @@ namespace NSBMGO
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void guna2Button38_Click_1(object sender, EventArgs e)
         {
+            
+
+
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "INSERT INTO Ticket(studentId,phone,studentFullName,studentAddress,payementDate,payementMethod,batch,totalSeats,ticketPrice,totalPrice) VALUES(@studentid,@phone,@studentfullname,@studentaddress,@paymentdate,@payementMeth,@batch,@totalseats,@ppt,@totalprice)";
+
+                cmd.Parameters.AddWithValue("@studentid", guna2TextBox2.Text);
+                cmd.Parameters.AddWithValue("@phone", guna2TextBox4.Text);
+                cmd.Parameters.AddWithValue("@studentfullname", guna2TextBox1.Text);
+                cmd.Parameters.AddWithValue("@studentaddress", guna2TextBox3.Text);
+                cmd.Parameters.AddWithValue("@paymentdate", guna2DateTimePicker1.Value.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@batch", guna2TextBox5.Text);
+                cmd.Parameters.AddWithValue("@totalseats", txtTotSeats.Text);
+                cmd.Parameters.AddWithValue("@ppt", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@totalprice", txtTotPrice.Text);
+                cmd.Parameters.AddWithValue("@payementMeth", guna2ComboBox1.Text);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show($"Data inserted successfully!\n{rowsAffected} rows affected. ");
+                }
+                else
+                {
+                    MessageBox.Show("An error occurred while inserting data. Please try again.");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            
+        }
+
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+            
+            
+
+                
             DialogResult result = MessageBox.Show("confirm the selected labels..", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
 
@@ -473,79 +668,24 @@ namespace NSBMGO
                             selectedLabelCount++;
 
                             guna2Button38.Enabled = true;
-                            guna2TextBox7.Text = selectedLabelCount.ToString();
+                            txtTotSeats.Text = selectedLabelCount.ToString();
+                            calDetails();
                         }
                     }
                 }
             }
-
-           
         }
 
-        private void guna2Button38_Click_1(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string studentID = guna2TextBox2.Text;
-            string phone = guna2TextBox4.Text;
-            string studentfullname = guna2TextBox1.Text;
-            string studentaddress = guna2TextBox3.Text;
-            string paymentdate = guna2DateTimePicker1.Value.ToString("yyyy-MM-dd");
-            string batch = guna2TextBox5.Text;
-            string totalseats = guna2TextBox7.Text;
-            string pricepertickets = guna2TextBox8.Text;
-            string totalprice = guna2TextBox9.Text;
-
-
-            try
-            {
-                SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
-
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Ticket(student_id,phone,student_full_name," +
-                    "student_address,payment_date,batch,total_seats," +
-                    "ticket_price,total_price) VALUES(@studentid,@phone," +
-                                  "@studentfullname,@studentaddress,@paymentdate," +
-                                  "@batch,@totalseats," +
-                                  "@priceperttickets,@totalprice)";
-
-                cmd.Parameters.AddWithValue("@studentid", studentID);
-                cmd.Parameters.AddWithValue("@phone", phone);
-                cmd.Parameters.AddWithValue("@studentfullname", studentfullname);
-                cmd.Parameters.AddWithValue("@studentaddress", studentaddress);
-                cmd.Parameters.AddWithValue("@paymentdate", paymentdate);
-                cmd.Parameters.AddWithValue("@batch", batch);
-                cmd.Parameters.AddWithValue("@totalseats", totalseats);
-                cmd.Parameters.AddWithValue("@pricepartickets", pricepertickets);
-                cmd.Parameters.AddWithValue("@totalprice", totalprice);
-
-
-                cmd.ExecuteNonQuery();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
-            if (MessageBox.Show("Booking successfull.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
-            {
-                this.Close();
-
-            }
         }
 
-        private void Reserve_Form_Load(object sender, EventArgs e)
+        private void calDetails()
         {
-            Draw1chairs();
-            Draw2chairs();
-            Draw3chairs();
-
-
-            pnChair1.BorderStyle = BorderStyle.Fixed3D;
-            pnChair2.BorderStyle = BorderStyle.Fixed3D;
-            pnChair3.BorderStyle = BorderStyle.Fixed3D;
+            TotPrice = Convert.ToInt32(txtPrice.Text)* Convert.ToInt32(txtTotSeats.Text);
+            txtTotPrice.Text = TotPrice.ToString();
 
         }
     }
+
 }
