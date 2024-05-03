@@ -30,6 +30,8 @@ namespace NSBMGO
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
             DataTable dataTable = new DataTable();
             guna2DataGridView1.DataSource = dataTable;
+            guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         internal FormBorderStyle formBorderStyle;
