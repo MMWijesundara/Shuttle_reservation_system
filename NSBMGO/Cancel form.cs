@@ -91,7 +91,7 @@ namespace NSBMGO
                     ticket.lblStuName.Text = dtTicket.Rows[i]["studentFullName"].ToString();
                     ticket.lblSeatCount.Text = dtTicket.Rows[i]["totalSeats"].ToString();
 
-                    ticket.lblTotPrice.Text = Convert.ToDecimal(dtTicket.Rows[i]["price"]).ToString("F2") + " LKR";
+                    ticket.lblTotPrice.Text = Convert.ToDecimal(dtTicket.Rows[i]["totalPrice"]).ToString("F2") + " LKR";
 
                     ticket.Anchor = AnchorStyles.None;
 
