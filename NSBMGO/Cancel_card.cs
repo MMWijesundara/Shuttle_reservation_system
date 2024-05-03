@@ -19,6 +19,7 @@ namespace NSBMGO
 
         private void deleteTicket()
         {
+            
             SqlConnection conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Encrypt=True;");
             string query = "DELETE FROM [Ticket] WHERE studentId = @stuId";
 
@@ -31,7 +32,8 @@ namespace NSBMGO
             {
                 conn.Open();
                 int rowsAff = cmd.ExecuteNonQuery();
-                MessageBox.Show($"Deletion succesfull. {0} rows affected. ", rowsAff.ToString());
+                
+                MessageBox.Show($"Deletion succesfull. {rowsAff} rows affected. ");
                 conn.Close();
 
             }
