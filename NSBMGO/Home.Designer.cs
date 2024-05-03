@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -90,18 +89,12 @@
             this.txtDelete = new Guna.UI2.WinForms.Guna2Button();
             this.txtAdd = new Guna.UI2.WinForms.Guna2Button();
             this.label35 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.homedatagridView = new System.Windows.Forms.DataGridView();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.newsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.newsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nSBMGODataSet = new NSBMGO.NSBMGODataSet();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label32 = new System.Windows.Forms.Label();
-            this.newsTableAdapter = new NSBMGO.NSBMGODataSetTableAdapters.NewsTableAdapter();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
@@ -126,8 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homedatagridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nSBMGODataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -162,7 +153,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(845, 905);
+            this.guna2Panel1.Size = new System.Drawing.Size(911, 905);
             this.guna2Panel1.TabIndex = 0;
             // 
             // label31
@@ -783,10 +774,10 @@
             this.guna2Panel2.Controls.Add(this.txtDelete);
             this.guna2Panel2.Controls.Add(this.txtAdd);
             this.guna2Panel2.Controls.Add(this.label35);
-            this.guna2Panel2.Location = new System.Drawing.Point(1173, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(1091, 0);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(708, 427);
+            this.guna2Panel2.Size = new System.Drawing.Size(790, 427);
             this.guna2Panel2.TabIndex = 1;
             // 
             // txtMessage
@@ -806,33 +797,33 @@
             this.txtMessage.PasswordChar = '\0';
             this.txtMessage.PlaceholderText = "Message";
             this.txtMessage.SelectedText = "";
-            this.txtMessage.Size = new System.Drawing.Size(685, 42);
+            this.txtMessage.Size = new System.Drawing.Size(752, 42);
             this.txtMessage.TabIndex = 5;
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 123);
@@ -840,7 +831,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(708, 304);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(790, 304);
             this.guna2DataGridView1.TabIndex = 6;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -916,10 +907,10 @@
             this.guna2Panel3.Controls.Add(this.homedatagridView);
             this.guna2Panel3.Controls.Add(this.guna2Button1);
             this.guna2Panel3.Controls.Add(this.label32);
-            this.guna2Panel3.Location = new System.Drawing.Point(1173, 485);
+            this.guna2Panel3.Location = new System.Drawing.Point(1091, 485);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(708, 416);
+            this.guna2Panel3.Size = new System.Drawing.Size(790, 416);
             this.guna2Panel3.TabIndex = 2;
             // 
             // guna2Button3
@@ -956,46 +947,15 @@
             // 
             // homedatagridView
             // 
-            this.homedatagridView.AutoGenerateColumns = false;
             this.homedatagridView.BackgroundColor = System.Drawing.Color.White;
             this.homedatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.homedatagridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dateDataGridViewTextBoxColumn,
-            this.newsDataGridViewTextBoxColumn});
-            this.homedatagridView.DataSource = this.newsBindingSource;
             this.homedatagridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.homedatagridView.Location = new System.Drawing.Point(0, 91);
             this.homedatagridView.Margin = new System.Windows.Forms.Padding(4);
             this.homedatagridView.Name = "homedatagridView";
             this.homedatagridView.RowHeadersWidth = 51;
-            this.homedatagridView.Size = new System.Drawing.Size(708, 325);
+            this.homedatagridView.Size = new System.Drawing.Size(790, 325);
             this.homedatagridView.TabIndex = 3;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // newsDataGridViewTextBoxColumn
-            // 
-            this.newsDataGridViewTextBoxColumn.DataPropertyName = "News";
-            this.newsDataGridViewTextBoxColumn.HeaderText = "News";
-            this.newsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.newsDataGridViewTextBoxColumn.Name = "newsDataGridViewTextBoxColumn";
-            this.newsDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // newsBindingSource
-            // 
-            this.newsBindingSource.DataMember = "News";
-            this.newsBindingSource.DataSource = this.nSBMGODataSet;
-            // 
-            // nSBMGODataSet
-            // 
-            this.nSBMGODataSet.DataSetName = "NSBMGODataSet";
-            this.nSBMGODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2Button1
             // 
@@ -1023,10 +983,6 @@
             this.label32.Size = new System.Drawing.Size(84, 32);
             this.label32.TabIndex = 1;
             this.label32.Text = "NEWS";
-            // 
-            // newsTableAdapter
-            // 
-            this.newsTableAdapter.ClearBeforeFill = true;
             // 
             // Home
             // 
@@ -1068,8 +1024,6 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homedatagridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nSBMGODataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1131,17 +1085,11 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label32;
         public System.Windows.Forms.DataGridView homedatagridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn newsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource newsBindingSource;
-        private NSBMGODataSet nSBMGODataSet;
-        private NSBMGODataSetTableAdapters.NewsTableAdapter newsTableAdapter;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox18;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox17;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox16;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox15;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox14;
-        public System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
