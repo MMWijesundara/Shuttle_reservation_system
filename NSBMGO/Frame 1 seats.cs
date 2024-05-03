@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NSBMGO
 {
-    public partial class Reserve : UserControl
+    public partial class Frame_1_seats : UserControl
     {
-        public Reserve()
+        public Frame_1_seats()
         {
             InitializeComponent();
         }
