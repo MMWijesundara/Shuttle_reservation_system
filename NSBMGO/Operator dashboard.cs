@@ -194,5 +194,15 @@ namespace NSBMGO
             pnl_fill.Controls.Add(route);
             route.Show();
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
