@@ -42,6 +42,7 @@
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtDriverId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDepartTime = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEndCity = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,9 +55,10 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.shuttleDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtShuttleID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.shuttleDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -80,17 +82,21 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.ColumnCount = 5;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnCount = 7;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.14798F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.39947F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.71732F));
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel8, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtSearchStart, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtSearchEnd, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel10, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.guna2DateTimePicker1, 5, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -104,9 +110,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(191, 3);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(104, 3);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 47);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 25);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "START CITY :";
             // 
@@ -115,9 +121,9 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(811, 3);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(550, 3);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(89, 47);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(89, 25);
             this.guna2HtmlLabel8.TabIndex = 1;
             this.guna2HtmlLabel8.Text = "END CITY :";
             // 
@@ -132,13 +138,13 @@
             this.txtSearchStart.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchStart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStart.Location = new System.Drawing.Point(304, 4);
+            this.txtSearchStart.Location = new System.Drawing.Point(217, 4);
             this.txtSearchStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchStart.Name = "txtSearchStart";
             this.txtSearchStart.PasswordChar = '\0';
             this.txtSearchStart.PlaceholderText = "";
             this.txtSearchStart.SelectedText = "";
-            this.txtSearchStart.Size = new System.Drawing.Size(295, 45);
+            this.txtSearchStart.Size = new System.Drawing.Size(208, 45);
             this.txtSearchStart.TabIndex = 2;
             // 
             // txtSearchEnd
@@ -152,13 +158,13 @@
             this.txtSearchEnd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchEnd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchEnd.Location = new System.Drawing.Point(906, 4);
+            this.txtSearchEnd.Location = new System.Drawing.Point(645, 4);
             this.txtSearchEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchEnd.Name = "txtSearchEnd";
             this.txtSearchEnd.PasswordChar = '\0';
             this.txtSearchEnd.PlaceholderText = "";
             this.txtSearchEnd.SelectedText = "";
-            this.txtSearchEnd.Size = new System.Drawing.Size(295, 45);
+            this.txtSearchEnd.Size = new System.Drawing.Size(208, 45);
             this.txtSearchEnd.TabIndex = 3;
             // 
             // btnSearch
@@ -172,7 +178,7 @@
             this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(1265, 4);
+            this.btnSearch.Location = new System.Drawing.Point(1283, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(180, 45);
             this.btnSearch.TabIndex = 4;
@@ -309,6 +315,23 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(907, 247);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2HtmlLabel9.AutoSize = false;
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(3, 212);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(197, 33);
+            this.guna2HtmlLabel9.TabIndex = 12;
+            this.guna2HtmlLabel9.Text = "Shuttle ID :";
+            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtDriverId
             // 
@@ -547,37 +570,6 @@
             this.guna2HtmlLabel7.Text = "Driver ID :";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // shuttleDataGridView1
-            // 
-            this.shuttleDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shuttleDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.shuttleDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.shuttleDataGridView1.Location = new System.Drawing.Point(0, 68);
-            this.shuttleDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.shuttleDataGridView1.Name = "shuttleDataGridView1";
-            this.shuttleDataGridView1.RowHeadersWidth = 51;
-            this.shuttleDataGridView1.RowTemplate.Height = 24;
-            this.shuttleDataGridView1.Size = new System.Drawing.Size(1583, 414);
-            this.shuttleDataGridView1.TabIndex = 3;
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel9.AutoSize = false;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(3, 212);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(197, 33);
-            this.guna2HtmlLabel9.TabIndex = 12;
-            this.guna2HtmlLabel9.Text = "Shuttle ID :";
-            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txtShuttleID
             // 
             this.txtShuttleID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -600,6 +592,49 @@
             this.txtShuttleID.SelectedText = "";
             this.txtShuttleID.Size = new System.Drawing.Size(698, 29);
             this.txtShuttleID.TabIndex = 13;
+            // 
+            // shuttleDataGridView1
+            // 
+            this.shuttleDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shuttleDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.shuttleDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.shuttleDataGridView1.Location = new System.Drawing.Point(0, 68);
+            this.shuttleDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.shuttleDataGridView1.Name = "shuttleDataGridView1";
+            this.shuttleDataGridView1.RowHeadersWidth = 51;
+            this.shuttleDataGridView1.RowTemplate.Height = 24;
+            this.shuttleDataGridView1.Size = new System.Drawing.Size(1583, 414);
+            this.shuttleDataGridView1.TabIndex = 3;
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.AutoSize = false;
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(898, 3);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(122, 47);
+            this.guna2HtmlLabel10.TabIndex = 5;
+            this.guna2HtmlLabel10.Text = "DATE :";
+            this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.LightGray;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(1026, 3);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(210, 47);
+            this.guna2DateTimePicker1.TabIndex = 6;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 4, 20, 43, 19, 407);
             // 
             // Shuttle
             // 
@@ -655,5 +690,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2TextBox txtShuttleID;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
