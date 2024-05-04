@@ -45,8 +45,8 @@
             this.date = new System.Windows.Forms.Label();
             this.pnl_profile = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_top_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -322,20 +322,6 @@
             this.tableLayoutPanel2.TabIndex = 6;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // lbl_top_name
-            // 
-            this.lbl_top_name.AutoSize = false;
-            this.lbl_top_name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_top_name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_top_name.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_top_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
-            this.lbl_top_name.Location = new System.Drawing.Point(1, 1);
-            this.lbl_top_name.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_top_name.Name = "lbl_top_name";
-            this.lbl_top_name.Size = new System.Drawing.Size(373, 43);
-            this.lbl_top_name.TabIndex = 4;
-            this.lbl_top_name.Text = "Hi ";
-            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
@@ -350,6 +336,20 @@
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "Welcome to NSBMGO\r\n";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            // 
+            // lbl_top_name
+            // 
+            this.lbl_top_name.AutoSize = false;
+            this.lbl_top_name.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_top_name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_top_name.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_top_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
+            this.lbl_top_name.Location = new System.Drawing.Point(1, 1);
+            this.lbl_top_name.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_top_name.Name = "lbl_top_name";
+            this.lbl_top_name.Size = new System.Drawing.Size(373, 43);
+            this.lbl_top_name.TabIndex = 4;
+            this.lbl_top_name.Text = "Hi ";
             // 
             // panel3
             // 
