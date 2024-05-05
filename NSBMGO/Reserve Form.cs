@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices.ComTypes;
+using NSBMGO.Class_BLL;
+using System.Data;
 
 namespace NSBMGO
 {
@@ -16,6 +18,7 @@ namespace NSBMGO
         internal int selectedLabelCount;
         internal string stD;
         internal string enD;
+        internal string shutId;
 
         private List<Guna2HtmlLabel> selectedLabels = new List<Guna2HtmlLabel>();
 
@@ -36,24 +39,89 @@ namespace NSBMGO
 
         }
 
-
-
-
-
-
-        public void guna2TextBox1_IconRightClick(object sender, EventArgs e)
+        private void calDetails()
         {
+            TotPrice = Convert.ToInt32(txtTotalSeats.Text) * Convert.ToInt32(guna2TextBox10.Text);
+            guna2TextBox11.Text = TotPrice.ToString();
 
-            generateReserveCards();
         }
+
+
+
+
+
+
+
 
         public void generateReserveCards()
         {
 
+            tableLayoutPanel5.Controls.Clear();
+
+            string startcity = txtSearchStart.Text.Trim();
+            string endCity = txtSearchEnd.Text.Trim();
+
+            ClassBLL objBLL = new ClassBLL();
+
+            DataTable dt = objBLL.GetItems(startcity, endCity);
 
 
 
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    reserve_card[] cards = new reserve_card[dt.Rows.Count];
 
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+
+
+                        cards[i] = new reserve_card();
+
+                        //MemoryStream ms = new MemoryStream();
+                        //cards[i].icon = new Bitmap(ms);
+
+                        cards[i].numPlate.Text = dt.Rows[i]["number_plate"].ToString();
+
+                        string timeString = dt.Rows[i]["depart_time"].ToString();
+                        cards[i].Time.Text = timeString.Substring(0, 5); // Get first 5 characters (hh:mm)
+
+
+
+                        cards[i].startCity.Text = dt.Rows[i]["start_city"].ToString();
+                        cards[i].endCity.Text = dt.Rows[i]["end_city"].ToString();
+                        //cards[i].Price.Text = dt.Rows[i]["price"].ToString();
+                        //cards[i].Price.Text = string.Format("{0:C2} LKR", dt.Rows[i]["price"]);
+                        cards[i].Price.Text = (dt.Rows[i]["price"]).ToString() + " LKR";
+
+                        //cards[i].btnReserve.Click += new EventHandler(btnReserve_Click);
+
+                        SeatPrice = Convert.ToInt32(dt.Rows[i]["price"]);
+                        shutId = dt.Rows[i]["shuttle_id"].ToString();
+                        guna2TextBox10.Text = SeatPrice.ToString();
+
+
+
+                        tableLayoutPanel5.Controls.Add(cards[i]);
+                        cards[i].Anchor = AnchorStyles.None;
+
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("Empty Data.");
+                }
+            }
+
+
+
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            guna2TextBox10.Text = SeatPrice.ToString();
         }
         private void Label_Click(object sender, EventArgs e)
         {
@@ -101,6 +169,8 @@ namespace NSBMGO
                 {
                     lbl.BackColor = ColorTranslator.FromHtml("#ed0933");
                 }
+
+                calDetails();
             }
 
             else
@@ -134,7 +204,7 @@ namespace NSBMGO
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Ticket(studentId,phone,studentFullName,studentAddress,payementDate,payementMethod,batch,totalSeats,ticketPrice,totalPrice,travelStartDate,travelEndDate) VALUES(@studentid,@phone,@studentfullname,@studentaddress,@paymentdate,@payementMeth,@batch,@totalseats,@ppt,@totalprice,@startDate, @endDate)";
+                cmd.CommandText = "INSERT INTO Ticket(studentId,phone,studentFullName,studentAddress,payementDate,payementMethod,batch,totalSeats,ticketPrice,totalPrice,travelStartDate,travelEndDate,shuttleId) VALUES(@studentid,@phone,@studentfullname,@studentaddress,@paymentdate,@payementMeth,@batch,@totalseats,@ppt,@totalprice,@startDate, @endDate, @shutID)";
 
                 cmd.Parameters.AddWithValue("@studentid", guna2TextBox5.Text);
                 cmd.Parameters.AddWithValue("@phone", guna2TextBox4.Text);
@@ -148,6 +218,7 @@ namespace NSBMGO
                 cmd.Parameters.AddWithValue("@payementMeth", guna2ComboBox1.Text);
                 cmd.Parameters.AddWithValue("@startDate",stD);
                 cmd.Parameters.AddWithValue("@endDate", enD);
+                cmd.Parameters.AddWithValue("@shutID", shutId);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -172,7 +243,7 @@ namespace NSBMGO
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            generateReserveCards();
         }
     }
 
