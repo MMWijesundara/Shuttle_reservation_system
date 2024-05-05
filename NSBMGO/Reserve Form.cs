@@ -56,7 +56,7 @@ namespace NSBMGO
         public void generateReserveCards()
         {
 
-            tableLayoutPanel5.Controls.Clear();
+            tableLayoutPanel2.Controls.Clear();
 
             string startcity = txtSearchStart.Text.Trim();
             string endCity = txtSearchEnd.Text.Trim();
@@ -103,7 +103,7 @@ namespace NSBMGO
 
 
 
-                        tableLayoutPanel5.Controls.Add(cards[i]);
+                        tableLayoutPanel2.Controls.Add(cards[i]);
                         cards[i].Anchor = AnchorStyles.None;
 
                     }

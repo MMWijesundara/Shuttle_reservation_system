@@ -275,7 +275,7 @@
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(127, 25);
             this.guna2HtmlLabel2.TabIndex = 9;
-            this.guna2HtmlLabel2.Text = "Price :";
+            this.guna2HtmlLabel2.Text = "Number Plate :";
             // 
             // tableLayoutPanel4
             // 
