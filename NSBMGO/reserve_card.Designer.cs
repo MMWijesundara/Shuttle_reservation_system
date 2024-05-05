@@ -171,25 +171,25 @@
             // 
             // Price
             // 
-            this.Price.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Price.BackColor = System.Drawing.Color.Transparent;
+            this.Price.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Price.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.Price.Location = new System.Drawing.Point(139, 137);
+            this.Price.Location = new System.Drawing.Point(139, 136);
             this.Price.Margin = new System.Windows.Forms.Padding(4);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(64, 25);
+            this.Price.Size = new System.Drawing.Size(155, 28);
             this.Price.TabIndex = 8;
             this.Price.Text = "300 LKR";
             // 
             // endCity
             // 
-            this.endCity.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.endCity.BackColor = System.Drawing.Color.Transparent;
+            this.endCity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.endCity.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.endCity.Location = new System.Drawing.Point(139, 103);
             this.endCity.Margin = new System.Windows.Forms.Padding(4);
             this.endCity.Name = "endCity";
-            this.endCity.Size = new System.Drawing.Size(88, 25);
+            this.endCity.Size = new System.Drawing.Size(155, 25);
             this.endCity.TabIndex = 7;
             this.endCity.Text = "Kadawatha";
             // 
@@ -207,13 +207,13 @@
             // 
             // startCity
             // 
-            this.startCity.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.startCity.BackColor = System.Drawing.Color.Transparent;
+            this.startCity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startCity.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.startCity.Location = new System.Drawing.Point(139, 70);
             this.startCity.Margin = new System.Windows.Forms.Padding(4);
             this.startCity.Name = "startCity";
-            this.startCity.Size = new System.Drawing.Size(51, 25);
+            this.startCity.Size = new System.Drawing.Size(155, 25);
             this.startCity.TabIndex = 5;
             this.startCity.Text = "NSBM";
             // 
@@ -231,13 +231,13 @@
             // 
             // Time
             // 
-            this.Time.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Time.BackColor = System.Drawing.Color.Transparent;
+            this.Time.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Time.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.Time.Location = new System.Drawing.Point(139, 37);
             this.Time.Margin = new System.Windows.Forms.Padding(4);
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(66, 25);
+            this.Time.Size = new System.Drawing.Size(155, 25);
             this.Time.TabIndex = 3;
             this.Time.Text = "7:50 AM";
             // 
@@ -255,13 +255,13 @@
             // 
             // numPlate
             // 
-            this.numPlate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.numPlate.BackColor = System.Drawing.Color.Transparent;
+            this.numPlate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numPlate.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.numPlate.Location = new System.Drawing.Point(139, 4);
             this.numPlate.Margin = new System.Windows.Forms.Padding(4);
             this.numPlate.Name = "numPlate";
-            this.numPlate.Size = new System.Drawing.Size(79, 25);
+            this.numPlate.Size = new System.Drawing.Size(155, 25);
             this.numPlate.TabIndex = 1;
             this.numPlate.Text = "KN - 2937";
             // 
