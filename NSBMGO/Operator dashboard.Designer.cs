@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Operator_dashboard));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -57,7 +56,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -492,6 +490,7 @@
             this.Name = "Operator_dashboard";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Operator_dashboard_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -530,7 +529,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Timer timer1;
 
         public Guna.UI2.WinForms.Guna2Button btn_shuttle;
         public Guna.UI2.WinForms.Guna2Button btn_driver;
