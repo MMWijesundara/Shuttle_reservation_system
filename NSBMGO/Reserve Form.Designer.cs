@@ -35,8 +35,6 @@
             this.txtSearchStart = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSearchEnd = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -94,32 +92,32 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel64 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel63 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel64 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel62 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTotalSeats = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel63 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel61 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel60 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel59 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel58 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel57 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel56 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2HtmlLabel65 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel66 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel56 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel57 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel60 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel58 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel59 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -127,9 +125,9 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -142,36 +140,31 @@
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel2);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1507, 53);
+            this.guna2Panel1.Size = new System.Drawing.Size(1130, 43);
             this.guna2Panel1.TabIndex = 7;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.ColumnCount = 7;
+            this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.14798F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.39947F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.71732F));
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel8, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtSearchStart, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtSearchEnd, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel10, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2DateTimePicker1, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 4, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1507, 53);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1130, 43);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -179,10 +172,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(104, 2);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(146, 2);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 49);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(88, 21);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "START CITY :";
             // 
@@ -191,15 +184,17 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(550, 2);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(633, 2);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(89, 49);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(73, 21);
             this.guna2HtmlLabel8.TabIndex = 1;
             this.guna2HtmlLabel8.Text = "END CITY :";
             // 
             // txtSearchStart
             // 
+            this.txtSearchStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchStart.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchStart.DefaultText = "";
             this.txtSearchStart.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -209,17 +204,19 @@
             this.txtSearchStart.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchStart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStart.Location = new System.Drawing.Point(217, 4);
-            this.txtSearchStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchStart.Location = new System.Drawing.Point(238, 3);
+            this.txtSearchStart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSearchStart.Name = "txtSearchStart";
             this.txtSearchStart.PasswordChar = '\0';
             this.txtSearchStart.PlaceholderText = "";
             this.txtSearchStart.SelectedText = "";
-            this.txtSearchStart.Size = new System.Drawing.Size(208, 45);
+            this.txtSearchStart.Size = new System.Drawing.Size(232, 37);
             this.txtSearchStart.TabIndex = 2;
             // 
             // txtSearchEnd
             // 
+            this.txtSearchEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchEnd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchEnd.DefaultText = "";
             this.txtSearchEnd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -229,13 +226,13 @@
             this.txtSearchEnd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchEnd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchEnd.Location = new System.Drawing.Point(645, 4);
-            this.txtSearchEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchEnd.Location = new System.Drawing.Point(710, 3);
+            this.txtSearchEnd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSearchEnd.Name = "txtSearchEnd";
             this.txtSearchEnd.PasswordChar = '\0';
             this.txtSearchEnd.PlaceholderText = "";
             this.txtSearchEnd.SelectedText = "";
-            this.txtSearchEnd.Size = new System.Drawing.Size(208, 45);
+            this.txtSearchEnd.Size = new System.Drawing.Size(232, 37);
             this.txtSearchEnd.TabIndex = 3;
             // 
             // btnSearch
@@ -249,53 +246,23 @@
             this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(1283, 3);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Location = new System.Drawing.Point(969, 3);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(180, 46);
+            this.btnSearch.Size = new System.Drawing.Size(135, 37);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "SEARCH";
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.AutoSize = false;
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(897, 2);
-            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(123, 49);
-            this.guna2HtmlLabel10.TabIndex = 5;
-            this.guna2HtmlLabel10.Text = "DATE :";
-            this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.LightGray;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(1026, 2);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(210, 49);
-            this.guna2DateTimePicker1.TabIndex = 6;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 4, 20, 43, 19, 407);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 50);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(600, 688);
+            this.guna2Panel2.Size = new System.Drawing.Size(450, 559);
             this.guna2Panel2.TabIndex = 8;
             // 
             // guna2Panel3
@@ -307,10 +274,10 @@
             this.guna2Panel3.Controls.Add(this.btnAddSeats);
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel4);
             this.guna2Panel3.Controls.Add(this.tableLayoutPanel1);
-            this.guna2Panel3.Location = new System.Drawing.Point(605, 62);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel3.Location = new System.Drawing.Point(454, 50);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(340, 688);
+            this.guna2Panel3.Size = new System.Drawing.Size(255, 559);
             this.guna2Panel3.TabIndex = 9;
             // 
             // tableLayoutPanel3
@@ -343,8 +310,8 @@
             this.tableLayoutPanel3.Controls.Add(this.guna2HtmlLabel51, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.guna2HtmlLabel52, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.guna2HtmlLabel53, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(212, 78);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(159, 63);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 11;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
@@ -358,8 +325,8 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(109, 442);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(82, 359);
             this.tableLayoutPanel3.TabIndex = 4;
             // 
             // guna2HtmlLabel26
@@ -369,10 +336,10 @@
             this.guna2HtmlLabel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel26.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel26.Location = new System.Drawing.Point(58, 403);
-            this.guna2HtmlLabel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel26.Location = new System.Drawing.Point(43, 323);
+            this.guna2HtmlLabel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel26.Name = "guna2HtmlLabel26";
-            this.guna2HtmlLabel26.Size = new System.Drawing.Size(47, 36);
+            this.guna2HtmlLabel26.Size = new System.Drawing.Size(36, 33);
             this.guna2HtmlLabel26.TabIndex = 21;
             this.guna2HtmlLabel26.Text = "44";
             this.guna2HtmlLabel26.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,10 +352,10 @@
             this.guna2HtmlLabel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel27.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel27.Location = new System.Drawing.Point(4, 403);
-            this.guna2HtmlLabel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel27.Location = new System.Drawing.Point(3, 323);
+            this.guna2HtmlLabel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel27.Name = "guna2HtmlLabel27";
-            this.guna2HtmlLabel27.Size = new System.Drawing.Size(47, 36);
+            this.guna2HtmlLabel27.Size = new System.Drawing.Size(35, 33);
             this.guna2HtmlLabel27.TabIndex = 20;
             this.guna2HtmlLabel27.Text = "43";
             this.guna2HtmlLabel27.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,10 +368,10 @@
             this.guna2HtmlLabel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel28.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel28.Location = new System.Drawing.Point(58, 363);
-            this.guna2HtmlLabel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel28.Location = new System.Drawing.Point(43, 291);
+            this.guna2HtmlLabel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel28.Name = "guna2HtmlLabel28";
-            this.guna2HtmlLabel28.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel28.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel28.TabIndex = 19;
             this.guna2HtmlLabel28.Text = "42";
             this.guna2HtmlLabel28.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -417,10 +384,10 @@
             this.guna2HtmlLabel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel35.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel35.Location = new System.Drawing.Point(4, 363);
-            this.guna2HtmlLabel35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel35.Location = new System.Drawing.Point(3, 291);
+            this.guna2HtmlLabel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel35.Name = "guna2HtmlLabel35";
-            this.guna2HtmlLabel35.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel35.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel35.TabIndex = 18;
             this.guna2HtmlLabel35.Text = "41";
             this.guna2HtmlLabel35.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -433,10 +400,10 @@
             this.guna2HtmlLabel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel36.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel36.Location = new System.Drawing.Point(58, 323);
-            this.guna2HtmlLabel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel36.Location = new System.Drawing.Point(43, 259);
+            this.guna2HtmlLabel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel36.Name = "guna2HtmlLabel36";
-            this.guna2HtmlLabel36.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel36.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel36.TabIndex = 17;
             this.guna2HtmlLabel36.Text = "40";
             this.guna2HtmlLabel36.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -449,10 +416,10 @@
             this.guna2HtmlLabel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel37.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel37.Location = new System.Drawing.Point(4, 323);
-            this.guna2HtmlLabel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel37.Location = new System.Drawing.Point(3, 259);
+            this.guna2HtmlLabel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel37.Name = "guna2HtmlLabel37";
-            this.guna2HtmlLabel37.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel37.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel37.TabIndex = 16;
             this.guna2HtmlLabel37.Text = "39";
             this.guna2HtmlLabel37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -465,10 +432,10 @@
             this.guna2HtmlLabel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel38.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel38.Location = new System.Drawing.Point(58, 283);
-            this.guna2HtmlLabel38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel38.Location = new System.Drawing.Point(43, 227);
+            this.guna2HtmlLabel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel38.Name = "guna2HtmlLabel38";
-            this.guna2HtmlLabel38.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel38.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel38.TabIndex = 15;
             this.guna2HtmlLabel38.Text = "38";
             this.guna2HtmlLabel38.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,10 +448,10 @@
             this.guna2HtmlLabel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel39.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel39.Location = new System.Drawing.Point(4, 283);
-            this.guna2HtmlLabel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel39.Location = new System.Drawing.Point(3, 227);
+            this.guna2HtmlLabel39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel39.Name = "guna2HtmlLabel39";
-            this.guna2HtmlLabel39.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel39.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel39.TabIndex = 14;
             this.guna2HtmlLabel39.Text = "37";
             this.guna2HtmlLabel39.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -497,10 +464,10 @@
             this.guna2HtmlLabel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel40.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel40.Location = new System.Drawing.Point(58, 243);
-            this.guna2HtmlLabel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel40.Location = new System.Drawing.Point(43, 195);
+            this.guna2HtmlLabel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel40.Name = "guna2HtmlLabel40";
-            this.guna2HtmlLabel40.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel40.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel40.TabIndex = 13;
             this.guna2HtmlLabel40.Text = "36";
             this.guna2HtmlLabel40.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -513,10 +480,10 @@
             this.guna2HtmlLabel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel41.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel41.Location = new System.Drawing.Point(4, 243);
-            this.guna2HtmlLabel41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel41.Location = new System.Drawing.Point(3, 195);
+            this.guna2HtmlLabel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel41.Name = "guna2HtmlLabel41";
-            this.guna2HtmlLabel41.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel41.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel41.TabIndex = 12;
             this.guna2HtmlLabel41.Text = "35";
             this.guna2HtmlLabel41.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -529,10 +496,10 @@
             this.guna2HtmlLabel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel42.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel42.Location = new System.Drawing.Point(58, 203);
-            this.guna2HtmlLabel42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel42.Location = new System.Drawing.Point(43, 163);
+            this.guna2HtmlLabel42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel42.Name = "guna2HtmlLabel42";
-            this.guna2HtmlLabel42.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel42.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel42.TabIndex = 11;
             this.guna2HtmlLabel42.Text = "34";
             this.guna2HtmlLabel42.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -545,10 +512,10 @@
             this.guna2HtmlLabel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel43.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel43.Location = new System.Drawing.Point(4, 203);
-            this.guna2HtmlLabel43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel43.Location = new System.Drawing.Point(3, 163);
+            this.guna2HtmlLabel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel43.Name = "guna2HtmlLabel43";
-            this.guna2HtmlLabel43.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel43.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel43.TabIndex = 10;
             this.guna2HtmlLabel43.Text = "33";
             this.guna2HtmlLabel43.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -561,10 +528,10 @@
             this.guna2HtmlLabel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel44.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel44.Location = new System.Drawing.Point(58, 163);
-            this.guna2HtmlLabel44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel44.Location = new System.Drawing.Point(43, 131);
+            this.guna2HtmlLabel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel44.Name = "guna2HtmlLabel44";
-            this.guna2HtmlLabel44.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel44.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel44.TabIndex = 9;
             this.guna2HtmlLabel44.Text = "32";
             this.guna2HtmlLabel44.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,10 +544,10 @@
             this.guna2HtmlLabel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel45.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel45.Location = new System.Drawing.Point(4, 163);
-            this.guna2HtmlLabel45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel45.Location = new System.Drawing.Point(3, 131);
+            this.guna2HtmlLabel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel45.Name = "guna2HtmlLabel45";
-            this.guna2HtmlLabel45.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel45.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel45.TabIndex = 8;
             this.guna2HtmlLabel45.Text = "31";
             this.guna2HtmlLabel45.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -593,10 +560,10 @@
             this.guna2HtmlLabel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel46.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel46.Location = new System.Drawing.Point(58, 123);
-            this.guna2HtmlLabel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel46.Location = new System.Drawing.Point(43, 99);
+            this.guna2HtmlLabel46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel46.Name = "guna2HtmlLabel46";
-            this.guna2HtmlLabel46.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel46.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel46.TabIndex = 7;
             this.guna2HtmlLabel46.Text = "30";
             this.guna2HtmlLabel46.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -609,10 +576,10 @@
             this.guna2HtmlLabel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel47.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel47.Location = new System.Drawing.Point(4, 123);
-            this.guna2HtmlLabel47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel47.Location = new System.Drawing.Point(3, 99);
+            this.guna2HtmlLabel47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel47.Name = "guna2HtmlLabel47";
-            this.guna2HtmlLabel47.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel47.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel47.TabIndex = 6;
             this.guna2HtmlLabel47.Text = "29";
             this.guna2HtmlLabel47.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -625,10 +592,10 @@
             this.guna2HtmlLabel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel48.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel48.Location = new System.Drawing.Point(58, 83);
-            this.guna2HtmlLabel48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel48.Location = new System.Drawing.Point(43, 67);
+            this.guna2HtmlLabel48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel48.Name = "guna2HtmlLabel48";
-            this.guna2HtmlLabel48.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel48.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel48.TabIndex = 5;
             this.guna2HtmlLabel48.Text = "28";
             this.guna2HtmlLabel48.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -641,10 +608,10 @@
             this.guna2HtmlLabel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel49.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel49.Location = new System.Drawing.Point(4, 83);
-            this.guna2HtmlLabel49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel49.Location = new System.Drawing.Point(3, 67);
+            this.guna2HtmlLabel49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel49.Name = "guna2HtmlLabel49";
-            this.guna2HtmlLabel49.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel49.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel49.TabIndex = 4;
             this.guna2HtmlLabel49.Text = "27";
             this.guna2HtmlLabel49.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -657,10 +624,10 @@
             this.guna2HtmlLabel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel50.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel50.Location = new System.Drawing.Point(58, 43);
-            this.guna2HtmlLabel50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel50.Location = new System.Drawing.Point(43, 35);
+            this.guna2HtmlLabel50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel50.Name = "guna2HtmlLabel50";
-            this.guna2HtmlLabel50.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel50.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel50.TabIndex = 3;
             this.guna2HtmlLabel50.Text = "26";
             this.guna2HtmlLabel50.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -673,10 +640,10 @@
             this.guna2HtmlLabel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel51.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel51.Location = new System.Drawing.Point(4, 43);
-            this.guna2HtmlLabel51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel51.Location = new System.Drawing.Point(3, 35);
+            this.guna2HtmlLabel51.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel51.Name = "guna2HtmlLabel51";
-            this.guna2HtmlLabel51.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel51.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel51.TabIndex = 2;
             this.guna2HtmlLabel51.Text = "25";
             this.guna2HtmlLabel51.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -689,10 +656,10 @@
             this.guna2HtmlLabel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel52.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel52.Location = new System.Drawing.Point(4, 3);
-            this.guna2HtmlLabel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel52.Location = new System.Drawing.Point(3, 3);
+            this.guna2HtmlLabel52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel52.Name = "guna2HtmlLabel52";
-            this.guna2HtmlLabel52.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel52.Size = new System.Drawing.Size(35, 27);
             this.guna2HtmlLabel52.TabIndex = 0;
             this.guna2HtmlLabel52.Text = "23";
             this.guna2HtmlLabel52.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -705,10 +672,10 @@
             this.guna2HtmlLabel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel53.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel53.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel53.Location = new System.Drawing.Point(58, 3);
-            this.guna2HtmlLabel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel53.Location = new System.Drawing.Point(43, 3);
+            this.guna2HtmlLabel53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel53.Name = "guna2HtmlLabel53";
-            this.guna2HtmlLabel53.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel53.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel53.TabIndex = 1;
             this.guna2HtmlLabel53.Text = "24";
             this.guna2HtmlLabel53.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -721,10 +688,10 @@
             this.btnAddSeats.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(214)))), ((int)(((byte)(251)))));
             this.btnAddSeats.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSeats.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(140)))), ((int)(((byte)(224)))));
-            this.btnAddSeats.Location = new System.Drawing.Point(79, 601);
-            this.btnAddSeats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddSeats.Location = new System.Drawing.Point(59, 488);
+            this.btnAddSeats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddSeats.Name = "btnAddSeats";
-            this.btnAddSeats.Size = new System.Drawing.Size(180, 46);
+            this.btnAddSeats.Size = new System.Drawing.Size(135, 37);
             this.btnAddSeats.TabIndex = 3;
             this.btnAddSeats.Text = "ADD SEATS";
             this.btnAddSeats.Click += new System.EventHandler(this.btnAddSeats_Click);
@@ -747,12 +714,12 @@
             this.tableLayoutPanel4.Controls.Add(this.guna2HtmlLabel31, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.guna2HtmlLabel30, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.guna2HtmlLabel29, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 526);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(16, 427);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(300, 41);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(225, 33);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // guna2HtmlLabel34
@@ -762,10 +729,10 @@
             this.guna2HtmlLabel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel34.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel34.Location = new System.Drawing.Point(151, 3);
-            this.guna2HtmlLabel34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel34.Location = new System.Drawing.Point(114, 3);
+            this.guna2HtmlLabel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel34.Name = "guna2HtmlLabel34";
-            this.guna2HtmlLabel34.Size = new System.Drawing.Size(42, 35);
+            this.guna2HtmlLabel34.Size = new System.Drawing.Size(32, 27);
             this.guna2HtmlLabel34.TabIndex = 7;
             this.guna2HtmlLabel34.Text = "48";
             this.guna2HtmlLabel34.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -778,10 +745,10 @@
             this.guna2HtmlLabel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel33.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel33.Location = new System.Drawing.Point(200, 3);
-            this.guna2HtmlLabel33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel33.Location = new System.Drawing.Point(151, 3);
+            this.guna2HtmlLabel33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel33.Name = "guna2HtmlLabel33";
-            this.guna2HtmlLabel33.Size = new System.Drawing.Size(42, 35);
+            this.guna2HtmlLabel33.Size = new System.Drawing.Size(32, 27);
             this.guna2HtmlLabel33.TabIndex = 6;
             this.guna2HtmlLabel33.Text = "49";
             this.guna2HtmlLabel33.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -794,10 +761,10 @@
             this.guna2HtmlLabel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel32.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel32.Location = new System.Drawing.Point(249, 3);
-            this.guna2HtmlLabel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel32.Location = new System.Drawing.Point(188, 3);
+            this.guna2HtmlLabel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel32.Name = "guna2HtmlLabel32";
-            this.guna2HtmlLabel32.Size = new System.Drawing.Size(47, 35);
+            this.guna2HtmlLabel32.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel32.TabIndex = 5;
             this.guna2HtmlLabel32.Text = "50";
             this.guna2HtmlLabel32.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -810,10 +777,10 @@
             this.guna2HtmlLabel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel31.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel31.Location = new System.Drawing.Point(4, 3);
-            this.guna2HtmlLabel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel31.Location = new System.Drawing.Point(3, 3);
+            this.guna2HtmlLabel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel31.Name = "guna2HtmlLabel31";
-            this.guna2HtmlLabel31.Size = new System.Drawing.Size(42, 35);
+            this.guna2HtmlLabel31.Size = new System.Drawing.Size(32, 27);
             this.guna2HtmlLabel31.TabIndex = 4;
             this.guna2HtmlLabel31.Text = "45";
             this.guna2HtmlLabel31.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -826,10 +793,10 @@
             this.guna2HtmlLabel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel30.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel30.Location = new System.Drawing.Point(53, 3);
-            this.guna2HtmlLabel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel30.Location = new System.Drawing.Point(40, 3);
+            this.guna2HtmlLabel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            this.guna2HtmlLabel30.Size = new System.Drawing.Size(42, 35);
+            this.guna2HtmlLabel30.Size = new System.Drawing.Size(32, 27);
             this.guna2HtmlLabel30.TabIndex = 3;
             this.guna2HtmlLabel30.Text = "46";
             this.guna2HtmlLabel30.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -842,10 +809,10 @@
             this.guna2HtmlLabel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel29.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel29.Location = new System.Drawing.Point(102, 3);
-            this.guna2HtmlLabel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel29.Location = new System.Drawing.Point(77, 3);
+            this.guna2HtmlLabel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            this.guna2HtmlLabel29.Size = new System.Drawing.Size(42, 35);
+            this.guna2HtmlLabel29.Size = new System.Drawing.Size(32, 27);
             this.guna2HtmlLabel29.TabIndex = 2;
             this.guna2HtmlLabel29.Text = "47";
             this.guna2HtmlLabel29.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -881,8 +848,8 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel3, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 78);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 63);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
@@ -896,8 +863,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(105, 442);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(79, 359);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // guna2HtmlLabel25
@@ -907,10 +874,10 @@
             this.guna2HtmlLabel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel25.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel25.Location = new System.Drawing.Point(56, 403);
-            this.guna2HtmlLabel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel25.Location = new System.Drawing.Point(42, 323);
+            this.guna2HtmlLabel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
-            this.guna2HtmlLabel25.Size = new System.Drawing.Size(45, 36);
+            this.guna2HtmlLabel25.Size = new System.Drawing.Size(34, 33);
             this.guna2HtmlLabel25.TabIndex = 21;
             this.guna2HtmlLabel25.Text = "22";
             this.guna2HtmlLabel25.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -923,10 +890,10 @@
             this.guna2HtmlLabel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel24.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel24.Location = new System.Drawing.Point(4, 403);
-            this.guna2HtmlLabel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel24.Location = new System.Drawing.Point(3, 323);
+            this.guna2HtmlLabel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(45, 36);
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(34, 33);
             this.guna2HtmlLabel24.TabIndex = 20;
             this.guna2HtmlLabel24.Text = "21";
             this.guna2HtmlLabel24.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -939,10 +906,10 @@
             this.guna2HtmlLabel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel23.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(56, 363);
-            this.guna2HtmlLabel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(42, 291);
+            this.guna2HtmlLabel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel23.TabIndex = 19;
             this.guna2HtmlLabel23.Text = "20";
             this.guna2HtmlLabel23.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -955,10 +922,10 @@
             this.guna2HtmlLabel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel22.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel22.Location = new System.Drawing.Point(4, 363);
-            this.guna2HtmlLabel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(3, 291);
+            this.guna2HtmlLabel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel22.TabIndex = 18;
             this.guna2HtmlLabel22.Text = "19";
             this.guna2HtmlLabel22.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -971,10 +938,10 @@
             this.guna2HtmlLabel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel21.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(56, 323);
-            this.guna2HtmlLabel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(42, 259);
+            this.guna2HtmlLabel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel21.TabIndex = 17;
             this.guna2HtmlLabel21.Text = "18";
             this.guna2HtmlLabel21.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -987,10 +954,10 @@
             this.guna2HtmlLabel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel20.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(4, 323);
-            this.guna2HtmlLabel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(3, 259);
+            this.guna2HtmlLabel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel20.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel20.TabIndex = 16;
             this.guna2HtmlLabel20.Text = "17";
             this.guna2HtmlLabel20.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1003,10 +970,10 @@
             this.guna2HtmlLabel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(56, 283);
-            this.guna2HtmlLabel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(42, 227);
+            this.guna2HtmlLabel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel19.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel19.TabIndex = 15;
             this.guna2HtmlLabel19.Text = "16";
             this.guna2HtmlLabel19.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1019,10 +986,10 @@
             this.guna2HtmlLabel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel18.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(4, 283);
-            this.guna2HtmlLabel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(3, 227);
+            this.guna2HtmlLabel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel18.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel18.TabIndex = 14;
             this.guna2HtmlLabel18.Text = "15";
             this.guna2HtmlLabel18.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1035,10 +1002,10 @@
             this.guna2HtmlLabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel17.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(56, 243);
-            this.guna2HtmlLabel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(42, 195);
+            this.guna2HtmlLabel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel17.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel17.TabIndex = 13;
             this.guna2HtmlLabel17.Text = "14";
             this.guna2HtmlLabel17.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1051,10 +1018,10 @@
             this.guna2HtmlLabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(4, 243);
-            this.guna2HtmlLabel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(3, 195);
+            this.guna2HtmlLabel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel16.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel16.TabIndex = 12;
             this.guna2HtmlLabel16.Text = "13";
             this.guna2HtmlLabel16.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1067,10 +1034,10 @@
             this.guna2HtmlLabel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(56, 203);
-            this.guna2HtmlLabel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(42, 163);
+            this.guna2HtmlLabel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel15.TabIndex = 11;
             this.guna2HtmlLabel15.Text = "12";
             this.guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1083,10 +1050,10 @@
             this.guna2HtmlLabel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(4, 203);
-            this.guna2HtmlLabel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(3, 163);
+            this.guna2HtmlLabel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel14.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel14.TabIndex = 10;
             this.guna2HtmlLabel14.Text = "11";
             this.guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1099,10 +1066,10 @@
             this.guna2HtmlLabel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(56, 163);
-            this.guna2HtmlLabel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(42, 131);
+            this.guna2HtmlLabel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel13.TabIndex = 9;
             this.guna2HtmlLabel13.Text = "10";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1115,10 +1082,10 @@
             this.guna2HtmlLabel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(4, 163);
-            this.guna2HtmlLabel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(3, 131);
+            this.guna2HtmlLabel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel12.TabIndex = 8;
             this.guna2HtmlLabel12.Text = "9";
             this.guna2HtmlLabel12.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1131,10 +1098,10 @@
             this.guna2HtmlLabel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(56, 123);
-            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(42, 99);
+            this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel11.TabIndex = 7;
             this.guna2HtmlLabel11.Text = "8";
             this.guna2HtmlLabel11.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1147,10 +1114,10 @@
             this.guna2HtmlLabel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(4, 123);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(3, 99);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel9.TabIndex = 6;
             this.guna2HtmlLabel9.Text = "7";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1163,10 +1130,10 @@
             this.guna2HtmlLabel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(56, 83);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(42, 67);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel7.TabIndex = 5;
             this.guna2HtmlLabel7.Text = "6";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1179,10 +1146,10 @@
             this.guna2HtmlLabel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(4, 83);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(3, 67);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel6.TabIndex = 4;
             this.guna2HtmlLabel6.Text = "5";
             this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1195,10 +1162,10 @@
             this.guna2HtmlLabel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(56, 43);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(42, 35);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel5.TabIndex = 3;
             this.guna2HtmlLabel5.Text = "4";
             this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1211,10 +1178,10 @@
             this.guna2HtmlLabel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(4, 43);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 35);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel4.TabIndex = 2;
             this.guna2HtmlLabel4.Text = "3";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1227,10 +1194,10 @@
             this.guna2HtmlLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(4, 3);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(3, 3);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "1";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1243,10 +1210,10 @@
             this.guna2HtmlLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(56, 3);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(42, 3);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(45, 35);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(34, 27);
             this.guna2HtmlLabel3.TabIndex = 1;
             this.guna2HtmlLabel3.Text = "2";
             this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1261,50 +1228,58 @@
             this.guna2Panel4.Controls.Add(this.tableLayoutPanel7);
             this.guna2Panel4.Controls.Add(this.tableLayoutPanel6);
             this.guna2Panel4.Controls.Add(this.guna2Panel5);
-            this.guna2Panel4.Location = new System.Drawing.Point(952, 62);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel4.Location = new System.Drawing.Point(714, 50);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(555, 688);
+            this.guna2Panel4.Size = new System.Drawing.Size(416, 559);
             this.guna2Panel4.TabIndex = 10;
             // 
-            // guna2Panel5
+            // tableLayoutPanel7
             // 
-            this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel5.Controls.Add(this.btnAdd);
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 665);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(555, 23);
-            this.guna2Panel5.TabIndex = 1;
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.96904F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.03097F));
+            this.tableLayoutPanel7.Controls.Add(this.guna2ComboBox1, 1, 3);
+            this.tableLayoutPanel7.Controls.Add(this.guna2TextBox11, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel64, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel62, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtTotalSeats, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.guna2TextBox10, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel63, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel61, 0, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 386);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.07407F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.69136F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.30864F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(412, 150);
+            this.tableLayoutPanel7.TabIndex = 3;
             // 
-            // btnAdd
+            // guna2ComboBox1
             // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnAdd.BorderRadius = 5;
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
-            this.btnAdd.Location = new System.Drawing.Point(363, -26);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(180, 46);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "RESERVE";
-            // 
-            // guna2HtmlLabel64
-            // 
-            this.guna2HtmlLabel64.AutoSize = false;
-            this.guna2HtmlLabel64.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel64.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel64.Location = new System.Drawing.Point(3, 93);
-            this.guna2HtmlLabel64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel64.Name = "guna2HtmlLabel64";
-            this.guna2HtmlLabel64.Size = new System.Drawing.Size(175, 41);
-            this.guna2HtmlLabel64.TabIndex = 20;
-            this.guna2HtmlLabel64.Text = "Total Price :";
+            this.guna2ComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Cash",
+            "Online"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(137, 113);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(273, 36);
+            this.guna2ComboBox1.TabIndex = 25;
             // 
             // guna2TextBox11
             // 
@@ -1319,49 +1294,27 @@
             this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(184, 95);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox11.Location = new System.Drawing.Point(137, 77);
+            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox11.Name = "guna2TextBox11";
             this.guna2TextBox11.PasswordChar = '\0';
             this.guna2TextBox11.PlaceholderText = "";
             this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(362, 34);
+            this.guna2TextBox11.Size = new System.Drawing.Size(273, 28);
             this.guna2TextBox11.TabIndex = 21;
             // 
-            // guna2HtmlLabel63
+            // guna2HtmlLabel64
             // 
-            this.guna2HtmlLabel63.AutoSize = false;
-            this.guna2HtmlLabel63.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel63.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel63.Location = new System.Drawing.Point(3, 49);
-            this.guna2HtmlLabel63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel63.Name = "guna2HtmlLabel63";
-            this.guna2HtmlLabel63.Size = new System.Drawing.Size(175, 40);
-            this.guna2HtmlLabel63.TabIndex = 18;
-            this.guna2HtmlLabel63.Text = "Price Per Ticket :";
-            // 
-            // guna2TextBox10
-            // 
-            this.guna2TextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(184, 51);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(362, 34);
-            this.guna2TextBox10.TabIndex = 19;
+            this.guna2HtmlLabel64.AutoSize = false;
+            this.guna2HtmlLabel64.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel64.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel64.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel64.Location = new System.Drawing.Point(2, 76);
+            this.guna2HtmlLabel64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel64.Name = "guna2HtmlLabel64";
+            this.guna2HtmlLabel64.Size = new System.Drawing.Size(131, 33);
+            this.guna2HtmlLabel64.TabIndex = 20;
+            this.guna2HtmlLabel64.Text = "Total Price :";
             // 
             // guna2HtmlLabel62
             // 
@@ -1369,10 +1322,10 @@
             this.guna2HtmlLabel62.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel62.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel62.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel62.Location = new System.Drawing.Point(3, 2);
-            this.guna2HtmlLabel62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel62.Location = new System.Drawing.Point(2, 2);
+            this.guna2HtmlLabel62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel62.Name = "guna2HtmlLabel62";
-            this.guna2HtmlLabel62.Size = new System.Drawing.Size(175, 43);
+            this.guna2HtmlLabel62.Size = new System.Drawing.Size(131, 34);
             this.guna2HtmlLabel62.TabIndex = 16;
             this.guna2HtmlLabel62.Text = "Total Seats :";
             // 
@@ -1389,14 +1342,49 @@
             this.txtTotalSeats.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotalSeats.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTotalSeats.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTotalSeats.Location = new System.Drawing.Point(184, 4);
-            this.txtTotalSeats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTotalSeats.Location = new System.Drawing.Point(137, 3);
+            this.txtTotalSeats.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTotalSeats.Name = "txtTotalSeats";
             this.txtTotalSeats.PasswordChar = '\0';
             this.txtTotalSeats.PlaceholderText = "";
             this.txtTotalSeats.SelectedText = "";
-            this.txtTotalSeats.Size = new System.Drawing.Size(362, 34);
+            this.txtTotalSeats.Size = new System.Drawing.Size(273, 28);
             this.txtTotalSeats.TabIndex = 17;
+            // 
+            // guna2TextBox10
+            // 
+            this.guna2TextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox10.DefaultText = "";
+            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox10.Location = new System.Drawing.Point(137, 41);
+            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox10.Name = "guna2TextBox10";
+            this.guna2TextBox10.PasswordChar = '\0';
+            this.guna2TextBox10.PlaceholderText = "";
+            this.guna2TextBox10.SelectedText = "";
+            this.guna2TextBox10.Size = new System.Drawing.Size(273, 28);
+            this.guna2TextBox10.TabIndex = 19;
+            // 
+            // guna2HtmlLabel63
+            // 
+            this.guna2HtmlLabel63.AutoSize = false;
+            this.guna2HtmlLabel63.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel63.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel63.Location = new System.Drawing.Point(2, 40);
+            this.guna2HtmlLabel63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel63.Name = "guna2HtmlLabel63";
+            this.guna2HtmlLabel63.Size = new System.Drawing.Size(131, 32);
+            this.guna2HtmlLabel63.TabIndex = 18;
+            this.guna2HtmlLabel63.Text = "Price Per Ticket :";
             // 
             // guna2HtmlLabel61
             // 
@@ -1404,183 +1392,12 @@
             this.guna2HtmlLabel61.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel61.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel61.Location = new System.Drawing.Point(3, 138);
-            this.guna2HtmlLabel61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel61.Location = new System.Drawing.Point(2, 113);
+            this.guna2HtmlLabel61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel61.Name = "guna2HtmlLabel61";
-            this.guna2HtmlLabel61.Size = new System.Drawing.Size(175, 45);
+            this.guna2HtmlLabel61.Size = new System.Drawing.Size(131, 35);
             this.guna2HtmlLabel61.TabIndex = 14;
             this.guna2HtmlLabel61.Text = "Payment method :";
-            // 
-            // guna2HtmlLabel60
-            // 
-            this.guna2HtmlLabel60.AutoSize = false;
-            this.guna2HtmlLabel60.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel60.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel60.Location = new System.Drawing.Point(3, 43);
-            this.guna2HtmlLabel60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel60.Name = "guna2HtmlLabel60";
-            this.guna2HtmlLabel60.Size = new System.Drawing.Size(175, 40);
-            this.guna2HtmlLabel60.TabIndex = 12;
-            this.guna2HtmlLabel60.Text = "Batch :";
-            // 
-            // guna2HtmlLabel59
-            // 
-            this.guna2HtmlLabel59.AutoSize = false;
-            this.guna2HtmlLabel59.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel59.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel59.Location = new System.Drawing.Point(3, 255);
-            this.guna2HtmlLabel59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel59.Name = "guna2HtmlLabel59";
-            this.guna2HtmlLabel59.Size = new System.Drawing.Size(175, 216);
-            this.guna2HtmlLabel59.TabIndex = 10;
-            this.guna2HtmlLabel59.Text = "Booking Date :";
-            // 
-            // guna2HtmlLabel58
-            // 
-            this.guna2HtmlLabel58.AutoSize = false;
-            this.guna2HtmlLabel58.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel58.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel58.Location = new System.Drawing.Point(3, 217);
-            this.guna2HtmlLabel58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel58.Name = "guna2HtmlLabel58";
-            this.guna2HtmlLabel58.Size = new System.Drawing.Size(175, 34);
-            this.guna2HtmlLabel58.TabIndex = 8;
-            this.guna2HtmlLabel58.Text = "Payment Date :";
-            // 
-            // guna2HtmlLabel57
-            // 
-            this.guna2HtmlLabel57.AutoSize = false;
-            this.guna2HtmlLabel57.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel57.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel57.Location = new System.Drawing.Point(3, 130);
-            this.guna2HtmlLabel57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel57.Name = "guna2HtmlLabel57";
-            this.guna2HtmlLabel57.Size = new System.Drawing.Size(175, 39);
-            this.guna2HtmlLabel57.TabIndex = 6;
-            this.guna2HtmlLabel57.Text = "Student Address :";
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(184, 175);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(362, 34);
-            this.guna2TextBox4.TabIndex = 7;
-            // 
-            // guna2HtmlLabel56
-            // 
-            this.guna2HtmlLabel56.AutoSize = false;
-            this.guna2HtmlLabel56.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel56.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel56.Location = new System.Drawing.Point(3, 87);
-            this.guna2HtmlLabel56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel56.Name = "guna2HtmlLabel56";
-            this.guna2HtmlLabel56.Size = new System.Drawing.Size(175, 39);
-            this.guna2HtmlLabel56.TabIndex = 4;
-            this.guna2HtmlLabel56.Text = "Student Full Name :";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(184, 132);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(362, 34);
-            this.guna2TextBox3.TabIndex = 5;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(184, 89);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(362, 34);
-            this.guna2TextBox2.TabIndex = 3;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(184, 45);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(362, 34);
-            this.guna2TextBox1.TabIndex = 1;
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(184, 217);
-            this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(362, 34);
-            this.guna2DateTimePicker2.TabIndex = 22;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 5, 4, 23, 36, 54, 826);
             // 
             // tableLayoutPanel6
             // 
@@ -1603,7 +1420,8 @@
             this.tableLayoutPanel6.Controls.Add(this.guna2TextBox3, 1, 3);
             this.tableLayoutPanel6.Controls.Add(this.guna2TextBox2, 1, 2);
             this.tableLayoutPanel6.Controls.Add(this.monthCalendar1, 1, 6);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 7;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.668077F));
@@ -1613,33 +1431,8 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.302325F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.033827F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.51163F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(549, 473);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(412, 384);
             this.tableLayoutPanel6.TabIndex = 2;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.96904F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.03097F));
-            this.tableLayoutPanel7.Controls.Add(this.guna2ComboBox1, 1, 3);
-            this.tableLayoutPanel7.Controls.Add(this.guna2TextBox11, 1, 2);
-            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel64, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel62, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.txtTotalSeats, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.guna2TextBox10, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel63, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.guna2HtmlLabel61, 0, 3);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 475);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 4;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.07407F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.69136F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.30864F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(549, 185);
-            this.tableLayoutPanel7.TabIndex = 3;
             // 
             // guna2HtmlLabel65
             // 
@@ -1647,10 +1440,10 @@
             this.guna2HtmlLabel65.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel65.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel65.Location = new System.Drawing.Point(3, 2);
-            this.guna2HtmlLabel65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel65.Location = new System.Drawing.Point(2, 2);
+            this.guna2HtmlLabel65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel65.Name = "guna2HtmlLabel65";
-            this.guna2HtmlLabel65.Size = new System.Drawing.Size(175, 37);
+            this.guna2HtmlLabel65.Size = new System.Drawing.Size(131, 29);
             this.guna2HtmlLabel65.TabIndex = 1;
             this.guna2HtmlLabel65.Text = "Student ID :";
             // 
@@ -1667,13 +1460,13 @@
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(184, 4);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox5.Location = new System.Drawing.Point(137, 3);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(362, 33);
+            this.guna2TextBox5.Size = new System.Drawing.Size(273, 27);
             this.guna2TextBox5.TabIndex = 2;
             // 
             // guna2HtmlLabel66
@@ -1682,54 +1475,232 @@
             this.guna2HtmlLabel66.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel66.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel66.Location = new System.Drawing.Point(3, 173);
-            this.guna2HtmlLabel66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel66.Location = new System.Drawing.Point(2, 138);
+            this.guna2HtmlLabel66.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel66.Name = "guna2HtmlLabel66";
-            this.guna2HtmlLabel66.Size = new System.Drawing.Size(175, 40);
+            this.guna2HtmlLabel66.Size = new System.Drawing.Size(131, 31);
             this.guna2HtmlLabel66.TabIndex = 3;
             this.guna2HtmlLabel66.Text = "Phone no:";
+            // 
+            // guna2HtmlLabel56
+            // 
+            this.guna2HtmlLabel56.AutoSize = false;
+            this.guna2HtmlLabel56.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel56.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel56.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel56.Location = new System.Drawing.Point(2, 70);
+            this.guna2HtmlLabel56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel56.Name = "guna2HtmlLabel56";
+            this.guna2HtmlLabel56.Size = new System.Drawing.Size(131, 30);
+            this.guna2HtmlLabel56.TabIndex = 4;
+            this.guna2HtmlLabel56.Text = "Student Full Name :";
+            // 
+            // guna2HtmlLabel57
+            // 
+            this.guna2HtmlLabel57.AutoSize = false;
+            this.guna2HtmlLabel57.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel57.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel57.Location = new System.Drawing.Point(2, 104);
+            this.guna2HtmlLabel57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel57.Name = "guna2HtmlLabel57";
+            this.guna2HtmlLabel57.Size = new System.Drawing.Size(131, 30);
+            this.guna2HtmlLabel57.TabIndex = 6;
+            this.guna2HtmlLabel57.Text = "Student Address :";
+            // 
+            // guna2HtmlLabel60
+            // 
+            this.guna2HtmlLabel60.AutoSize = false;
+            this.guna2HtmlLabel60.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel60.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel60.Location = new System.Drawing.Point(2, 35);
+            this.guna2HtmlLabel60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel60.Name = "guna2HtmlLabel60";
+            this.guna2HtmlLabel60.Size = new System.Drawing.Size(131, 31);
+            this.guna2HtmlLabel60.TabIndex = 12;
+            this.guna2HtmlLabel60.Text = "Batch :";
+            // 
+            // guna2HtmlLabel58
+            // 
+            this.guna2HtmlLabel58.AutoSize = false;
+            this.guna2HtmlLabel58.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel58.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel58.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel58.Location = new System.Drawing.Point(2, 173);
+            this.guna2HtmlLabel58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel58.Name = "guna2HtmlLabel58";
+            this.guna2HtmlLabel58.Size = new System.Drawing.Size(131, 26);
+            this.guna2HtmlLabel58.TabIndex = 8;
+            this.guna2HtmlLabel58.Text = "Payment Date :";
+            // 
+            // guna2HtmlLabel59
+            // 
+            this.guna2HtmlLabel59.AutoSize = false;
+            this.guna2HtmlLabel59.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel59.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel59.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel59.Location = new System.Drawing.Point(2, 203);
+            this.guna2HtmlLabel59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel59.Name = "guna2HtmlLabel59";
+            this.guna2HtmlLabel59.Size = new System.Drawing.Size(131, 179);
+            this.guna2HtmlLabel59.TabIndex = 10;
+            this.guna2HtmlLabel59.Text = "Booking Date :";
+            // 
+            // guna2TextBox4
+            // 
+            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox4.DefaultText = "";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.Location = new System.Drawing.Point(137, 139);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderText = "";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.Size = new System.Drawing.Size(273, 28);
+            this.guna2TextBox4.TabIndex = 7;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(137, 36);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(273, 28);
+            this.guna2TextBox1.TabIndex = 1;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(137, 173);
+            this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(273, 26);
+            this.guna2DateTimePicker2.TabIndex = 22;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 5, 4, 23, 36, 54, 826);
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(137, 105);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(273, 28);
+            this.guna2TextBox3.TabIndex = 5;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(137, 71);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(273, 28);
+            this.guna2TextBox2.TabIndex = 3;
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.monthCalendar1.Location = new System.Drawing.Point(190, 262);
+            this.monthCalendar1.Location = new System.Drawing.Point(142, 208);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 23;
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
-            // guna2ComboBox1
+            // guna2Panel5
             // 
-            this.guna2ComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Cash",
-            "Online"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(184, 138);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(362, 36);
-            this.guna2ComboBox1.TabIndex = 25;
+            this.guna2Panel5.Controls.Add(this.btnAdd);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 540);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(416, 19);
+            this.guna2Panel5.TabIndex = 1;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAdd.BorderRadius = 5;
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(246)))), ((int)(((byte)(183)))));
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(158)))), ((int)(((byte)(74)))));
+            this.btnAdd.Location = new System.Drawing.Point(272, -21);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(135, 37);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "RESERVE";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Reserve_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(247)))), ((int)(((byte)(228)))));
-            this.ClientSize = new System.Drawing.Size(1507, 750);
+            this.ClientSize = new System.Drawing.Size(1130, 609);
             this.ControlBox = false;
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Reserve_Form";
             this.Text = "Reserve_Form";
             this.Load += new System.EventHandler(this.Reserve_Form_Load);
@@ -1741,9 +1712,9 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel5.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1756,8 +1727,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearchStart;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchEnd;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;

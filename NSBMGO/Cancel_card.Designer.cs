@@ -52,7 +52,6 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderColor = System.Drawing.Color.Green;
             this.guna2Panel2.BorderRadius = 10;
@@ -60,10 +59,11 @@
             this.guna2Panel2.Controls.Add(this.panel1);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(1, 21);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(440, 209);
+            this.guna2Panel2.Size = new System.Drawing.Size(543, 221);
             this.guna2Panel2.TabIndex = 1;
             // 
             // panel1
@@ -118,9 +118,9 @@
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(9, 111);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(28, 111);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(92, 21);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(73, 21);
             this.guna2HtmlLabel11.TabIndex = 9;
             this.guna2HtmlLabel11.Text = "Total Price :";
             // 
@@ -129,9 +129,9 @@
             this.lblTotPrice.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTotPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblTotPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblTotPrice.Location = new System.Drawing.Point(107, 111);
+            this.lblTotPrice.Location = new System.Drawing.Point(107, 112);
             this.lblTotPrice.Name = "lblTotPrice";
-            this.lblTotPrice.Size = new System.Drawing.Size(72, 21);
+            this.lblTotPrice.Size = new System.Drawing.Size(55, 19);
             this.lblTotPrice.TabIndex = 8;
             this.lblTotPrice.Text = "1400 LKR";
             // 
@@ -140,9 +140,9 @@
             this.lblSeatCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblSeatCount.BackColor = System.Drawing.Color.Transparent;
             this.lblSeatCount.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblSeatCount.Location = new System.Drawing.Point(107, 84);
+            this.lblSeatCount.Location = new System.Drawing.Point(107, 85);
             this.lblSeatCount.Name = "lblSeatCount";
-            this.lblSeatCount.Size = new System.Drawing.Size(13, 21);
+            this.lblSeatCount.Size = new System.Drawing.Size(10, 19);
             this.lblSeatCount.TabIndex = 7;
             this.lblSeatCount.Text = "4";
             // 
@@ -151,9 +151,9 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(4, 84);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(24, 84);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(97, 21);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(77, 21);
             this.guna2HtmlLabel8.TabIndex = 6;
             this.guna2HtmlLabel8.Text = "Seat Count :";
             // 
@@ -162,9 +162,9 @@
             this.lblDestination.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDestination.BackColor = System.Drawing.Color.Transparent;
             this.lblDestination.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblDestination.Location = new System.Drawing.Point(107, 57);
+            this.lblDestination.Location = new System.Drawing.Point(107, 58);
             this.lblDestination.Name = "lblDestination";
-            this.lblDestination.Size = new System.Drawing.Size(88, 21);
+            this.lblDestination.Size = new System.Drawing.Size(70, 19);
             this.lblDestination.TabIndex = 5;
             this.lblDestination.Text = "Kadawatha";
             // 
@@ -173,9 +173,9 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(3, 57);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(22, 57);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(98, 21);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(79, 21);
             this.guna2HtmlLabel6.TabIndex = 6;
             this.guna2HtmlLabel6.Text = "Destination : ";
             // 
@@ -184,9 +184,9 @@
             this.lblStuName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblStuName.BackColor = System.Drawing.Color.Transparent;
             this.lblStuName.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblStuName.Location = new System.Drawing.Point(107, 30);
+            this.lblStuName.Location = new System.Drawing.Point(107, 31);
             this.lblStuName.Name = "lblStuName";
-            this.lblStuName.Size = new System.Drawing.Size(116, 21);
+            this.lblStuName.Size = new System.Drawing.Size(92, 19);
             this.lblStuName.TabIndex = 3;
             this.lblStuName.Text = "Nadeel Ameen";
             // 
@@ -206,9 +206,9 @@
             this.lblstuId.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblstuId.BackColor = System.Drawing.Color.Transparent;
             this.lblstuId.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblstuId.Location = new System.Drawing.Point(107, 3);
+            this.lblstuId.Location = new System.Drawing.Point(107, 4);
             this.lblstuId.Name = "lblstuId";
-            this.lblstuId.Size = new System.Drawing.Size(49, 21);
+            this.lblstuId.Size = new System.Drawing.Size(38, 19);
             this.lblstuId.TabIndex = 1;
             this.lblstuId.Text = "23456";
             // 
@@ -217,9 +217,9 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(7, 3);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 3);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(94, 21);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 21);
             this.guna2HtmlLabel2.TabIndex = 9;
             this.guna2HtmlLabel2.Text = "Student ID : ";
             // 
@@ -242,7 +242,7 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(16, 26);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(168, 32);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(132, 25);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "TICKET DETAILS";
             // 
@@ -253,7 +253,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2Panel2);
             this.Name = "Cancel_card";
-            this.Size = new System.Drawing.Size(442, 233);
+            this.Size = new System.Drawing.Size(543, 221);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
