@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NSBMGO
@@ -92,7 +87,7 @@ namespace NSBMGO
 
         private void btnAddImage_Click(object sender, EventArgs e)
         {
-           
+
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -110,7 +105,7 @@ namespace NSBMGO
 
         private void Driver_Load(object sender, EventArgs e)
         {
-            
+
 
             openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Image Files(.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
@@ -132,48 +127,33 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
             string query = "UPDATE [Driver] SET driverName = @drivername, address = @address, contactNumber= @contactnumber,  image = @image WHERE driverId = @Id";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             int contactnumber = int.Parse(txtContactNumber.Text);
             cmd.Parameters.AddWithValue("@drivername", txtDriverName.Text);
             cmd.Parameters.AddWithValue("@address", txtDriverAddress.Text);
-            cmd.Parameters.AddWithValue("@contactnumber",contactnumber );
-
-      
+            cmd.Parameters.AddWithValue("@contactnumber", contactnumber);
             cmd.Parameters.AddWithValue("@image", imageData);
 
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
 
-
-                int Id = Convert.ToInt32(dataGridView1.Rows[selectedRowIndex].Cells[0].Value);
-
-
-                cmd.Parameters.AddWithValue("@Id", Id);
-
+                // Get the driverId directly as a string
+                string driverId = dataGridView1.Rows[selectedRowIndex].Cells[0].Value.ToString();
+                cmd.Parameters.AddWithValue("@Id", driverId);
 
                 try
                 {
                     conn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    int secondRowsAffected = cmd.ExecuteNonQuery();
                     conn.Close();
 
-                    adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
-                    dataSet.Clear();
-                    adapter.Fill(dataSet, "Driver");
-                    dataGridView1.DataSource = dataSet.Tables["Driver"];
-
-                    if (rowsAffected > 0 && secondRowsAffected > 0)
+                    if (rowsAffected > 0)
                     {
                         MessageBox.Show("Successfully Updated");
-                        dataSet.Clear();
-                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
-                        adapter.Fill(dataSet, "Driver");
-                        dataGridView1.DataSource = dataSet.Tables["Driver"];
+                        refreshDataGridView();
                     }
                     else
                     {
@@ -182,10 +162,33 @@ namespace NSBMGO
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("Please select a row to update.");
+            }
         }
+
+        private void refreshDataGridView()
+        {
+            try
+            {
+                adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
+                dataSet.Clear();
+                adapter.Fill(dataSet, "Driver");
+                dataGridView1.DataSource = dataSet.Tables["Driver"];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error refreshing DataGridView: " + ex.Message);
+            }
+        }
+
+
+        
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -213,7 +216,7 @@ namespace NSBMGO
                         dataSet.Clear();
                         adapter.SelectCommand = new SqlCommand("SELECT * FROM [Driver]", conn);
                         adapter.Fill(dataSet, "Driver");
-                       dataGridView1.DataSource = dataSet.Tables["Driver"];
+                        dataGridView1.DataSource = dataSet.Tables["Driver"];
                     }
                     else
                     {
@@ -239,8 +242,8 @@ namespace NSBMGO
             txtDriverName.Clear();
             txtDriverAddress.Clear();
             txtDriverId.Clear();
-            txtContactNumber.Clear();   
-            guna2PictureBox1.Image=null;
+            txtContactNumber.Clear();
+            guna2PictureBox1.Image = null;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
