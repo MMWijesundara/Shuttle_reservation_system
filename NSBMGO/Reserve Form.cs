@@ -1,12 +1,12 @@
 ﻿using Guna.UI2.WinForms;
+using NSBMGO.Data_access_layer;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Runtime.InteropServices.ComTypes;
-using NSBMGO.Class_BLL;
 using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Runtime.InteropServices.ComTypes;
+using System.Windows.Forms;
 
 namespace NSBMGO
 {
@@ -17,16 +17,22 @@ namespace NSBMGO
         internal int TotPrice;
         internal int selectedLabelCount;
         internal string stD;
+        internal string stDn;
         internal string enD;
+        internal string enDn;
         internal string shutId;
+        internal DataTable dtShuttle;
+        internal string startCity;
+        internal string endCity;
 
         private List<Guna2HtmlLabel> selectedLabels = new List<Guna2HtmlLabel>();
+        private List<string> selectedDayNames = new List<string>();
 
 
         public Reserve_Form()
         {
             InitializeComponent();
-            monthCalendar1.DateSelected += monthCalendar1_DateSelected;
+            //monthCalendar1.DateSelected += monthCalendar1_DateSelected;
         }
         private void Reserve_Form_Load(object sender, EventArgs e)
         {
@@ -58,22 +64,81 @@ namespace NSBMGO
 
             tableLayoutPanel2.Controls.Clear();
 
-            string startcity = txtSearchStart.Text.Trim();
-            string endCity = txtSearchEnd.Text.Trim();
-
-            ClassBLL objBLL = new ClassBLL();
-
-            DataTable dt = objBLL.GetItems(startcity, endCity);
+            startCity = txtSearchStart.Text.Trim();
+            endCity = txtSearchEnd.Text.Trim();
 
 
+            //ClassBLL objBLL = new ClassBLL();
 
-            if (dt != null)
+            //DataTable dt = objBLL.GetItems(startcity, endCity , );
+
+            connection con1 = new connection();
+            con1.conn.Open();
+
+            DateTime selectedStartDate = monthCalendar1.SelectionStart;
+
+            DateTime selectedEndDate = monthCalendar1.SelectionEnd;
+            stDn = selectedStartDate.DayOfWeek.ToString();
+            stD = selectedStartDate.ToString("yyyy-MM-dd");
+            enDn = selectedStartDate.DayOfWeek.ToString();
+
+
+
+            //List<string> selectedDayNames = new List<string>();
+
+            //for (DateTime date = selectedStartDate; date <= selectedEndDate; date = date.AddDays(1))
+            //{
+            //    selectedDayNames.Add(date.ToString("dddd")); // Add day names to the list
+            //}
+
+            // Construct your SQL query with the additional filter for departure day name
+            string query = "SELECT * FROM Shuttle WHERE start_city = @startCity AND end_city = @endCity AND depart_day LIKE '%' + @stDn + '%'";
+
+
+            // Add conditions for each selected day name
+            //for (int i = 0; i < selectedDayNames.Count; i++)
+            //{
+            //    query += "AND CHARINDEX(@selectedDayName" + i + ", depart_day) > 0 ";
+            //}
+
+            SqlCommand cmd = new SqlCommand(query, con1.conn);
+            cmd.Parameters.AddWithValue("@startCity", startCity);
+            cmd.Parameters.AddWithValue("@endCity", endCity);
+            cmd.Parameters.AddWithValue("@stDn", stDn);
+
+            // Add parameters for each selected day name
+            //for (int i = 0; i < selectedDayNames.Count; i++)
+            //{
+            //    cmd.Parameters.AddWithValue("@selectedDayName" + i, selectedDayNames[i]);
+            //}
+
+            try
             {
-                if (dt.Rows.Count > 0)
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                 {
-                    reserve_card[] cards = new reserve_card[dt.Rows.Count];
+                    dtShuttle = new DataTable();
+                    sda.Fill(dtShuttle);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                throw;
+            }
+            finally
+            {
+                con1.conn.Close(); // Close the connection when done
+            }
 
-                    for (int i = 0; i < dt.Rows.Count; i++)
+
+
+            if (dtShuttle != null)
+            {
+                if (dtShuttle.Rows.Count > 0)
+                {
+                    reserve_card[] cards = new reserve_card[dtShuttle.Rows.Count];
+
+                    for (int i = 0; i < dtShuttle.Rows.Count; i++)
                     {
 
 
@@ -82,23 +147,23 @@ namespace NSBMGO
                         //MemoryStream ms = new MemoryStream();
                         //cards[i].icon = new Bitmap(ms);
 
-                        cards[i].numPlate.Text = dt.Rows[i]["number_plate"].ToString();
+                        cards[i].numPlate.Text = dtShuttle.Rows[i]["number_plate"].ToString();
 
-                        string timeString = dt.Rows[i]["depart_time"].ToString();
-                        cards[i].Time.Text = timeString.Substring(0, 5); // Get first 5 characters (hh:mm)
+                        string timeString = dtShuttle.Rows[i]["depart_time"].ToString();
+                        cards[i].Time.Text = timeString.Substring(0, 5); 
 
 
 
-                        cards[i].startCity.Text = dt.Rows[i]["start_city"].ToString();
-                        cards[i].endCity.Text = dt.Rows[i]["end_city"].ToString();
+                        cards[i].startCity.Text = dtShuttle.Rows[i]["start_city"].ToString();
+                        cards[i].endCity.Text = dtShuttle.Rows[i]["end_city"].ToString();
                         //cards[i].Price.Text = dt.Rows[i]["price"].ToString();
                         //cards[i].Price.Text = string.Format("{0:C2} LKR", dt.Rows[i]["price"]);
-                        cards[i].Price.Text = (dt.Rows[i]["price"]).ToString() + " LKR";
+                        cards[i].Price.Text = (dtShuttle.Rows[i]["price"]).ToString() + " LKR";
 
                         //cards[i].btnReserve.Click += new EventHandler(btnReserve_Click);
 
-                        SeatPrice = Convert.ToInt32(dt.Rows[i]["price"]);
-                        shutId = dt.Rows[i]["shuttle_id"].ToString();
+                        SeatPrice = Convert.ToInt32(dtShuttle.Rows[i]["price"]);
+                        shutId = dtShuttle.Rows[i]["shuttle_id"].ToString();
                         guna2TextBox10.Text = SeatPrice.ToString();
 
 
@@ -129,42 +194,42 @@ namespace NSBMGO
                 Guna2HtmlLabel lbl = sender as Guna2HtmlLabel;
                 if (lbl.BackColor == Color.White)
                 {
-                    lbl.BackColor = ColorTranslator.FromHtml("#1151f2"); 
-                    selectedLabels.Add(lbl); 
+                    lbl.BackColor = ColorTranslator.FromHtml("#1151f2");
+                    selectedLabels.Add(lbl);
                     selectedLabelCount++;
                 }
                 else if (lbl.BackColor == ColorTranslator.FromHtml("#1151f2"))
                 {
-                    lbl.BackColor = Color.White; 
-                    selectedLabels.Remove(lbl); 
+                    lbl.BackColor = Color.White;
+                    selectedLabels.Remove(lbl);
                     selectedLabelCount--;
                 }
 
-                
-                
+
+
 
             }
         }
 
-        
+
         private void UpdateSelectedSeatsCount()
         {
-            
+
 
             txtTotalSeats.Text = selectedLabelCount.ToString();
 
         }
 
-        
+
         private void btnAddSeats_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to confirm the selected seats?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
+
 
             if (result == DialogResult.Yes)
             {
                 UpdateSelectedSeatsCount();
-                
+
                 foreach (Guna2HtmlLabel lbl in selectedLabels)
                 {
                     lbl.BackColor = ColorTranslator.FromHtml("#ed0933");
@@ -183,17 +248,21 @@ namespace NSBMGO
                     }
                 }
             }
-            
+
         }
 
-        private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
-        {
-            // Access the selected range of dates
-            DateTime startDate = monthCalendar1.SelectionStart;
-             stD = startDate.ToString("yyyy-MM-dd");
-            DateTime endDate = monthCalendar1.SelectionEnd;
-             enD = endDate.ToString("yyyy-MM-dd");
-        }
+        //private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
+        //{
+        //    // Access the selected range of dates
+        //    DateTime startDate = monthCalendar1.SelectionStart;
+        //    stD = startDate.ToString("yyyy-MM-dd");
+        //    stDn = startDate.DayOfWeek.ToString();
+
+        //    DateTime endDate = monthCalendar1.SelectionEnd;
+        //    enD = endDate.ToString("yyyy-MM-dd");
+        //    enDn = endDate.DayOfWeek.ToString();
+
+        //}
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -204,7 +273,7 @@ namespace NSBMGO
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Ticket(studentId,phone,studentFullName,studentAddress,payementDate,payementMethod,batch,totalSeats,ticketPrice,totalPrice,travelStartDate,travelEndDate,shuttleId) VALUES(@studentid,@phone,@studentfullname,@studentaddress,@paymentdate,@payementMeth,@batch,@totalseats,@ppt,@totalprice,@startDate, @endDate, @shutID)";
+                cmd.CommandText = "INSERT INTO Ticket(studentId,phone,studentFullName,studentAddress,payementDate,payementMethod,batch,totalSeats,ticketPrice,totalPrice,travelStartDate,shuttleId) VALUES(@studentid,@phone,@studentfullname,@studentaddress,@paymentdate,@payementMeth,@batch,@totalseats,@ppt,@totalprice,@startDate, @shutID)";
 
                 cmd.Parameters.AddWithValue("@studentid", guna2TextBox5.Text);
                 cmd.Parameters.AddWithValue("@phone", guna2TextBox4.Text);
@@ -216,8 +285,7 @@ namespace NSBMGO
                 cmd.Parameters.AddWithValue("@ppt", guna2TextBox10.Text);
                 cmd.Parameters.AddWithValue("@totalprice", guna2TextBox11.Text);
                 cmd.Parameters.AddWithValue("@payementMeth", guna2ComboBox1.Text);
-                cmd.Parameters.AddWithValue("@startDate",stD);
-                cmd.Parameters.AddWithValue("@endDate", enD);
+                cmd.Parameters.AddWithValue("@startDate", stD);
                 cmd.Parameters.AddWithValue("@shutID", shutId);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
