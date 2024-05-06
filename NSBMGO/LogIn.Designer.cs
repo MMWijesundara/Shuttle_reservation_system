@@ -222,7 +222,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BackgroundImage = global::NSBMGO.Properties.Resources.NSBM_Go_logo;
+            this.panel1.BackgroundImage = global::NSBMGO.Properties.Resources.NSBM_GO_GREEN_TRANSPARENT_21;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
