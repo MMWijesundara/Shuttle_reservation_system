@@ -171,7 +171,6 @@ namespace NSBMGO
             }
         }
 
-        // Method to refresh DataGridView after update
         private void refreshDataGridView()
         {
             try

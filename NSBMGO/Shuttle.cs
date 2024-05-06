@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -89,63 +90,77 @@ namespace NSBMGO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-            conn.Open();
-
-            string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city= @endCity, depart_time = @departTime, price = @price,driver_id =@driverId  WHERE shuttle_id = @shuttleId";
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-
-            cmd.Parameters.AddWithValue("@numberPlate", txtNumberPlate.Text);
-            cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
-            cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
-            cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
-            cmd.Parameters.AddWithValue("@price", txtPrice.Text);
-            cmd.Parameters.AddWithValue("@driverId", txtDriverId.Text);
-            //cmd.Parameters.AddWithValue("@shuttleId", txtShuttleID.Text);
-
-            if (shuttleDataGridView1.SelectedRows.Count > 0)
+            try
             {
-                int selectedRowIndex = shuttleDataGridView1.SelectedRows[0].Index;
+                // Open the connection
+                conn.Open();
 
+                // SQL query to update Shuttle details
+                string query = "UPDATE [Shuttle] SET number_plate = @numberPlate, start_city = @startCity, end_city = @endCity, depart_time = @departTime, price = @price, driver_id = @driverId WHERE shuttle_id = @shuttleId";
 
-                int shuttleId = Convert.ToInt32(shuttleDataGridView1.Rows[selectedRowIndex].Cells[0].Value);
+                // Create SqlCommand object
+                SqlCommand cmd = new SqlCommand(query, conn);
 
+                // Set parameter values
+                cmd.Parameters.AddWithValue("@numberPlate", txtNumberPlate.Text);
+                cmd.Parameters.AddWithValue("@startCity", txtStartCity.Text);
+                cmd.Parameters.AddWithValue("@endCity", txtEndCity.Text);
+                cmd.Parameters.AddWithValue("@departTime", txtDepartTime.Text);
+                cmd.Parameters.AddWithValue("@price", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@driverId", txtDriverId.Text);
 
-                cmd.Parameters.AddWithValue("@shuttleId", shuttleId);
-
-
-                try
+                if (shuttleDataGridView1.SelectedRows.Count > 0)
                 {
-                    conn.Open();
+                    int selectedRowIndex = shuttleDataGridView1.SelectedRows[0].Index;
+
+                    // Get the shuttleId from the selected row
+                    string shuttleId = shuttleDataGridView1.Rows[selectedRowIndex].Cells[0].Value.ToString();
+                    cmd.Parameters.AddWithValue("@shuttleId", shuttleId);
+
+                    // Execute the query
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    int secondRowsAffected = cmd.ExecuteNonQuery();
+
+                    // Close the connection
                     conn.Close();
 
-                    adapter.SelectCommand = new SqlCommand("SELECT * FROM [Shuttle]", conn);
-                    dataSet.Clear();
-                    adapter.Fill(dataSet, "Shuttle");
-                    shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
-
-                    if (rowsAffected > 0 && secondRowsAffected > 0)
+                    // Check if rows were affected
+                    if (rowsAffected > 0)
                     {
                         MessageBox.Show("Successfully Updated");
-                        dataSet.Clear();
-                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [Shuttle]", conn);
-                        adapter.Fill(dataSet, "Shuttle");
-                        shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
+                        RefreshDataGridView();
                     }
                     else
                     {
                         MessageBox.Show("No rows updated");
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Please select a row to update.");
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
+
+        // Method to refresh Shuttle DataGridView after update
+        private void RefreshDataGridView()
+        {
+            try
+            {
+                adapter.SelectCommand = new SqlCommand("SELECT * FROM [Shuttle]", conn);
+                dataSet.Clear();
+                adapter.Fill(dataSet, "Shuttle");
+                shuttleDataGridView1.DataSource = dataSet.Tables["Shuttle"];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error refreshing Shuttle DataGridView: " + ex.Message);
+            }
+        }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -219,11 +234,12 @@ namespace NSBMGO
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
 
-                string query = "SELECT * FROM Shuttle WHERE start_city LIKE @startCity AND end_city LIKE @endCity";
+                string query = "SELECT * FROM Shuttle WHERE start_city LIKE @startCity AND end_city LIKE @endCity AND depart_day LIKE '%' + @dayName + '%'";
 
                 // Concatenate "%" to the search text to perform partial matching
                 cmd.Parameters.AddWithValue("@startCity", "%" + txtSearchStart.Text + "%");
                 cmd.Parameters.AddWithValue("@endCity", "%" + txtSearchEnd.Text + "%");
+                cmd.Parameters.AddWithValue("@dayName", guna2DateTimePicker1.Value.DayOfWeek.ToString());
 
                 cmd.CommandText = query;
 
@@ -244,8 +260,6 @@ namespace NSBMGO
             {
                 conn.Close();
             }
-
-
         }
     }
 }
