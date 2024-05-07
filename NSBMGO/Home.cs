@@ -96,7 +96,7 @@ namespace NSBMGO
 
             SqlConnection con1 = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
             con1.Open();
-            SqlCommand cmd = new SqlCommand("Select * from [News]", con1);
+            SqlCommand cmd = new SqlCommand("Select * from [NewsTable]", con1);
             SqlDataAdapter
             da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -112,7 +112,7 @@ namespace NSBMGO
             
 
 
-            string query = "INSERT INTO [News] (Date,News) VALUES (@Date, @News)";
+            string query = "INSERT INTO [NewsTable] (Date,News) VALUES (@Date, @News)";
 
             SqlCommand cmd3 = new SqlCommand(query, con1);
 
@@ -125,7 +125,7 @@ namespace NSBMGO
                 con1.Open();
                 cmd3.ExecuteNonQuery();
 
-                SqlCommand cmd2 = new SqlCommand("Select * from [News]", con1);
+                SqlCommand cmd2 = new SqlCommand("Select * from [NewsTable]", con1);
                 SqlDataAdapter da = new SqlDataAdapter(cmd2);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -157,7 +157,7 @@ namespace NSBMGO
 
                 int date = Convert.ToInt32(homedatagridView.Rows[selectedRowIndex].Cells[0].Value);
 
-                string query = "DELETE FROM [News] WHERE Date = @date";
+                string query = "DELETE FROM [NewsTable] WHERE Date = @date";
 
                 SqlCommand cmd = new SqlCommand(query, con1);
                 cmd.Parameters.AddWithValue("@date", date);
@@ -174,9 +174,9 @@ namespace NSBMGO
 
 
                         dataSet.Clear();
-                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
-                        adapter.Fill(dataSet, "News");
-                        homedatagridView.DataSource = dataSet.Tables["News"];
+                        adapter.SelectCommand = new SqlCommand("SELECT * FROM [NewsTable]", con1);
+                        adapter.Fill(dataSet, "NewsTable");
+                        homedatagridView.DataSource = dataSet.Tables["NewsTable"];
                         con1.Close();
 
                     }
@@ -199,10 +199,10 @@ namespace NSBMGO
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
+            adapter.SelectCommand = new SqlCommand("SELECT * FROM [NewsTable]", con1);
             dataSet.Clear();
-            adapter.Fill(dataSet, "News");
-            homedatagridView.DataSource = dataSet.Tables["News"];
+            adapter.Fill(dataSet, "NewsTable");
+            homedatagridView.DataSource = dataSet.Tables["NewsTable"];
         }
     }
 
