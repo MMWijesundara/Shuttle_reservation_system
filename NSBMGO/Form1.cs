@@ -37,39 +37,44 @@ namespace NSBMGO
 
         private void bttnAdd_Click(object sender, EventArgs e)
         {
-            int Date = int.Parse(txtDate.Text);
-            string News = txtNews.Text;
-            
-
-            string query = "INSERT INTO [News] (Date,News) VALUES (@Date, @News)";
-
-            SqlCommand cmd = new SqlCommand(query, con1);
-
-            cmd.Parameters.AddWithValue("@Date", Date);
-            cmd.Parameters.AddWithValue("@News", News);
-
-            try
+            // Parse the date string from txtDate.Text into a DateTime object
+            DateTime date;
+            if (!DateTime.TryParse(txtDate.Text, out date))
             {
-                con1.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Successfully Saved");
-
-                adapter.SelectCommand = new SqlCommand("SELECT * FROM [News]", con1);
-                dataSet.Clear();
-                adapter.Fill(dataSet, "News");
-                
-                
+                MessageBox.Show("Invalid date format. Please enter a valid date.");
+                return; // Exit the method if date parsing fails
             }
-            catch (Exception ex)
+
+            string news = txtNews.Text;
+
+            string query = "INSERT INTO [NewsTable] (Date, News) VALUES (@Date, @News)";
+
+            using (SqlCommand cmd = new SqlCommand(query, con1))
             {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con1.Close();
+                cmd.Parameters.AddWithValue("@Date", date);
+                cmd.Parameters.AddWithValue("@News", news);
+
+                try
+                {
+                    con1.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfully Saved");
+
+                    // Refresh the dataset after inserting new data
+                    adapter.SelectCommand = new SqlCommand("SELECT * FROM [NewsTable]", con1);
+                    dataSet.Clear();
+                    adapter.Fill(dataSet, "NewsTable");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con1.Close();
+                }
             }
         }
-
         
     }
 }
