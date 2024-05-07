@@ -29,7 +29,8 @@ namespace NSBMGO
         {
 
             InitializeComponent();
-           
+            homedatagridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
             con1 = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
             adapter = new SqlDataAdapter();
             dataSet = new DataSet();
@@ -53,6 +54,7 @@ namespace NSBMGO
             table.Columns.Add("Messages", typeof(string));
 
             guna2DataGridView1.DataSource = table;
+            inventory_Load();
         }
 
         
@@ -82,7 +84,7 @@ namespace NSBMGO
 
         
 
-        private void inventory_Load(object sender, EventArgs e)
+        private void inventory_Load()
         {
             openFileDialog1 = new OpenFileDialog();
             
