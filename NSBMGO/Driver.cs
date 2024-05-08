@@ -115,6 +115,8 @@ namespace NSBMGO
 
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
 
+            try
+            {
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select * from [Driver]", conn);
             SqlDataAdapter
@@ -123,6 +125,14 @@ namespace NSBMGO
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error" + ex);
+            }
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

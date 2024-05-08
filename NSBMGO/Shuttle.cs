@@ -21,7 +21,7 @@ namespace NSBMGO
         public Shuttle()
         {
             InitializeComponent();
-            conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Connect Timeout=30;Encrypt=True;");
+            conn = new SqlConnection(@"Data Source=nsbmgo.database.windows.net;Initial Catalog=NSBMGO;User ID=nsbmgo;Password=admin@123;Encrypt=True;");
             adapter = new SqlDataAdapter();
             dataSet = new DataSet();
             DataTable dataTable = new DataTable();
